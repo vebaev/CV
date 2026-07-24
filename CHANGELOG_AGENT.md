@@ -15,6 +15,16 @@
 - Downloadable English CV PDF and custom social-preview image.
 - Automated rendered-content and asset tests.
 
+### Changed
+
+- Reworked the desktop and mobile visual scale into a compact editorial CV
+  layout with smaller display type, tighter section spacing and denser cards.
+- Increased small metadata text for better balance and readability.
+- Reduced the measured 1280 px desktop page height from about 6,694 px to
+  4,787 px while preserving all content and interactions.
+- Updated the Scopus data test to accept current and future automated metric
+  increases instead of locking the original h-index value.
+
 ### Fixed
 
 - Excluded Cloudflare-only starter files from the GitHub Pages type check.
@@ -41,6 +51,8 @@
 - `npm run build:pages` passed.
 - `npm test` passed with 2 tests.
 - `npm run lint` passed.
+- Compact responsive layout was visually inspected at desktop size.
+- Desktop page height was reduced by approximately 28%.
 - Live Scopus refresh passed with 58 documents, h-index 16 and 1,266 citations.
 - The successful Scopus workflow triggered and completed a subsequent GitHub
   Pages deployment.

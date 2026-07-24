@@ -47,7 +47,8 @@ test("ships publication data, CV and social preview", async () => {
 
   const scopus = JSON.parse(data);
   assert.equal(scopus.authorId, "12789511400");
-  assert.equal(scopus.metrics.hIndex, 15);
+  assert.ok(scopus.metrics.hIndex >= 15);
   assert.ok(scopus.metrics.citations >= 1193);
+  assert.ok(scopus.metrics.documents >= scopus.publications.length);
   assert.ok(scopus.publications.length >= 20);
 });

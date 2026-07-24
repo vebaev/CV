@@ -32,6 +32,9 @@ The English academic CV website is implemented and ready for GitHub Pages.
   on the public page. The original PDF remains available through the CV download.
 - The project supports both the local vinext preview and a standard Next.js
   static export for GitHub Pages.
+- The visual system uses a compact editorial scale: a 72 px desktop header,
+  restrained 48–72 px display type, 58–80 px section spacing, denser research
+  cards and bibliography-style publication rows.
 - The verified live Scopus snapshot contains 58 documents, h-index 16 and 1,266
   citations as of 24 July 2026.
 
