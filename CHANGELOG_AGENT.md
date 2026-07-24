@@ -19,6 +19,7 @@
 
 - Excluded Cloudflare-only starter files from the GitHub Pages type check.
 - Removed starter loading preview, starter metadata and unused dependency.
+- Removed unused starter icons and illustration assets.
 - Reset publication pagination directly in filter handlers to satisfy React
   lint rules.
 
