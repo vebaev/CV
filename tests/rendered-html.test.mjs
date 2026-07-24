@@ -51,6 +51,11 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /baev@uni-plovdiv\.bg/);
   assert.match(html, /tel:\+35932261560/);
   assert.match(html, /imessage:\/\/vebaev@gmail\.com/);
+  assert.doesNotMatch(html, /iMessage · vebaev@gmail\.com/);
+  assert.match(html, /Paisii Hilendarski University of Plovdiv/);
+  assert.match(html, /Faculty of Biology/);
+  assert.match(html, /2 Todor Samodumov Street/);
+  assert.match(html, /4000 Plovdiv, Bulgaria/);
   assert.match(html, /Prof\. Dr\. Vesselin Baev in Tokyo/);
   assert.match(html, /35\.6762° N/);
   assert.match(html, /139\.6503° E/);
@@ -61,10 +66,11 @@ test("server-renders the academic CV", async () => {
 });
 
 test("ships publication data, CV and social preview", async () => {
-  const [data] = await Promise.all([
+  const [data, pageSource] = await Promise.all([
     readFile(new URL("../public/data/scopus.json", import.meta.url), "utf8"),
+    readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     access(new URL("../public/Vesselin-Baev-CV-2026.pdf", import.meta.url)),
-    access(new URL("../public/Vesselin-Baev-Tokyo.jpg", import.meta.url)),
+    access(new URL("../public/Vesselin-Baev-Tokyo-2026.jpg", import.meta.url)),
     access(new URL("../public/og.png", import.meta.url)),
   ]);
 
@@ -85,4 +91,6 @@ test("ships publication data, CV and social preview", async () => {
     )?.authors,
     "Galina Yahubyan, Elena Apostolova, Ivan Minkov, Vesselin Baev",
   );
+  assert.match(pageSource, /const \[visible, setVisible\] = useState\(5\)/);
+  assert.match(pageSource, /setVisible\(\(count\) => count \+ 5\)/);
 });

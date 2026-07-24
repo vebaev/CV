@@ -46,14 +46,17 @@ The English academic CV website is implemented and ready for GitHub Pages.
 - The header uses the full `Prof. Dr. Vesselin Baev` name. Professor, Vice Dean
   and the Scopus update label have stronger type hierarchy than supporting copy.
 - The hero panel is intentionally smaller than the text column and uses
-  `public/Vesselin-Baev-Tokyo.jpg` inside the existing arch shape. The VB
+  `public/Vesselin-Baev-Tokyo-2026.jpg` inside the existing arch shape. The VB
   monogram and CV download button have been removed. A dark lower gradient and
   subtle gold text strokes preserve the role text over the photograph. The
   current portrait is 1043 × 931 px; the desktop arch uses the same aspect ratio
-  at up to 510 px wide so the full photograph remains visible.
+  at up to 400 px wide so its height aligns with the adjacent text. The versioned
+  filename prevents browsers from retaining the previous portrait.
 - The decorative hero coordinates are for Tokyo: `35.6762° N, 139.6503° E`.
 - Contact links list the institutional email, telephone and an iMessage link to
-  `vebaev@gmail.com` before the institutional and Scopus links.
+  `vebaev@gmail.com` before the institutional and Scopus links. The Gmail
+  address remains in the link target but is hidden from the visible iMessage
+  label. The English Faculty address appears above the contact buttons.
 - Memberships lists AI-GUIDE CA25157 first, followed by BM1006 and FA1407.
 - Teaching lists tool development, Illumina/ONT analysis and AI bioinformatics
   solutions as separate entries.
@@ -66,6 +69,7 @@ The English academic CV website is implemented and ready for GitHub Pages.
   has a verified four-author override.
 - The verified live Scopus snapshot contains 58 documents, h-index 16 and 1,266
   citations as of 24 July 2026.
+- Publications initially show five records and reveal five more per request.
 
 ## Repository and automation
 

@@ -25,6 +25,8 @@
   `10.1201/b16675-40`, whose DOI metadata omits authors.
 - User-provided Tokyo portrait as the hero profile photograph.
 - Direct telephone and iMessage contact links.
+- English University of Plovdiv Faculty of Biology address above the contact
+  links.
 
 ### Changed
 
@@ -47,6 +49,12 @@
 - Replaced the first Tokyo portrait with the revised 1043 × 931 image and
   widened the arch to the photograph's natural aspect ratio.
 - Updated the hero coordinates from Plovdiv to Tokyo.
+- Reduced the revised portrait arch from 510 px to 400 px so its height aligns
+  with the hero copy, and changed the asset filename to invalidate the previous
+  browser cache.
+- Hid the Gmail address from the visible iMessage button while preserving the
+  direct iMessage target.
+- Changed publication pagination from eight to five records per batch.
 - Standardized Professor, Associate Professor and Assistant Professor
   affiliations to Department of Molecular Biology, University of Plovdiv.
 - Split Tool development, Illumina/ONT analysis and AI bioinformatics solutions
@@ -96,6 +104,8 @@
 - Rendered-content and asset tests cover the portrait, telephone, iMessage link
   and removal of the hero monogram.
 - Rendered-content tests cover the Tokyo latitude and longitude.
+- Tests cover the English address, hidden iMessage email label, versioned
+  portrait asset and five-record publication pagination.
 - The Crossref enrichment endpoint returned five complete author records for a
   live DOI test.
 - Desktop page height was reduced by approximately 28%.

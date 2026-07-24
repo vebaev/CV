@@ -90,7 +90,7 @@ export default function Home() {
   const [data, setData] = useState<ScopusData | null>(null);
   const [query, setQuery] = useState("");
   const [year, setYear] = useState("all");
-  const [visible, setVisible] = useState(8);
+  const [visible, setVisible] = useState(5);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -182,11 +182,11 @@ export default function Home() {
         <div className="hero-panel" aria-label="Portrait and academic profile">
           <Image
             className="hero-photo"
-            src="./Vesselin-Baev-Tokyo.jpg"
+            src="./Vesselin-Baev-Tokyo-2026.jpg"
             alt="Prof. Dr. Vesselin Baev in Tokyo"
             fill
             priority
-            sizes="(max-width: 640px) 360px, 510px"
+            sizes="(max-width: 640px) 360px, 400px"
           />
           <div className="hero-role">
             <span>Vice Dean</span>
@@ -365,7 +365,7 @@ export default function Home() {
               value={query}
               onChange={(event) => {
                 setQuery(event.target.value);
-                setVisible(8);
+                setVisible(5);
               }}
               placeholder="Search publications"
             />
@@ -376,7 +376,7 @@ export default function Home() {
               value={year}
               onChange={(event) => {
                 setYear(event.target.value);
-                setVisible(8);
+                setVisible(5);
               }}
             >
               <option value="all">All years</option>
@@ -425,7 +425,7 @@ export default function Home() {
           <button
             className="button button-more"
             type="button"
-            onClick={() => setVisible((count) => count + 8)}
+            onClick={() => setVisible((count) => count + 5)}
           >
             Show more publications
           </button>
@@ -459,6 +459,12 @@ export default function Home() {
       <section className="contact" id="contact">
         <p className="eyebrow">Let’s connect</p>
         <h2>Open to research collaboration and scientific exchange.</h2>
+        <address className="contact-address">
+          <strong>Paisii Hilendarski University of Plovdiv</strong>
+          <span>Faculty of Biology</span>
+          <span>2 Todor Samodumov Street</span>
+          <span>4000 Plovdiv, Bulgaria</span>
+        </address>
         <div className="contact-links">
           <a href="mailto:baev@uni-plovdiv.bg">
             baev@uni-plovdiv.bg <span aria-hidden="true">↗</span>
@@ -467,7 +473,7 @@ export default function Home() {
             +359 32 261 560 <span aria-hidden="true">↗</span>
           </a>
           <a href="imessage://vebaev@gmail.com">
-            iMessage · vebaev@gmail.com <span aria-hidden="true">↗</span>
+            iMessage <span aria-hidden="true">↗</span>
           </a>
           <a href="https://bio.uni-plovdiv.bg/" target="_blank" rel="noreferrer">
             Faculty of Biology <span aria-hidden="true">↗</span>
