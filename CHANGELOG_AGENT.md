@@ -41,6 +41,8 @@
   property.
 - Verified Google Search Console ownership, submitted `/CV/sitemap.xml` and
   requested priority indexing for the canonical homepage.
+- Responsive SVG browser favicon with a `VB` monogram in the site's deep blue
+  and gold palette.
 
 ### Changed
 

@@ -40,6 +40,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+  icons: {
+    icon: [
+      {
+        url: `${SITE_URL}favicon.svg`,
+        type: "image/svg+xml",
+      },
+    ],
+  },
   robots: {
     index: true,
     follow: true,

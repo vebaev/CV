@@ -39,6 +39,10 @@ test("server-renders the academic CV", async () => {
     html,
     /<link rel="canonical" href="https:\/\/vebaev\.github\.io\/CV\/"/,
   );
+  assert.match(
+    html,
+    /<link rel="icon" href="https:\/\/vebaev\.github\.io\/CV\/favicon\.svg"/,
+  );
   assert.match(html, /<meta name="robots" content="index, follow"/);
   assert.match(
     html,
@@ -108,6 +112,7 @@ test("ships publication data, CV and social preview", async () => {
     access(new URL("../public/Vesselin-Baev-CV-2026.pdf", import.meta.url)),
     access(new URL("../public/Vesselin-Baev-Tokyo-2026.jpg", import.meta.url)),
     access(new URL("../public/og.png", import.meta.url)),
+    access(new URL("../public/favicon.svg", import.meta.url)),
   ]);
 
   const scopus = JSON.parse(data);
