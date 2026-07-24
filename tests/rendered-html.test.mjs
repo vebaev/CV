@@ -33,6 +33,8 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /Science at the/);
   assert.match(html, /Research impact/);
   assert.match(html, /Prof\. Dr\. Vesselin Baev/);
+  assert.match(html, /🇬🇧/);
+  assert.match(html, /🇧🇬/);
   assert.match(html, /About me/);
   assert.match(html, /English/);
   assert.match(html, /French/);
@@ -66,9 +68,10 @@ test("server-renders the academic CV", async () => {
 });
 
 test("ships publication data, CV and social preview", async () => {
-  const [data, pageSource] = await Promise.all([
+  const [data, pageSource, styleSource] = await Promise.all([
     readFile(new URL("../public/data/scopus.json", import.meta.url), "utf8"),
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
     access(new URL("../public/Vesselin-Baev-CV-2026.pdf", import.meta.url)),
     access(new URL("../public/Vesselin-Baev-Tokyo-2026.jpg", import.meta.url)),
     access(new URL("../public/og.png", import.meta.url)),
@@ -93,4 +96,13 @@ test("ships publication data, CV and social preview", async () => {
   );
   assert.match(pageSource, /const \[visible, setVisible\] = useState\(5\)/);
   assert.match(pageSource, /setVisible\(\(count\) => count \+ 5\)/);
+  assert.match(
+    pageSource,
+    /const \[language, setLanguage\] = useState<SiteLanguage>\("en"\)/,
+  );
+  assert.match(pageSource, /aria-label="English"/);
+  assert.match(pageSource, /aria-label="Български"/);
+  assert.match(pageSource, /Научни интереси/);
+  assert.match(pageSource, /Пловдивски университет „Паисий Хилендарски“/);
+  assert.match(styleSource, /\.language-toggle\s*\{[\s\S]*border-radius: 50%/);
 });

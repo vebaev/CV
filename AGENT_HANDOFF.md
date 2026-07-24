@@ -2,7 +2,8 @@
 
 ## Current state
 
-The English academic CV website is implemented and ready for GitHub Pages.
+The bilingual English/Bulgarian academic CV website is implemented and ready
+for GitHub Pages.
 
 - Live site: `https://vebaev.github.io/CV/`
 - Main page: `app/page.tsx`
@@ -34,6 +35,13 @@ The English academic CV website is implemented and ready for GitHub Pages.
   longer linked from the hero.
 - The project supports both the local vinext preview and a standard Next.js
   static export for GitHub Pages.
+- English is the default language on every new page load. Two circular flag
+  buttons immediately before About switch the client-rendered interface between
+  English and Bulgarian and update the document language and title.
+- Static CV copy, navigation, metrics, filters, contact details and
+  accessibility labels are localized. Scopus publication titles, authors,
+  journals and types, plus the three EU COST membership names, remain in their
+  original language.
 - The visual system uses a compact editorial scale: a 72 px desktop header,
   restrained 42–60 px hero display type, 58–80 px section spacing, denser
   research cards and bibliography-style publication rows.
@@ -56,7 +64,8 @@ The English academic CV website is implemented and ready for GitHub Pages.
 - Contact links list the institutional email, telephone and an iMessage link to
   `vebaev@gmail.com` before the institutional and Scopus links. The Gmail
   address remains in the link target but is hidden from the visible iMessage
-  label. The English Faculty address appears above the contact buttons.
+  label. The Faculty address above the contact buttons follows the selected
+  interface language.
 - Memberships lists AI-GUIDE CA25157 first, followed by BM1006 and FA1407.
 - Teaching lists tool development, Illumina/ONT analysis and AI bioinformatics
   solutions as separate entries.

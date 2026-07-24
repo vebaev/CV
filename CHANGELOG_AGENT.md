@@ -27,6 +27,9 @@
 - Direct telephone and iMessage contact links.
 - English University of Plovdiv Faculty of Biology address above the contact
   links.
+- Circular English and Bulgarian flag controls before the About navigation
+  item.
+- Complete Bulgarian localization for the static CV interface and content.
 
 ### Changed
 
@@ -55,6 +58,10 @@
 - Hid the Gmail address from the visible iMessage button while preserving the
   direct iMessage target.
 - Changed publication pagination from eight to five records per batch.
+- Set English as the default language while enabling instant client-side
+  switching to Bulgarian.
+- Kept publication records and EU COST membership names in their original
+  language in both interface modes.
 - Standardized Professor, Associate Professor and Assistant Professor
   affiliations to Department of Molecular Biology, University of Plovdiv.
 - Split Tool development, Illumina/ONT analysis and AI bioinformatics solutions
@@ -106,6 +113,8 @@
 - Rendered-content tests cover the Tokyo latitude and longitude.
 - Tests cover the English address, hidden iMessage email label, versioned
   portrait asset and five-record publication pagination.
+- Tests cover both flag controls, English default state, Bulgarian copy and
+  circular language-control styling.
 - The Crossref enrichment endpoint returned five complete author records for a
   live DOI test.
 - Desktop page height was reduced by approximately 28%.

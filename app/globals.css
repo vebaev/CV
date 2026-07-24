@@ -106,8 +106,55 @@ main {
 
 nav {
   display: flex;
-  gap: 28px;
+  gap: 24px;
   align-items: center;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.language-toggle {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(7, 22, 79, 0.08);
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.language-toggle span {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.language-toggle:hover {
+  transform: translateY(-1px);
+  border-color: var(--gold);
+}
+
+.language-toggle.is-active {
+  background: var(--gold-pale);
+  border-color: var(--gold);
+  box-shadow:
+    0 0 0 2px var(--paper),
+    0 0 0 3px rgba(180, 141, 59, 0.55);
+}
+
+.language-toggle:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
 }
 
 nav a {
@@ -999,6 +1046,10 @@ footer {
     gap: 18px;
     background: var(--paper);
     border-bottom: 1px solid var(--line);
+  }
+
+  .language-switcher {
+    margin-bottom: 2px;
   }
 
   nav.nav-open {
