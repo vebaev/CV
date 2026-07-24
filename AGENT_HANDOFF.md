@@ -35,6 +35,12 @@ for GitHub Pages.
   longer linked from the hero.
 - The project supports both the local vinext preview and a standard Next.js
   static export for GitHub Pages.
+- The canonical public URL is `https://vebaev.github.io/CV/`. The static export
+  includes `/CV/sitemap.xml`, `/CV/robots.txt`, explicit index/follow metadata
+  and large image/snippet permissions for Googlebot.
+- The page includes JSON-LD `WebSite`, `ProfilePage` and `Person` entities with
+  verified Scopus Author ID `12789511400`, ORCID `0000-0002-5224-9145`, the
+  official University of Plovdiv profile, ResearchGate and Frontiers Loop.
 - English is the default language on every new page load. Two circular flag
   buttons after Contact in the main navigation switch the client-rendered
   interface between English and Bulgarian and update the document language and
@@ -59,6 +65,8 @@ for GitHub Pages.
   biological insights`.
 - The header uses the full `Prof. Dr. Vesselin Baev` name. Professor, Vice Dean
   and the Scopus update label have stronger type hierarchy than supporting copy.
+- The hero displays `Prof. Dr. Vesselin Baev` as the single semantic `h1`; the
+  editorial science statement is the visually supporting `h2`.
 - The hero panel is intentionally smaller than the text column and uses
   `public/Vesselin-Baev-Tokyo-2026.jpg` inside the existing arch shape. The VB
   monogram and CV download button have been removed. A dark lower gradient and

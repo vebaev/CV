@@ -33,6 +33,21 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /Science at the/);
   assert.match(html, /Research impact/);
   assert.match(html, /Prof\. Dr\. Vesselin Baev/);
+  assert.match(
+    html,
+    /<h1 class="hero-name">Prof\. Dr\. Vesselin Baev<\/h1>/,
+  );
+  assert.match(html, /<h2 class="hero-statement">Science at the/);
+  assert.match(
+    html,
+    /<link rel="canonical" href="https:\/\/vebaev\.github\.io\/CV\/"/,
+  );
+  assert.match(html, /<meta name="robots" content="index, follow"/);
+  assert.match(html, /application\/ld\+json/);
+  assert.match(html, /https:\/\/schema\.org/);
+  assert.match(html, /ProfilePage/);
+  assert.match(html, /0000-0002-5224-9145/);
+  assert.match(html, /12789511400/);
   assert.match(html, /🇬🇧/);
   assert.match(html, /🇧🇬/);
   assert.match(html, /About me/);
@@ -138,4 +153,27 @@ test("ships publication data, CV and social preview", async () => {
     /Обучаване на биолози да прилагат изчислителни подходи\./,
   );
   assert.match(styleSource, /\.language-toggle\s*\{[\s\S]*border-radius: 50%/);
+});
+
+test("ships search-engine discovery metadata", async () => {
+  const [layoutSource, robotsSource, sitemapSource, siteSource] =
+    await Promise.all([
+      readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
+      readFile(new URL("../app/robots.ts", import.meta.url), "utf8"),
+      readFile(new URL("../app/sitemap.ts", import.meta.url), "utf8"),
+      readFile(new URL("../lib/site.ts", import.meta.url), "utf8"),
+    ]);
+
+  assert.match(siteSource, /https:\/\/vebaev\.github\.io\/CV\//);
+  assert.match(layoutSource, /alternates:\s*\{\s*canonical: SITE_URL/);
+  assert.match(layoutSource, /ProfilePage/);
+  assert.match(layoutSource, /"@type": "Person"/);
+  assert.match(layoutSource, /"@type": "WebSite"/);
+  assert.match(layoutSource, /0000-0002-5224-9145/);
+  assert.match(layoutSource, /12789511400/);
+  assert.match(robotsSource, /userAgent: "\*"/);
+  assert.match(robotsSource, /allow: "\/"/);
+  assert.match(robotsSource, /sitemap\.xml/);
+  assert.match(sitemapSource, /changeFrequency: "daily"/);
+  assert.match(sitemapSource, /priority: 1/);
 });

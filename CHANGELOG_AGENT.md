@@ -33,6 +33,10 @@
 - Projects section for the EU ITN Marie Skłodowska-Curie ELBA grant agreement
   765492 (2018–2023).
 - Localized Memberships and Projects links in the main navigation.
+- Search-engine discovery files for sitemap and crawler guidance.
+- Canonical, explicit indexing, author and publisher metadata.
+- JSON-LD `WebSite`, `ProfilePage` and `Person` entities linking the verified
+  Scopus, ORCID, University of Plovdiv, ResearchGate and Frontiers profiles.
 
 ### Changed
 
@@ -71,6 +75,8 @@
   added direct anchors for the Memberships and Projects sections.
 - Changed the English section 01 heading from `reproducible biological insight`
   to `reproducible biological insights`.
+- Promoted the full academic name to the page's visible semantic `h1` and kept
+  the editorial science statement as a supporting `h2`.
 - Refined the Bulgarian Vice Dean, About and Teaching wording and changed
   French proficiency from 4/5 to 3/5 in both languages.
 - Standardized Professor, Associate Professor and Assistant Professor
@@ -131,6 +137,8 @@
 - Tests cover the new Memberships and Projects navigation links, their section
   anchors and the placement of the language controls after Contact.
 - Tests cover the plural `insights` wording in the English section 01 heading.
+- Tests cover the canonical URL, index/follow directives, JSON-LD identity
+  graph, verified researcher identifiers, sitemap and crawler guidance.
 - The Crossref enrichment endpoint returned five complete author records for a
   live DOI test.
 - Desktop page height was reduced by approximately 28%.
