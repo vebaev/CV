@@ -27,6 +27,8 @@
   after Elsevier rejected the subscription-only `COMPLETE` view.
 - Paginated Scopus Search in batches of 25 after the regular developer-key
   service rejected the previous 200-record request.
+- Switched Author Retrieval from the restricted `ENHANCED` view to the public
+  `METRICS` view while retaining document, citation and h-index values.
 
 ### Verification
 

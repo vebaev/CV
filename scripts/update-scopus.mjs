@@ -71,7 +71,7 @@ function normalizePublication(entry) {
 
 const authorUrl =
   `${API_ROOT}/author/author_id/${AUTHOR_ID}` +
-  "?view=ENHANCED&httpAccept=application%2Fjson";
+  "?view=METRICS&httpAccept=application%2Fjson";
 
 function makeSearchUrl(start) {
   return (
