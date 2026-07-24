@@ -43,6 +43,10 @@ test("server-renders the academic CV", async () => {
     /<link rel="canonical" href="https:\/\/vebaev\.github\.io\/CV\/"/,
   );
   assert.match(html, /<meta name="robots" content="index, follow"/);
+  assert.match(
+    html,
+    /<meta name="google-site-verification" content="s9kurQRjRr4wko5MR_T46vzil5lP4sFkzGqaAjXbDfg"/,
+  );
   assert.match(html, /application\/ld\+json/);
   assert.match(html, /https:\/\/schema\.org/);
   assert.match(html, /ProfilePage/);
@@ -166,6 +170,10 @@ test("ships search-engine discovery metadata", async () => {
 
   assert.match(siteSource, /https:\/\/vebaev\.github\.io\/CV\//);
   assert.match(layoutSource, /alternates:\s*\{\s*canonical: SITE_URL/);
+  assert.match(
+    layoutSource,
+    /google: "s9kurQRjRr4wko5MR_T46vzil5lP4sFkzGqaAjXbDfg"/,
+  );
   assert.match(layoutSource, /ProfilePage/);
   assert.match(layoutSource, /"@type": "Person"/);
   assert.match(layoutSource, /"@type": "WebSite"/);

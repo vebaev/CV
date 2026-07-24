@@ -38,6 +38,8 @@ for GitHub Pages.
 - The canonical public URL is `https://vebaev.github.io/CV/`. The static export
   includes `/CV/sitemap.xml`, `/CV/robots.txt`, explicit index/follow metadata
   and large image/snippet permissions for Googlebot.
+- The homepage permanently retains the Google Search Console HTML verification
+  meta tag for the URL-prefix property `https://vebaev.github.io/CV/`.
 - The page includes JSON-LD `WebSite`, `ProfilePage` and `Person` entities with
   verified Scopus Author ID `12789511400`, ORCID `0000-0002-5224-9145`, the
   official University of Plovdiv profile, ResearchGate and Frontiers Loop.

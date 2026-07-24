@@ -34,6 +34,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Prof. Dr. Vesselin Baev", url: SITE_URL }],
   creator: "Prof. Dr. Vesselin Baev",
   publisher: "Prof. Dr. Vesselin Baev",
+  verification: {
+    google: "s9kurQRjRr4wko5MR_T46vzil5lP4sFkzGqaAjXbDfg",
+  },
   alternates: {
     canonical: SITE_URL,
   },

@@ -37,6 +37,8 @@
 - Canonical, explicit indexing, author and publisher metadata.
 - JSON-LD `WebSite`, `ProfilePage` and `Person` entities linking the verified
   Scopus, ORCID, University of Plovdiv, ResearchGate and Frontiers profiles.
+- Google Search Console HTML verification metadata for the canonical URL-prefix
+  property.
 
 ### Changed
 
@@ -139,6 +141,7 @@
 - Tests cover the plural `insights` wording in the English section 01 heading.
 - Tests cover the canonical URL, index/follow directives, JSON-LD identity
   graph, verified researcher identifiers, sitemap and crawler guidance.
+- Tests cover the persistent Google Search Console verification marker.
 - The Crossref enrichment endpoint returned five complete author records for a
   live DOI test.
 - Desktop page height was reduced by approximately 28%.
