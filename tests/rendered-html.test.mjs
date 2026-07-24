@@ -47,8 +47,10 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /Illumina\/ONT analysis/);
   assert.match(html, /AI bioinformatics solutions/);
   assert.match(html, /Memberships/);
+  assert.match(html, /href="#memberships">Memberships<\/a>/);
   assert.match(html, /AI-Governance, Use, and Impact/);
   assert.match(html, /Projects/);
+  assert.match(html, /href="#projects">Projects<\/a>/);
   assert.match(html, /EU ITN/);
   assert.match(
     html,
@@ -111,6 +113,13 @@ test("ships publication data, CV and social preview", async () => {
   assert.match(pageSource, /aria-label="Български"/);
   assert.match(pageSource, /Научни интереси/);
   assert.match(pageSource, /projects: "Проекти"/);
+  assert.match(pageSource, /memberships: "Членства"/);
+  assert.match(
+    pageSource,
+    /href="#contact"[\s\S]*\{copy\.nav\.contact\}[\s\S]*className="language-switcher"/,
+  );
+  assert.match(pageSource, /id="memberships"/);
+  assert.match(pageSource, /id="projects"/);
   assert.match(pageSource, /Пловдивски университет „Паисий Хилендарски“/);
   assert.match(pageSource, /Научноизследователската дейност/);
   assert.match(pageSource, /statementBefore: "Мостове между"/);

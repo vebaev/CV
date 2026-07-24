@@ -36,8 +36,9 @@ for GitHub Pages.
 - The project supports both the local vinext preview and a standard Next.js
   static export for GitHub Pages.
 - English is the default language on every new page load. Two circular flag
-  buttons immediately before About switch the client-rendered interface between
-  English and Bulgarian and update the document language and title.
+  buttons after Contact in the main navigation switch the client-rendered
+  interface between English and Bulgarian and update the document language and
+  title.
 - Static CV copy, navigation, metrics, filters, contact details and
   accessibility labels are localized. Scopus publication titles, authors,
   journals and types, the three EU COST membership names and the EU ITN project
@@ -73,6 +74,8 @@ for GitHub Pages.
 - Projects follows Memberships as section 04 in the same gold row style. It
   lists the EU ITN Marie Skłodowska-Curie ELBA grant agreement 765492
   (2018–2023); only the section heading is localized.
+- Memberships and Projects are available as localized top-navigation links with
+  direct anchors to their numbered sections.
 - Teaching lists tool development, Illumina/ONT analysis and AI bioinformatics
   solutions as separate entries.
 - The daily updater keeps the publication set and metrics sourced from Scopus,

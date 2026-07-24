@@ -40,6 +40,8 @@ const siteCopy = {
       about: "About",
       research: "Research",
       publications: "Publications",
+      memberships: "Memberships",
+      projects: "Projects",
       contact: "Contact",
     },
     hero: {
@@ -196,6 +198,8 @@ const siteCopy = {
       about: "За мен",
       research: "Научни интереси",
       publications: "Публикации",
+      memberships: "Членства",
+      projects: "Проекти",
       contact: "Контакти",
     },
     hero: {
@@ -431,6 +435,12 @@ export default function Home() {
         </button>
 
         <nav className={menuOpen ? "nav-open" : ""} aria-label={copy.navigationLabel}>
+          <a href="#about" onClick={closeMenu}>{copy.nav.about}</a>
+          <a href="#research" onClick={closeMenu}>{copy.nav.research}</a>
+          <a href="#publications" onClick={closeMenu}>{copy.nav.publications}</a>
+          <a href="#memberships" onClick={closeMenu}>{copy.nav.memberships}</a>
+          <a href="#projects" onClick={closeMenu}>{copy.nav.projects}</a>
+          <a href="#contact" onClick={closeMenu}>{copy.nav.contact}</a>
           <div
             className="language-switcher"
             role="group"
@@ -461,10 +471,6 @@ export default function Home() {
               <span aria-hidden="true">🇧🇬</span>
             </button>
           </div>
-          <a href="#about" onClick={closeMenu}>{copy.nav.about}</a>
-          <a href="#research" onClick={closeMenu}>{copy.nav.research}</a>
-          <a href="#publications" onClick={closeMenu}>{copy.nav.publications}</a>
-          <a href="#contact" onClick={closeMenu}>{copy.nav.contact}</a>
         </nav>
       </header>
 
@@ -716,7 +722,7 @@ export default function Home() {
         )}
       </section>
 
-      <section className="affiliations section-grid">
+      <section className="affiliations section-grid" id="memberships">
         <div className="section-label">
           <span>03</span>
           <p>{copy.memberships}</p>
@@ -740,7 +746,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="affiliations projects section-grid">
+      <section className="affiliations projects section-grid" id="projects">
         <div className="section-label">
           <span>04</span>
           <p>{copy.projects}</p>

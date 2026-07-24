@@ -32,6 +32,7 @@
 - Complete Bulgarian localization for the static CV interface and content.
 - Projects section for the EU ITN Marie Skłodowska-Curie ELBA grant agreement
   765492 (2018–2023).
+- Localized Memberships and Projects links in the main navigation.
 
 ### Changed
 
@@ -66,6 +67,8 @@
   language in both interface modes.
 - Added a localized Projects/Проекти heading after Memberships while preserving
   the official English EU ITN grant record in both language modes.
+- Moved the English and Bulgarian flag controls after Contact in the header and
+  added direct anchors for the Memberships and Projects sections.
 - Refined the Bulgarian Vice Dean, About and Teaching wording and changed
   French proficiency from 4/5 to 3/5 in both languages.
 - Standardized Professor, Associate Professor and Assistant Professor
@@ -123,6 +126,8 @@
   circular language-control styling.
 - Tests cover the Projects section, EU ITN label, ELBA grant agreement and
   Bulgarian section heading.
+- Tests cover the new Memberships and Projects navigation links, their section
+  anchors and the placement of the language controls after Contact.
 - The Crossref enrichment endpoint returned five complete author records for a
   live DOI test.
 - Desktop page height was reduced by approximately 28%.
