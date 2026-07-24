@@ -1,6 +1,6 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-07-24T11:45:47.119Z",
+  "updatedAt": "2026-07-24T11:51:12.428Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 16,
@@ -37,7 +37,7 @@
     },
     {
       "title": "An AI-powered knowledge base for scientific abstracts: a case study on environmental DNA (eDNA) in biomonitoring",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Gana Gecheva",
       "year": 2025,
       "journal": "Ecologia Balkanica",
       "doi": "10.69085/eb20252154",
@@ -91,7 +91,7 @@
     },
     {
       "title": "Small RNA Landscape of Platelet Dust: Platelet-Derived Extracellular Vesicles from Patients with Non-Small-Cell Lung Cancer",
-      "authors": "Antunes-Ferreira M.",
+      "authors": "Mafalda Antunes-Ferreira, Ilias Glogovitis, Diogo Fortunato, Silvia D’Ambrosi, Mariona Colom Saborit, Galina Yahubyan, Vesselin Baev, Michael Hackenberg, Natasa Zarovni, Thomas Wurdinger, Danijela Koppers-Lalic",
       "year": 2025,
       "journal": "Non Coding RNA",
       "doi": "10.3390/ncrna11030038",
@@ -199,7 +199,7 @@
     },
     {
       "title": "Illuminating the Genomic Landscape of Lactiplantibacillus plantarum PU3—A Novel Probiotic Strain Isolated from Human Breast Milk, Explored through Nanopore Sequencing",
-      "authors": "Mollova D.",
+      "authors": "Daniela Mollova, Mariyana Gozmanova, Elena Apostolova, Galina Yahubyan, Ilia Iliev, Vesselin Baev",
       "year": 2023,
       "journal": "Microorganisms",
       "doi": "10.3390/microorganisms11102440",
@@ -217,7 +217,7 @@
     },
     {
       "title": "The Dynamics of miR-449a/c Expression during Uterine Cycles Are Associated with Endometrial Development",
-      "authors": "Naydenov M.",
+      "authors": "Mladen Naydenov, Maria Nikolova, Apostol Apostolov, Ilias Glogovitis, Andres Salumets, Vesselin Baev, Galina Yahubyan",
       "year": 2023,
       "journal": "Biology",
       "doi": "10.3390/biology12010055",
@@ -253,7 +253,7 @@
     },
     {
       "title": "Analysis of the Complete Mitochondrial Genome Sequence of the Resurrection Plant Haberlea Rhodopensis",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Zdravka Ivanova, Galina Yahubyan, Valentina Toneva, Elena Apostolova, Georgi Minkov, Ivan Minkov",
       "year": 2021,
       "journal": "Acta Biochimica Polonica",
       "doi": "10.18388/abp.2020_5555",
@@ -271,7 +271,7 @@
     },
     {
       "title": "Isomirs–hidden soldiers in the mirna regulatory army, and how to find them?",
-      "authors": "Glogovitis I.",
+      "authors": "Ilias Glogovitis, Galina Yahubyan, Thomas Würdinger, Danijela Koppers-Lalic, Vesselin Baev",
       "year": 2021,
       "journal": "Biomolecules",
       "doi": "10.3390/biom11010041",
@@ -280,7 +280,7 @@
     },
     {
       "title": "MicroRNA expression dynamics reshape the cultivar-specific response of pepper (Capsicum annuum L.) to potato spindle tuber viroid (PSTVd) infection",
-      "authors": "Apostolova E.",
+      "authors": "E. Apostolova, N Hadjieva, D.P. Ivanova, G. Yahubyan, V. Baev, M. Gozmanova",
       "year": 2021,
       "journal": "Scientia Horticulturae",
       "doi": "10.1016/j.scienta.2020.109845",
@@ -298,7 +298,7 @@
     },
     {
       "title": "Transcriptome analysis reveals dynamic cultivar-dependent patterns of gene expression in potato spindle tuber viroid-infected pepper",
-      "authors": "Hadjieva N.",
+      "authors": "Nikol Hadjieva, Elena Apostolova, Vesselin Baev, Galina Yahubyan, Mariyana Gozmanova",
       "year": 2021,
       "journal": "Plants",
       "doi": "10.3390/plants10122687",
@@ -307,7 +307,7 @@
     },
     {
       "title": "MicroRNA profiling the resurrection plant haberlea rhodopensis unveils essential regulators of survival under severe drought",
-      "authors": "Apostolova E.",
+      "authors": "E. APOSTOLOVA, M. GOZMANOVA, L. NACHEVA, Z. IVANOVA, V. TONEVA, I. MINKOV, V. BAEV, G. YAHUBYAN",
       "year": 2020,
       "journal": "Biologia Plantarum",
       "doi": "10.32615/bp.2020.062",
@@ -316,7 +316,7 @@
     },
     {
       "title": "Metagenomic analysis of the microbial community structure in protected wetlands in the Maritza River Basin",
-      "authors": "Iliev I.",
+      "authors": "Ivan Iliev, Mariana Marhova, Sonya Kostadinova, Velizar Gochev, Marinela Tsankova, Angelina Ivanova, Galina Yahubyan, Vesselin Baev",
       "year": 2019,
       "journal": "Biotechnology and Biotechnological Equipment",
       "doi": "10.1080/13102818.2019.1697364",
@@ -325,7 +325,7 @@
     },
     {
       "title": "LoopRNA – Java module for RNA structure annotation",
-      "authors": "Minkov G.",
+      "authors": "Georgi Minkov, Valentina Toneva, Zdravka Ivanova, Vesselin Baev",
       "year": 2018,
       "journal": "Comptes Rendus De L Academie Bulgare Des Sciences",
       "doi": "10.7546/CRABS.2018.09.08",
@@ -334,7 +334,7 @@
     },
     {
       "title": "Transposon-associated polymorphisms of stress-responsive gene promoters in selected accessions of Arabidopsis thaliana",
-      "authors": "Naydenov M.",
+      "authors": "Mladen Naydenov, Nadezhda Gospodinova, Elena Apostolova, Nikolaj Anachkov, Vesselin Baev, Mariyana Gozmanova, Ivan Minkov, Galina Yahubyan",
       "year": 2018,
       "journal": "Acta Biochimica Polonica",
       "doi": "10.18388/abp.2017_1590",
@@ -343,7 +343,7 @@
     },
     {
       "title": "Chloroplast genome analysis of resurrection tertiary relict Haberlea rhodopensis highlights genes important for desiccation stress response",
-      "authors": "Ivanova Z.",
+      "authors": "Zdravka Ivanova, Gaurav Sablok, Evelina Daskalova, Gergana Zahmanova, Elena Apostolova, Galina Yahubyan, Vesselin Baev",
       "year": 2017,
       "journal": "Frontiers in Plant Science",
       "doi": "10.3389/fpls.2017.00204",
@@ -352,7 +352,7 @@
     },
     {
       "title": "Erratum to: Growing Diversity of Plant MicroRNAs and MIR-Derived Small RNAs (Plant Epigenetics, RNA Technologies, 10.1007/978-3-319-55520-1_3)",
-      "authors": "Gozmanova M.",
+      "authors": "Mariyana Gozmanova, Vesselin Baev, Elena Apostolova, Gaurav Sablok, Galina Yahubyan",
       "year": 2017,
       "journal": "RNA Technologies",
       "doi": "10.1007/978-3-319-55520-1_26",
@@ -379,7 +379,7 @@
     },
     {
       "title": "ChloroMitoSSRDB 2.00: More genomes, more repeats, unifying SSRs search patterns and on-the-fly repeat detection",
-      "authors": "Sablok G.",
+      "authors": "Gaurav Sablok, G. V. Padma Raju, Suresh B. Mudunuri, Ratna Prabha, Dhananjaya P. Singh, Vesselin Baev, Galina Yahubyan, Peter J. Ralph, Nicola La Porta",
       "year": 2015,
       "journal": "Database",
       "doi": "10.1093/database/bav084",
@@ -388,7 +388,7 @@
     },
     {
       "title": "High-temperature effect on genes engaged in DNA methylation and affected by DNA methylation in Arabidopsis",
-      "authors": "Naydenov M.",
+      "authors": "Mladen Naydenov, Vesselin Baev, Elena Apostolova, Nadezhda Gospodinova, Gaurav Sablok, Mariyana Gozmanova, Galina Yahubyan",
       "year": 2015,
       "journal": "Plant Physiology and Biochemistry",
       "doi": "10.1016/j.plaphy.2014.12.022",
@@ -397,7 +397,7 @@
     },
     {
       "title": "isomiRs: Increasing evidences of isomiRs complexity in plant stress functional biology",
-      "authors": "Sablok G.",
+      "authors": "Gaurav Sablok, Ashish K. Srivastva, Penna Suprasanna, Vesselin Baev, Peter J. Ralph",
       "year": 2015,
       "journal": "Frontiers in Plant Science",
       "doi": "10.3389/fpls.2015.00949",
@@ -415,7 +415,7 @@
     },
     {
       "title": "Next generation sequencing crowd sourcing at BIOCOMP: What promises it holds for us in future?",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Gaurav Sablok, Ivan Minkov",
       "year": 2014,
       "journal": "Journal of Computational Science",
       "doi": "10.1016/j.jocs.2014.04.001",
@@ -424,7 +424,7 @@
     },
     {
       "title": "Small RNA analysis of potato spindle tuber viroid infected phelipanche ramosa",
-      "authors": "Ivanova D.",
+      "authors": "Desislava Ivanova, Ivan Milev, Tihomir Vachev, Vesselin Baev, Galina Yahubyan, Georgi Minkov, Mariyana Gozmanova",
       "year": 2014,
       "journal": "Plant Physiology and Biochemistry",
       "doi": "10.1016/j.plaphy.2013.11.019",
@@ -442,7 +442,7 @@
     },
     {
       "title": "Combinational effect of mutational bias and translational selection for translation efficiency in tomato (Solanum lycopersicum) cv. Micro-Tom",
-      "authors": "Sablok G.",
+      "authors": "Gaurav Sablok, XianMing Wu, Jimmy Kuo, Kinshuk Chandra Nayak, Vesselin Baev, Claudio Varotto, Fengfeng Zhou",
       "year": 2013,
       "journal": "Genomics",
       "doi": "10.1016/j.ygeno.2013.02.008",
@@ -451,7 +451,7 @@
     },
     {
       "title": "IsomiRex: Web-based identification of microRNAs, isomiR variations and differential expression using next-generation sequencing datasets",
-      "authors": "Sablok G.",
+      "authors": "Gaurav Sablok, Ivan Milev, Georgi Minkov, Ivan Minkov, Claudio Varotto, Galina Yahubyan, Vesselin Baev",
       "year": 2013,
       "journal": "FEBS Letters",
       "doi": "10.1016/j.febslet.2013.06.047",
@@ -460,7 +460,7 @@
     },
     {
       "title": "Characterization of the uterine leiomyoma microRNAome by deep sequencing",
-      "authors": "Georgieva B.",
+      "authors": "Boryana Georgieva, Ivan Milev, Ivan Minkov, Irina Dimitrova, Andrew P. Bradford, Vesselin Baev",
       "year": 2012,
       "journal": "Genomics",
       "doi": "10.1016/j.ygeno.2012.03.003",
@@ -469,7 +469,7 @@
     },
     {
       "title": "Implementation of a de novo genome-wide computational approach for updating Brachypodium miRNAs",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Ivan Milev, Mladen Naydenov, Elena Apostolova, Georgi Minkov, Ivan Minkov, Galina Yahubyan",
       "year": 2011,
       "journal": "Genomics",
       "doi": "10.1016/j.ygeno.2011.02.008",
@@ -478,7 +478,7 @@
     },
     {
       "title": "Identification of potato spindle tuber viroid small rna in orobanche ramosa by microarray",
-      "authors": "Ivanova D.",
+      "authors": "D. Ivanova, T. Vachev, V. Baev, I. Minkov, M. Gozmanova",
       "year": 2010,
       "journal": "Biotechnology and Biotechnological Equipment",
       "doi": "10.1080/13102818.2010.10817829",
@@ -487,7 +487,7 @@
     },
     {
       "title": "Identification of RNA-dependent DNA-methylation regulated promoters in Arabidopsis",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Mladen Naydenov, Elena Apostolova, Desislava Ivanova, Slaveya Doncheva, Ivan Minkov, Galina Yahubyan",
       "year": 2010,
       "journal": "Plant Physiology and Biochemistry",
       "doi": "10.1016/j.plaphy.2010.03.013",
@@ -496,7 +496,7 @@
     },
     {
       "title": "Computational identification of novel microRNA homologs in the chimpanzee genome",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Evelina Daskalova, Ivan Minkov",
       "year": 2009,
       "journal": "Computational Biology and Chemistry",
       "doi": "10.1016/j.compbiolchem.2008.07.024",
@@ -505,7 +505,7 @@
     },
     {
       "title": "Prediction and preliminary validation of oncogene regulation by miRNAs",
-      "authors": "Koscianska E.",
+      "authors": "Edyta Koscianska, Vesselin Baev, Konstantinia Skreka, Katerina Oikonomaki, Ventsislav Rusinov, Martin Tabler, Kriton Kalantidis",
       "year": 2007,
       "journal": "BMC Molecular Biology",
       "doi": "10.1186/1471-2199-8-79",
@@ -514,7 +514,7 @@
     },
     {
       "title": "MicroRNA promoter element discovery in Arabidopsis",
-      "authors": "Megraw M.",
+      "authors": "Molly Megraw, Vesselin Baev, Ventsislav Rusinov, Shane T. Jensen, Kriton Kalantidis, Artemis G. Hatzigeorgiou",
       "year": 2006,
       "journal": "RNA",
       "doi": "10.1261/rna.130506",
@@ -523,7 +523,7 @@
     },
     {
       "title": "MicroInspector: A web tool for detection of miRNA binding sites in an RNA sequence",
-      "authors": "Rusinov V.",
+      "authors": "V. Rusinov, V. Baev, I. N. Minkov, M. Tabler",
       "year": 2005,
       "journal": "Nucleic Acids Research",
       "doi": "10.1093/nar/gki364",
