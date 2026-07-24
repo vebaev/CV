@@ -34,6 +34,7 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /Science at the/);
   assert.match(html, /Research impact/);
   assert.match(html, /Prof\. Dr\. Vesselin Baev/);
+  assert.match(html, /class="hero-eyebrow-dot"/);
   assert.doesNotMatch(html, /class="hero-name"/);
   assert.match(html, /<h1 class="hero-statement">Science at the/);
   assert.match(
@@ -164,6 +165,14 @@ test("ships publication data, CV and social preview", async () => {
     /Обучаване на биолози да прилагат изчислителни подходи\./,
   );
   assert.match(styleSource, /\.language-toggle\s*\{[\s\S]*border-radius: 50%/);
+  assert.match(
+    styleSource,
+    /\.hero-eyebrow-dot\s*\{[\s\S]*animation: hero-dot-pulse/,
+  );
+  assert.match(
+    styleSource,
+    /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.hero-eyebrow-dot\s*\{[\s\S]*animation: none/,
+  );
 });
 
 test("ships search-engine discovery metadata", async () => {

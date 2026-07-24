@@ -45,6 +45,8 @@
   and gold palette.
 - Global Simple Analytics tracking script for privacy-friendly visitor
   statistics on the published CV.
+- Subtle pulsing gold status dot beside the Professor of Bioinformatics hero
+  label, with reduced-motion support.
 
 ### Changed
 

@@ -209,8 +209,33 @@ nav a:focus-visible::after {
 }
 
 .hero .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 15px;
   letter-spacing: 0.14em;
+}
+
+.hero-eyebrow-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  animation: hero-dot-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes hero-dot-pulse {
+  0%,
+  100% {
+    transform: scale(0.86);
+    box-shadow: 0 0 0 0 rgba(180, 141, 59, 0.38);
+  }
+
+  50% {
+    transform: scale(1);
+    box-shadow: 0 0 0 7px rgba(180, 141, 59, 0);
+  }
 }
 
 .hero-statement {
@@ -1237,6 +1262,10 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .hero-eyebrow-dot {
+    animation: none;
   }
 
   * {

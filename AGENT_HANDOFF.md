@@ -81,6 +81,8 @@ for GitHub Pages.
   biological insights`.
 - The header uses the full `Prof. Dr. Vesselin Baev` name. Professor, Vice Dean
   and the Scopus update label have stronger type hierarchy than supporting copy.
+- The Professor of Bioinformatics hero label begins with a subtle pulsing gold
+  dot. The animation is disabled when the visitor prefers reduced motion.
 - The hero no longer repeats `Prof. Dr. Vesselin Baev` after the Professor of
   Bioinformatics label. The editorial science statement is the semantic `h1`;
   the full name remains prominent in the fixed header and in all SEO metadata.
