@@ -20,9 +20,10 @@ The English academic CV website is implemented and ready for GitHub Pages.
   API refresh.
 - Scopus Search uses the `STANDARD` view so a regular Elsevier developer key can
   refresh the public metadata without an institutional subscription token.
-- Author Retrieval uses the entitlement-free `METRICS` view, which provides
-  document, citation and h-index values without requesting restricted profile
-  fields.
+- GitHub-hosted API calls use Scopus Search only because Author Retrieval views
+  are entitlement-restricted from public runners. Total citations and h-index
+  are calculated from each indexed document's live `citedby-count`, while the
+  document total comes from the same Scopus response.
 - Scopus Search is paginated in batches of 25 records, matching the regular
   developer-key service limit while still retrieving the complete publication
   list.

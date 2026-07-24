@@ -69,10 +69,6 @@ function normalizePublication(entry) {
   };
 }
 
-const authorUrl =
-  `${API_ROOT}/author/author_id/${AUTHOR_ID}` +
-  "?view=METRICS&httpAccept=application%2Fjson";
-
 function makeSearchUrl(start) {
   return (
     `${API_ROOT}/search/scopus` +
@@ -82,13 +78,8 @@ function makeSearchUrl(start) {
   );
 }
 
-const [authorPayload, firstSearchPayload] = await Promise.all([
-  fetchJson(authorUrl),
-  fetchJson(makeSearchUrl(0)),
-]);
+const firstSearchPayload = await fetchJson(makeSearchUrl(0));
 
-const authorRecord = authorPayload["author-retrieval-response"]?.[0];
-const core = authorRecord?.coredata;
 const firstSearchResults = firstSearchPayload["search-results"];
 const totalResults = number(firstSearchResults?.["opensearch:totalResults"]);
 const resultLimit = Math.min(totalResults, SEARCH_RESULT_LIMIT);
@@ -105,27 +96,37 @@ const entries = [firstSearchPayload, ...remainingPayloads].flatMap(
   (payload) => payload["search-results"]?.entry ?? [],
 );
 
-if (!core || !Array.isArray(entries) || entries.length === 0) {
-  throw new Error("Scopus returned an incomplete author profile");
+if (!Array.isArray(entries) || entries.length === 0) {
+  throw new Error("Scopus returned an incomplete publication list");
 }
 
-const publications = entries
-  .filter((entry) => !entry.error)
+const validEntries = entries.filter((entry) => !entry.error);
+const publications = validEntries
   .map(normalizePublication)
   .filter((entry) => entry.year > 1900)
   .sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
+const citationCounts = validEntries
+  .filter((entry) => entry["citedby-count"] !== undefined)
+  .map((entry) => number(entry["citedby-count"]))
+  .sort((a, b) => b - a);
 
 const previous = JSON.parse(await readFile(outputPath, "utf8"));
+const calculatedCitations = citationCounts.reduce((sum, count) => sum + count, 0);
+const calculatedHIndex = citationCounts.filter(
+  (citations, index) => citations >= index + 1,
+).length;
 const next = {
   authorId: AUTHOR_ID,
   updatedAt: new Date().toISOString(),
   source: "Elsevier Scopus APIs",
   metrics: {
-    hIndex: number(core["h-index"], previous.metrics.hIndex),
-    citations: number(core["citation-count"], previous.metrics.citations),
+    hIndex: citationCounts.length ? calculatedHIndex : previous.metrics.hIndex,
+    citations: citationCounts.length
+      ? calculatedCitations
+      : previous.metrics.citations,
     documents: number(
-      core["document-count"],
-      number(firstSearchResults?.["opensearch:totalResults"], publications.length),
+      firstSearchResults?.["opensearch:totalResults"],
+      publications.length,
     ),
   },
   publications,
