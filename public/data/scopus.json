@@ -1,6 +1,6 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-07-24T10:18:45.944Z",
+  "updatedAt": "2026-07-24T11:45:47.119Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 16,
@@ -10,7 +10,7 @@
   "publications": [
     {
       "title": "A Metagenomic Comparison of the Colostrum Microbiome in Bulgarian Mothers by Delivery Mode: A Pilot Study",
-      "authors": "Mollova D.",
+      "authors": "Daniela Mollova, Vesselin Baev, Tsvetomira Borisova, Mariya Rusinova, Ilia Iliev",
       "year": 2026,
       "journal": "Microorganisms",
       "doi": "10.3390/microorganisms14010184",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Menstrual cycle-dependent expression of tRNA-derived fragments in healthy human endometrium and uterine fluid-derived extracellular vesicles",
-      "authors": "Apostolov A.",
+      "authors": "Apostol Apostolov, Mladen Naydenov, Kristiyana Kambareva, Amruta D. S. Pathare, Merli Saare, Alberto Sola-Leyva, Andres Salumets, Vesselin Baev, Galina Yahubyan",
       "year": 2026,
       "journal": "BMC Genomics",
       "doi": "10.1186/s12864-026-12851-3",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Potential of Fermented Food-Derived Lactiplantibacillus Cell-Free Supernatants to Control Staphylococcus aureus Growth and Biofilm Development",
-      "authors": "Ilieva L.",
+      "authors": "Lena Ilieva, Vesselin Baev, Mariana Marhova, Galina Yahubyan, Elena Apostolova, Mariyana Gozmanova, Velizar Gochev, Tsvetelina Paunova-Krasteva, Tsvetozara Damyanova, Sonya Kostadinova, Miroslava Gocheva, Ivan Iliev",
       "year": 2026,
       "journal": "International Journal of Molecular Sciences",
       "doi": "10.3390/ijms27020760",
@@ -46,7 +46,7 @@
     },
     {
       "title": "Bioinformatics Research in Bacterial Genomics and Metagenomics",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev",
       "year": 2025,
       "journal": "Current Issues in Molecular Biology",
       "doi": "10.3390/cimb47040258",
@@ -55,7 +55,7 @@
     },
     {
       "title": "Characterization and Probiotic Potential of Levilactobacillus brevis DPL5: A Novel Strain Isolated from Human Breast Milk with Antimicrobial Properties Against Biofilm-Forming Staphylococcus aureus",
-      "authors": "Iliev I.",
+      "authors": "Ivan Iliev, Galina Yahubyan, Elena Apostolova-Kuzova, Mariyana Gozmanova, Daniela Mollova, Iliya Iliev, Lena Ilieva, Mariana Marhova, Velizar Gochev, Vesselin Baev",
       "year": 2025,
       "journal": "Microorganisms",
       "doi": "10.3390/microorganisms13010160",
@@ -64,7 +64,7 @@
     },
     {
       "title": "Combinatorial Analysis of miRNAs and tRNA Fragments as Potential Biomarkers for Cancer Patients in Liquid Biopsies",
-      "authors": "Glogovitis I.",
+      "authors": "Ilias Glogovitis, Silvia D’Ambrosi, Mafalda Antunes-Ferreira, Monica Chiogna, Galina Yahubyan, Vesselin Baev, Thomas Wurdinger, Danijela Koppers-Lalic",
       "year": 2025,
       "journal": "Non Coding RNA",
       "doi": "10.3390/ncrna11010017",
@@ -73,7 +73,7 @@
     },
     {
       "title": "In Vitro Probiotic Modulation of Specific Dietary Complex Sugar Consumption in Fecal Cultures in Infants",
-      "authors": "Mollova D.",
+      "authors": "Daniela Mollova, Vesselin Baev, Ilia Iliev",
       "year": 2025,
       "journal": "Microorganisms",
       "doi": "10.3390/microorganisms13102352",
@@ -82,7 +82,7 @@
     },
     {
       "title": "Multi-omics analysis of uterine fluid extracellular vesicles reveals a resemblance with endometrial tissue across the menstrual cycle: biological and translational insights",
-      "authors": "Apostolov A.",
+      "authors": "Apostol Apostolov, Danilo Mladenović, Kadi Tilk, Andres Lõhmus, Vesselin Baev, Galina Yahubyan, Alberto Sola-Leyva, Mathilde Bergamelli, André Görgens, Cheng Zhao, Samir E L Andaloussi, Aive Kalinina, Ganesh Acharya, Fredrik Lanner, Merli Saare, Maire Peters, Paola Piomboni, Alice Luddi, Andres Salumets, Elina Aleksejeva",
       "year": 2025,
       "journal": "Human Reproduction Open",
       "doi": "10.1093/hropen/hoaf010",
@@ -100,7 +100,7 @@
     },
     {
       "title": "Unveiling the Petunia hybrida Virome: Metatranscriptomic Profiling from the Bulgarian Market and In Vitro Cultures",
-      "authors": "Valkova R.",
+      "authors": "Rumyana Valkova, Stoyanka Jurak, Elena Apostolova-Kuzova, Vesselin Baev, Lilyana Nacheva, Galina Yahubyan, Dijana Škorić, Mariyana Gozmanova",
       "year": 2025,
       "journal": "Plants",
       "doi": "10.3390/plants14162597",
@@ -109,7 +109,7 @@
     },
     {
       "title": "Using Moss Walls for Air Quality Monitoring: Extending Their Utility Beyond Traditional Green Infrastructure",
-      "authors": "Gecheva G.",
+      "authors": "Gana Gecheva, Zhana Petkova, Stoyan Damyanov, Deyana Georgieva, Vesselin Baev, Mariyana Gozmanova, Elena Apostolova-Kuzova, Galina Yahubyan",
       "year": 2025,
       "journal": "International Journal of Plant Biology",
       "doi": "10.3390/ijpb16020044",
@@ -118,7 +118,7 @@
     },
     {
       "title": "Viral and Viroid Communities in Peach Cultivars Grown in Bulgaria",
-      "authors": "Gozmanova M.",
+      "authors": "Mariyana Gozmanova, Vesselin Baev, Rumyana Valkova, Elena Apostolova-Kuzova, Stoyanka Jurac, Galina Yahubyan, Lilyana Nacheva, Snezhana Milusheva",
       "year": 2025,
       "journal": "Horticulturae",
       "doi": "10.3390/horticulturae11050503",
@@ -127,7 +127,7 @@
     },
     {
       "title": "Aging promotes accumulation of senescent and multiciliated cells in human endometrial epithelium",
-      "authors": "Loid M.",
+      "authors": "Marina Loid, Darina Obukhova, Keiu Kask, Apostol Apostolov, Alvin Meltsov, Demis Tserpelis, Arthur van den Wijngaard, Signe Altmäe, Galina Yahubyan, Vesselin Baev, Merli Saare, Maire Peters, Ave Minajeva, Priit Adler, Ganesh Acharya, Kaarel Krjutškov, Maria Nikolova, Felipe Vilella, Carlos Simon, Masoud Zamani Esteki, Andres Salumets",
       "year": 2024,
       "journal": "Human Reproduction Open",
       "doi": "10.1093/hropen/hoae048",
@@ -136,7 +136,7 @@
     },
     {
       "title": "Endometrial Proliferative Phase-Centered View of Transcriptome Dynamics across the Menstrual Cycle",
-      "authors": "Apostolov A.",
+      "authors": "Apostol Apostolov, Mladen Naydenov, Aive Kalinina, Maria Nikolova, Merli Saare, Elina Aleksejeva, Nadezhda Milova, Antoan Milov, Andres Salumets, Vesselin Baev, Galina Yahubyan",
       "year": 2024,
       "journal": "International Journal of Molecular Sciences",
       "doi": "10.3390/ijms25105320",
@@ -145,7 +145,7 @@
     },
     {
       "title": "Exploring the Genomic Landscape of Bacillus paranthracis PUMB_17 as a Proficient Phosphatidylcholine-Specific Phospholipase C Producer",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Ivan Iliev, Yordan Stefanov, Marinela Tsankova, Mariana Marhova, Elena Apostolova, Mariyana Gozmanova, Galina Yahubyan, Sonya Kostadinova",
       "year": 2024,
       "journal": "Current Issues in Molecular Biology",
       "doi": "10.3390/cimb46030158",
@@ -154,7 +154,7 @@
     },
     {
       "title": "Exploring the Metatranscriptome of Bacterial Communities of Two Moss Species Thriving in Different Environments—Terrestrial and Aquatic",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Gana Gecheva, Elena Apostolova, Mariyana Gozmanova, Galina Yahubyan",
       "year": 2024,
       "journal": "Plants",
       "doi": "10.3390/plants13091210",
@@ -163,7 +163,7 @@
     },
     {
       "title": "Genomic Exploration of a Chitinolytic Streptomyces albogriseolus PMB5 Strain from European mantis (Mantis religiosa)",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Ivan Iliev, Elena Apostolova, Mariyana Gozmanova, Yana Hristova, Yanitsa Ilieva, Galina Yahubyan, Velizar Gochev",
       "year": 2024,
       "journal": "Current Issues in Molecular Biology",
       "doi": "10.3390/cimb46090554",
@@ -172,7 +172,7 @@
     },
     {
       "title": "16S-rRNA-Based Metagenomic Profiling of the Bacterial Communities in Traditional Bulgarian Sourdoughs",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Elena Apostolova, Velitchka Gotcheva, Miglena Koprinarova, Maria Papageorgiou, João Miguel Rocha, Galina Yahubyan, Angel Angelov",
       "year": 2023,
       "journal": "Microorganisms",
       "doi": "10.3390/microorganisms11030803",
@@ -181,7 +181,7 @@
     },
     {
       "title": "Effects of sourdough on rheological properties of dough, quality characteristics and staling time of wholemeal wheat croissants",
-      "authors": "Chochkov R.",
+      "authors": "Rosen Chochkov, Miroslav Savov, Velitchka Gotcheva, Maria Papageorgiou, João Miguel Rocha, Vesselin Baev, Angel Angelov",
       "year": 2023,
       "journal": "Italian Journal of Food Science",
       "doi": "10.15586/IJFS.V35I3.2385",
@@ -190,7 +190,7 @@
     },
     {
       "title": "Identification of Bulgarian Sourdough Microbiota by Metagenomic Approach Using Three Commercially Available DNA Extraction Protocols",
-      "authors": "Vassileva I.",
+      "authors": "Ivelina Vassileva, Vesselin Baev, Galina Yahubyan, Elena Apostolova-Kuzova, Angel Angelov, Miglena Koprinarova",
       "year": 2023,
       "journal": "Food Technology and Biotechnology",
       "doi": "10.17113/ftb.61.01.23.7796",
@@ -208,7 +208,7 @@
     },
     {
       "title": "Liquid Biopsy: Current Status and Future Perspectives",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Danijela Koppers-Lalic, Bruno Costa-Silva",
       "year": 2023,
       "journal": "Cancers",
       "doi": "10.3390/cancers15123205",
@@ -226,7 +226,7 @@
     },
     {
       "title": "The Fascinating World of Plant Non-Coding RNAs",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Andreas Gisel, Ivan Minkov",
       "year": 2023,
       "journal": "International Journal of Molecular Sciences",
       "doi": "10.3390/ijms241210341",
@@ -235,7 +235,7 @@
     },
     {
       "title": "Bacterial diversity and physiological activity of lettuce (Lactuca sativa) rhizosphere under bio-organic greenhouse management strategies",
-      "authors": "Iliev I.",
+      "authors": "I. Iliev, E. Apostolova, N. Hadjieva, K. Kostadinov, S. Filipov, S. Kostadinova, V. Baev, M. Gozmanova",
       "year": 2022,
       "journal": "International Journal of Environmental Science and Technology",
       "doi": "10.1007/s13762-021-03831-z",
@@ -244,7 +244,7 @@
     },
     {
       "title": "The Multiverse of Plant Small RNAs: How Can We Explore It?",
-      "authors": "Ivanova Z.",
+      "authors": "Zdravka Ivanova, Georgi Minkov, Andreas Gisel, Galina Yahubyan, Ivan Minkov, Valentina Toneva, Vesselin Baev",
       "year": 2022,
       "journal": "International Journal of Molecular Sciences",
       "doi": "10.3390/ijms23073979",
@@ -262,7 +262,7 @@
     },
     {
       "title": "Coupling miR/isomiR and mRNA Expression Signatures Unveils New Molecular Layers of Endometrial Receptivity",
-      "authors": "Nikolova M.",
+      "authors": "Maria Nikolova, Mladen Naydenov, Ilias Glogovitis, Apostol Apostolov, Merli Saare, Nageswara Boggavarapu, Andres Salumets, Vesselin Baev, Galina Yahubyan",
       "year": 2021,
       "journal": "Life",
       "doi": "10.3390/life11121391",
@@ -289,7 +289,7 @@
     },
     {
       "title": "Mirgalaxy: Galaxy‐based framework for interactive analysis of microrna and isomir sequencing data",
-      "authors": "Glogovitis I.",
+      "authors": "Ilias Glogovitis, Galina Yahubyan, Thomas Würdinger, Danijela Koppers-Lalic, Vesselin Baev",
       "year": 2021,
       "journal": "Cancers",
       "doi": "10.3390/cancers13225663",
@@ -361,7 +361,7 @@
     },
     {
       "title": "Growing Diversity of Plant MicroRNAs and MIR-Derived Small RNAs",
-      "authors": "Gozmanova M.",
+      "authors": "Mariyana Gozmanova, Vesselin Baev, Elena Apostolova, Gaurav Sablok, Galina Yahubyan",
       "year": 2017,
       "journal": "RNA Technologies",
       "doi": "10.1007/978-3-319-55520-1_3",
@@ -370,7 +370,7 @@
     },
     {
       "title": "Metagenomic profiling of the microbial freshwater communities in two Bulgarian reservoirs",
-      "authors": "Iliev I.",
+      "authors": "Ivan Iliev, Galina Yahubyan, Mariana Marhova, Elena Apostolova, Mariyana Gozmanova, Gana Gecheva, Sonya Kostadinova, Angelina Ivanova, Vesselin Baev",
       "year": 2017,
       "journal": "Journal of Basic Microbiology",
       "doi": "10.1002/jobm.201700137",
@@ -406,7 +406,7 @@
     },
     {
       "title": "Insight into small RNA abundance and expression in high- and low-temperature stress response using deep sequencing in Arabidopsis",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Ivan Milev, Mladen Naydenov, Tihomir Vachev, Elena Apostolova, Nikolay Mehterov, Mariyana Gozmanva, Georgi Minkov, Gaurav Sablok, Galina Yahubyan",
       "year": 2014,
       "journal": "Plant Physiology and Biochemistry",
       "doi": "10.1016/j.plaphy.2014.09.007",
