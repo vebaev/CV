@@ -1,0 +1,198 @@
+{
+  "authorId": "12789511400",
+  "updatedAt": "2026-01-15T03:00:00+02:00",
+  "source": "Scopus export, January 2026",
+  "metrics": {
+    "hIndex": 15,
+    "citations": 1193,
+    "documents": 56
+  },
+  "publications": [
+    {
+      "title": "Potential of Fermented Food-Derived Lactiplantibacillus Cell-Free Supernatants to Control Staphylococcus aureus Growth and Biofilm Development",
+      "authors": "Ilieva L., Baev V., Marhova M., Yahubyan G., Apostolova E., Gozmanova M., Gochev V., et al.",
+      "year": 2026,
+      "journal": "International Journal of Molecular Sciences",
+      "doi": "10.3390/ijms27020760",
+      "type": "Article"
+    },
+    {
+      "title": "A Metagenomic Comparison of the Colostrum Microbiome in Bulgarian Mothers by Delivery Mode: A Pilot Study",
+      "authors": "Mollova D., Baev V., Borisova T., Rusinova M., Iliev I.",
+      "year": 2026,
+      "journal": "Microorganisms",
+      "doi": "10.3390/microorganisms14010184",
+      "type": "Article"
+    },
+    {
+      "title": "Bioinformatics Research in Bacterial Genomics and Metagenomics",
+      "authors": "Baev V.",
+      "year": 2025,
+      "journal": "Current Issues in Molecular Biology",
+      "doi": "10.3390/cimb47040258",
+      "type": "Review"
+    },
+    {
+      "title": "Using Moss Walls for Air Quality Monitoring: Extending Their Utility Beyond Traditional Green Infrastructure",
+      "authors": "Gecheva G., Petkova Z., Damyanov S., Georgieva D., Baev V., et al.",
+      "year": 2025,
+      "journal": "International Journal of Plant Biology",
+      "doi": "10.3390/ijpb16020044",
+      "type": "Article"
+    },
+    {
+      "title": "Characterization and Probiotic Potential of Levilactobacillus brevis DPL5",
+      "authors": "Iliev I., Yahubyan G., Apostolova-Kuzova E., Gozmanova M., Mollova D., et al.",
+      "year": 2025,
+      "journal": "Microorganisms",
+      "doi": "10.3390/microorganisms13010160",
+      "type": "Article"
+    },
+    {
+      "title": "In Vitro Probiotic Modulation of Specific Dietary Complex Sugar Consumption in Fecal Cultures in Infants",
+      "authors": "Mollova D., Baev V., Iliev I.",
+      "year": 2025,
+      "journal": "Microorganisms",
+      "doi": "10.3390/microorganisms13102352",
+      "type": "Article"
+    },
+    {
+      "title": "Combinatorial Analysis of miRNAs and tRNA Fragments as Potential Biomarkers for Cancer Patients in Liquid Biopsies",
+      "authors": "Glogovitis I., D’Ambrosi S., Antunes-Ferreira M., Chiogna M., Yahubyan G., Baev V., et al.",
+      "year": 2025,
+      "journal": "Non-Coding RNA",
+      "doi": "10.3390/ncrna11010017",
+      "type": "Article"
+    },
+    {
+      "title": "Multi-omics analysis of uterine fluid extracellular vesicles reveals a resemblance with endometrial tissue across the menstrual cycle",
+      "authors": "Apostolov A., Mladenović D., Tilk K., Lõhmus A., Baev V., Yahubyan G., et al.",
+      "year": 2025,
+      "journal": "Human Reproduction Open",
+      "doi": "10.1093/hropen/hoaf010",
+      "type": "Article"
+    },
+    {
+      "title": "Unveiling the Petunia hybrida Virome: Metatranscriptomic Profiling from the Bulgarian Market and In Vitro Cultures",
+      "authors": "Valkova R., Jurak S., Apostolova-Kuzova E., Baev V., Nacheva L., et al.",
+      "year": 2025,
+      "journal": "Plants",
+      "doi": "10.3390/plants14162597",
+      "type": "Article"
+    },
+    {
+      "title": "Small RNA Landscape of Platelet Dust: Platelet-Derived Extracellular Vesicles from Patients with Non-Small-Cell Lung Cancer",
+      "authors": "Antunes-Ferreira M., Glogovitis I., Fortunato D., D’Ambrosi S., Yahubyan G., Baev V., et al.",
+      "year": 2025,
+      "journal": "Non-Coding RNA",
+      "doi": "10.3390/ncrna11030038",
+      "type": "Article"
+    },
+    {
+      "title": "An AI-powered knowledge base for scientific abstracts: a case study on environmental DNA in biomonitoring",
+      "authors": "Baev V., Gecheva G.",
+      "year": 2025,
+      "journal": "Ecologia Balkanica",
+      "doi": "10.69085/eb20252154",
+      "type": "Article"
+    },
+    {
+      "title": "Viral and Viroid Communities in Peach Cultivars Grown in Bulgaria",
+      "authors": "Gozmanova M., Baev V., Valkova R., Apostolova-Kuzova E., Jurak S., et al.",
+      "year": 2025,
+      "journal": "Horticulturae",
+      "doi": "10.3390/horticulturae11050503",
+      "type": "Article"
+    },
+    {
+      "title": "Endometrial Proliferative Phase-Centered View of Transcriptome Dynamics across the Menstrual Cycle",
+      "authors": "Apostolov A., Naydenov M., Kalinina A., Nikolova M., Saare M., Aleksejeva E., et al.",
+      "year": 2024,
+      "journal": "International Journal of Molecular Sciences",
+      "doi": "10.3390/ijms25105320",
+      "citations": 1,
+      "type": "Article"
+    },
+    {
+      "title": "Genomic Exploration of a Chitinolytic Streptomyces albogriseolus PMB5 Strain from European Mantis",
+      "authors": "Baev V., Iliev I., Apostolova E., Gozmanova M., Hristova Y., Ilieva Y., et al.",
+      "year": 2024,
+      "journal": "Current Issues in Molecular Biology",
+      "doi": "10.3390/cimb46090554",
+      "citations": 0,
+      "type": "Article"
+    },
+    {
+      "title": "Aging promotes accumulation of senescent and multiciliated cells in human endometrial epithelium",
+      "authors": "Loid M., Obukhova D., Kask K., Apostolov A., Meltsov A., Baev V., et al.",
+      "year": 2024,
+      "journal": "Human Reproduction Open",
+      "doi": "10.1093/hropen/hoae048",
+      "citations": 2,
+      "type": "Article"
+    },
+    {
+      "title": "Exploring the Genomic Landscape of Bacillus paranthracis PUMB_17 as a Proficient Phosphatidylcholine-Specific Phospholipase C Producer",
+      "authors": "Baev V., Iliev I., Stefanov Y., Tsankova M., Marhova M., Apostolova E., et al.",
+      "year": 2024,
+      "journal": "Current Issues in Molecular Biology",
+      "doi": "10.3390/cimb46030158",
+      "citations": 0,
+      "type": "Article"
+    },
+    {
+      "title": "Exploring the Metatranscriptome of Bacterial Communities of Two Moss Species Thriving in Different Environments",
+      "authors": "Baev V., Gecheva G., Apostolova E., Gozmanova M., Yahubyan G.",
+      "year": 2024,
+      "journal": "Plants",
+      "doi": "10.3390/plants13091210",
+      "citations": 0,
+      "type": "Article"
+    },
+    {
+      "title": "Liquid Biopsy: Current Status and Future Perspectives",
+      "authors": "Baev V., Koppers-Lalic D., Costa-Silva B.",
+      "year": 2023,
+      "journal": "Cancers",
+      "doi": "10.3390/cancers15123205",
+      "citations": 5,
+      "type": "Editorial"
+    },
+    {
+      "title": "The Dynamics of miR-449a/c Expression during Uterine Cycles Are Associated with Endometrial Development",
+      "authors": "Naydenov M., Nikolova M., Apostolov A., Glogovitis I., Salumets A., Baev V., Yahubyan G.",
+      "year": 2023,
+      "journal": "Biology",
+      "doi": "10.3390/biology12010055",
+      "citations": 5,
+      "type": "Article"
+    },
+    {
+      "title": "The Multiverse of Plant Small RNAs: How Can We Explore It?",
+      "authors": "Ivanova Z., Minkov G., Gisel A., Yahubyan G., Minkov I., Toneva V., Baev V.",
+      "year": 2022,
+      "journal": "International Journal of Molecular Sciences",
+      "doi": "10.3390/ijms23073979",
+      "citations": 4,
+      "type": "Review"
+    },
+    {
+      "title": "MirGalaxy: Galaxy-based framework for interactive analysis of microRNA and isomiR sequencing data",
+      "authors": "Glogovitis I., Yahubyan G., Würdinger T., Koppers-Lalic D., Baev V.",
+      "year": 2021,
+      "journal": "Cancers",
+      "doi": "10.3390/cancers13225663",
+      "citations": 6,
+      "type": "Article"
+    },
+    {
+      "title": "MicroInspector: A web tool for detection of miRNA binding sites in an RNA sequence",
+      "authors": "Rusinov V., Baev V., Minkov I.N., Tabler M.",
+      "year": 2005,
+      "journal": "Nucleic Acids Research",
+      "doi": "10.1093/nar/gki364",
+      "citations": 220,
+      "type": "Article"
+    }
+  ]
+}

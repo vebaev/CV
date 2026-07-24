@@ -1,0 +1,44 @@
+name: Update Scopus data
+
+on:
+  schedule:
+    - cron: "7 3 * * *"
+      timezone: "Europe/Sofia"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scopus-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Retrieve Scopus profile and publications
+        env:
+          ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
+          ELSEVIER_INST_TOKEN: ${{ secrets.ELSEVIER_INST_TOKEN }}
+        run: npm run update:scopus
+
+      - name: Save refreshed data
+        run: |
+          if git diff --quiet -- public/data/scopus.json; then
+            echo "Scopus data is unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/scopus.json
+          git commit -m "Update Scopus profile data"
+          git push
