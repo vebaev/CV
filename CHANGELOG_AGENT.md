@@ -62,6 +62,8 @@
   switching to Bulgarian.
 - Kept publication records and EU COST membership names in their original
   language in both interface modes.
+- Refined the Bulgarian Vice Dean, About and Teaching wording and changed
+  French proficiency from 4/5 to 3/5 in both languages.
 - Standardized Professor, Associate Professor and Assistant Professor
   affiliations to Department of Molecular Biology, University of Plovdiv.
 - Split Tool development, Illumina/ONT analysis and AI bioinformatics solutions

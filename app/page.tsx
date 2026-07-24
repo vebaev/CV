@@ -79,7 +79,7 @@ const siteCopy = {
     },
     languages: [
       { name: "English", level: 5 },
-      { name: "French", level: 4 },
+      { name: "French", level: 3 },
       { name: "Russian", level: 1 },
       { name: "Japanese", level: 1 },
     ],
@@ -207,7 +207,7 @@ const siteCopy = {
       button: "Разгледайте публикациите",
       portraitAlt: "проф. д-р Веселин Баев в Токио",
       viceDean: "Заместник-декан",
-      role: "Наука и научни изследвания",
+      role: "Научноизследователската дейност",
       faculty: "Биологически факултет",
     },
     metrics: {
@@ -220,7 +220,7 @@ const siteCopy = {
     },
     about: {
       label: "За мен",
-      statementBefore: "Изграждам мостове между",
+      statementBefore: "Мостове между",
       statementEmphasis: "молекулярната биология",
       statementAfter:
         ", изчислителните подходи и следващото поколение учени.",
@@ -234,7 +234,7 @@ const siteCopy = {
     },
     languages: [
       { name: "Английски", level: 5 },
-      { name: "Френски", level: 4 },
+      { name: "Френски", level: 3 },
       { name: "Руски", level: 1 },
       { name: "Японски", level: 1 },
     ],
@@ -300,7 +300,7 @@ const siteCopy = {
         },
       ],
       teaching: "Преподаване",
-      teachingHeading: "Обучение на биолози да прилагат изчислителен подход.",
+      teachingHeading: "Обучаване на биолози да прилагат изчислителни подходи.",
       courses: [
         "Основи на биоинформатиката",
         "Биоинформатичен анализ",

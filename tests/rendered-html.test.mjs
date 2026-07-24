@@ -104,5 +104,13 @@ test("ships publication data, CV and social preview", async () => {
   assert.match(pageSource, /aria-label="Български"/);
   assert.match(pageSource, /Научни интереси/);
   assert.match(pageSource, /Пловдивски университет „Паисий Хилендарски“/);
+  assert.match(pageSource, /Научноизследователската дейност/);
+  assert.match(pageSource, /statementBefore: "Мостове между"/);
+  assert.match(pageSource, /\{ name: "French", level: 3 \}/);
+  assert.match(pageSource, /\{ name: "Френски", level: 3 \}/);
+  assert.match(
+    pageSource,
+    /Обучаване на биолози да прилагат изчислителни подходи\./,
+  );
   assert.match(styleSource, /\.language-toggle\s*\{[\s\S]*border-radius: 50%/);
 });

@@ -42,12 +42,15 @@ for GitHub Pages.
   accessibility labels are localized. Scopus publication titles, authors,
   journals and types, plus the three EU COST membership names, remain in their
   original language.
+- The Bulgarian hero role is `Научноизследователската дейност`; the About
+  statement begins `Мостове между`, and the Teaching introduction uses
+  `Обучаване на биолози да прилагат изчислителни подходи`.
 - The visual system uses a compact editorial scale: a 72 px desktop header,
   restrained 42–60 px hero display type, 58–80 px section spacing, denser
   research cards and bibliography-style publication rows.
 - About me is a separate profile section with a five-step visual language
   scale. The numbered content flow remains Research focus, Academic career and
-  Memberships.
+  Memberships. French proficiency is 3/5 in both language modes.
 - Research focus uses the same light background as Academic career and a
   six-card layout covering NGS, non-coding RNAs, microbial genomics,
   multi-omics, tool/workflow development and AI models in bioinformatics.
