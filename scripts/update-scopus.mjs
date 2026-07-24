@@ -3,6 +3,8 @@ import { dirname, resolve } from "node:path";
 
 const AUTHOR_ID = "12789511400";
 const API_ROOT = "https://api.elsevier.com/content";
+const CROSSREF_API_ROOT = "https://api.crossref.org/works";
+const CROSSREF_CONCURRENCY = 6;
 const SEARCH_PAGE_SIZE = 25;
 const SEARCH_RESULT_LIMIT = 5000;
 const outputPath = resolve("public/data/scopus.json");
@@ -23,8 +25,8 @@ if (instToken) {
   headers["X-ELS-Insttoken"] = instToken;
 }
 
-async function fetchJson(url) {
-  const response = await fetch(url, { headers });
+async function fetchJson(url, requestHeaders = headers) {
+  const response = await fetch(url, { headers: requestHeaders });
   if (!response.ok) {
     const detail = await response.text();
     throw new Error(
@@ -32,6 +34,61 @@ async function fetchJson(url) {
     );
   }
   return response.json();
+}
+
+function crossrefAuthorName(author) {
+  const literal = text(author.name).trim();
+  const given = text(author.given).trim();
+  const family = text(author.family).trim();
+  return [given, family].filter(Boolean).join(" ") || literal;
+}
+
+async function completeAuthors(publication) {
+  if (!publication.doi) return publication;
+
+  try {
+    const payload = await fetchJson(
+      `${CROSSREF_API_ROOT}/${encodeURIComponent(publication.doi)}`,
+      {
+        Accept: "application/json",
+        "User-Agent":
+          "Vesselin-Baev-CV/1.0 (mailto:baev@uni-plovdiv.bg)",
+      },
+    );
+    const authors = Array.isArray(payload.message?.author)
+      ? payload.message.author.map(crossrefAuthorName).filter(Boolean)
+      : [];
+
+    return authors.length
+      ? { ...publication, authors: authors.join(", ") }
+      : publication;
+  } catch (error) {
+    console.warn(
+      `Unable to retrieve the complete author list for ${publication.doi}: ${error.message}`,
+    );
+    return publication;
+  }
+}
+
+async function mapWithConcurrency(values, concurrency, mapper) {
+  const results = new Array(values.length);
+  let nextIndex = 0;
+
+  async function worker() {
+    while (nextIndex < values.length) {
+      const index = nextIndex;
+      nextIndex += 1;
+      results[index] = await mapper(values[index]);
+    }
+  }
+
+  await Promise.all(
+    Array.from(
+      { length: Math.min(concurrency, values.length) },
+      () => worker(),
+    ),
+  );
+  return results;
 }
 
 function text(value, fallback = "") {
@@ -101,10 +158,15 @@ if (!Array.isArray(entries) || entries.length === 0) {
 }
 
 const validEntries = entries.filter((entry) => !entry.error);
-const publications = validEntries
+const basePublications = validEntries
   .map(normalizePublication)
   .filter((entry) => entry.year > 1900)
   .sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
+const publications = await mapWithConcurrency(
+  basePublications,
+  CROSSREF_CONCURRENCY,
+  completeAuthors,
+);
 const citationCounts = validEntries
   .filter((entry) => entry["citedby-count"] !== undefined)
   .map((entry) => number(entry["citedby-count"]))

@@ -14,6 +14,11 @@
 - GitHub Pages build and deployment workflow.
 - Downloadable English CV PDF and custom social-preview image.
 - Automated rendered-content and asset tests.
+- Separate About me section with five-step language scales for English, French,
+  Russian and Japanese.
+- Research directions for tool/workflow development and AI models in
+  bioinformatics.
+- Crossref author enrichment for complete author lists on Scopus publications.
 
 ### Changed
 
@@ -28,6 +33,16 @@
   CA25157.
 - Added tool development, Illumina/ONT analysis and AI bioinformatics
   solutions to Teaching.
+- Redesigned Research focus as a six-card light section matching the Academic
+  career background.
+- Reduced the VB hero panel and removed the CV download button.
+- Standardized Professor, Associate Professor and Assistant Professor
+  affiliations to Department of Molecular Biology, University of Plovdiv.
+- Split Tool development, Illumina/ONT analysis and AI bioinformatics solutions
+  into separate Teaching entries.
+- Moved AI-GUIDE CA25157 to the first Memberships position.
+- Allowed publication author lists to wrap over multiple lines without
+  truncation.
 - Increased small metadata text for better balance and readability.
 - Reduced the measured 1280 px desktop page height from about 6,694 px to
   4,787 px while preserving all content and interactions.
@@ -65,6 +80,10 @@
   1280 × 720; the resulting page height is 4,740 px.
 - Rendered-content tests cover the full name, Teaching addition, Memberships,
   AI-GUIDE and removal of Academic leadership.
+- Rendered-content tests cover About me, all four languages, the two new
+  research directions, separate Teaching entries and removal of the CV button.
+- The Crossref enrichment endpoint returned five complete author records for a
+  live DOI test.
 - Desktop page height was reduced by approximately 28%.
 - Live Scopus refresh passed with 58 documents, h-index 16 and 1,266 citations.
 - The successful Scopus workflow triggered and completed a subsequent GitHub

@@ -45,6 +45,16 @@ const researchAreas = [
     title: "Multi-omics",
     copy: "Integrated transcriptomic and extracellular-vesicle research with biological and translational impact.",
   },
+  {
+    number: "05",
+    title: "Tool and Workflow Development",
+    copy: "Reproducible pipelines and specialized tools that make complex biological analyses transparent and reusable.",
+  },
+  {
+    number: "06",
+    title: "AI Models in Bioinformatics",
+    copy: "AI-assisted methods for interpreting biological data, accelerating discovery and supporting research decisions.",
+  },
 ];
 
 const teaching = [
@@ -52,7 +62,16 @@ const teaching = [
   "Bioinformatics Analysis",
   "Programming in Bioinformatics",
   "Small RNAs & NGS Data Analysis",
-  "Tool development, Illumina/ONT analysis, AI bioinformatics solutions.",
+  "Tool development",
+  "Illumina/ONT analysis",
+  "AI bioinformatics solutions",
+];
+
+const languages = [
+  { name: "English", level: 5 },
+  { name: "French", level: 4 },
+  { name: "Russian", level: 1 },
+  { name: "Japanese", level: 1 },
 ];
 
 function compactNumber(value: number) {
@@ -133,6 +152,7 @@ export default function Home() {
         </button>
 
         <nav className={menuOpen ? "nav-open" : ""} aria-label="Main navigation">
+          <a href="#about" onClick={closeMenu}>About</a>
           <a href="#research" onClick={closeMenu}>Research</a>
           <a href="#publications" onClick={closeMenu}>Publications</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
@@ -154,9 +174,6 @@ export default function Home() {
           <div className="hero-actions">
             <a className="button button-primary" href="#publications">
               Explore publications <span aria-hidden="true">↗</span>
-            </a>
-            <a className="button button-secondary" href="./Vesselin-Baev-CV-2026.pdf" download>
-              Download CV <span aria-hidden="true">↓</span>
             </a>
           </div>
         </div>
@@ -209,27 +226,66 @@ export default function Home() {
         </a>
       </section>
 
+      <section className="about-me section-grid" id="about">
+        <div className="section-label section-label-plain">
+          <p>About me</p>
+        </div>
+        <div className="section-content about-layout">
+          <div className="about-copy">
+            <p className="statement">
+              Building bridges between <em>molecular biology</em>, computation
+              and the next generation of scientists.
+            </p>
+            <div className="about-columns">
+              <p>
+                Prof. Dr. Vesselin Baev is Professor of Bioinformatics and Vice
+                Dean for Science and Research at the Faculty of Biology, Paisii
+                Hilendarski University of Plovdiv, Bulgaria.
+              </p>
+              <p>
+                His work spans NGS data analysis, regulatory RNAs, microbial
+                genomics, metagenomics and multi-omics, with a focus on turning
+                complex biological data into practical scientific insight.
+              </p>
+            </div>
+          </div>
+
+          <aside className="languages-card" aria-labelledby="languages-title">
+            <p className="eyebrow">Languages</p>
+            <h2 id="languages-title">Communication across research communities.</h2>
+            <div className="language-list">
+              {languages.map((language) => (
+                <div className="language-row" key={language.name}>
+                  <span>{language.name}</span>
+                  <span
+                    className="language-scale"
+                    aria-label={`${language.level} out of 5`}
+                  >
+                    {Array.from({ length: 5 }, (_, index) => (
+                      <span
+                        className={index < language.level ? "is-active" : ""}
+                        aria-hidden="true"
+                        key={index}
+                      />
+                    ))}
+                  </span>
+                  <strong>{language.level}/5</strong>
+                </div>
+              ))}
+            </div>
+          </aside>
+        </div>
+      </section>
+
       <section className="research section-grid" id="research">
         <div className="section-label">
           <span>01</span>
           <p>Research focus</p>
         </div>
         <div className="section-content research-content">
-          <p className="statement">
-            Building bridges between <em>molecular biology</em>, computation and
-            the next generation of scientists.
-          </p>
-          <div className="about-columns">
-            <p>
-              Prof. Dr. Vesselin Baev is Professor of Bioinformatics and Vice
-              Dean for Science and Research at the Faculty of Biology, Paisii
-              Hilendarski University of Plovdiv, Bulgaria.
-            </p>
-            <p>
-              His work spans NGS data analysis, regulatory RNAs, microbial
-              genomics, metagenomics and multi-omics, with a focus on turning
-              complex biological data into practical scientific insight.
-            </p>
+          <div className="research-heading">
+            <p className="eyebrow">Scientific scope</p>
+            <h2>From sequencing data to reproducible biological insight.</h2>
           </div>
           <div className="research-grid">
             {researchAreas.map((area) => (
@@ -253,17 +309,17 @@ export default function Home() {
             <article>
               <time>2022 — present</time>
               <h3>Professor of Bioinformatics</h3>
-              <p>Faculty of Biology, University of Plovdiv</p>
+              <p>Department of Molecular Biology, University of Plovdiv</p>
             </article>
             <article>
               <time>2014 — 2022</time>
               <h3>Associate Professor</h3>
-              <p>Department of Molecular Biology</p>
+              <p>Department of Molecular Biology, University of Plovdiv</p>
             </article>
             <article>
               <time>2008 — 2013</time>
               <h3>Assistant Professor</h3>
-              <p>Bioinformatics</p>
+              <p>Department of Molecular Biology, University of Plovdiv</p>
             </article>
             <article>
               <time>March 2008</time>
@@ -378,18 +434,18 @@ export default function Home() {
         <div className="section-content">
           <div className="affiliation-row">
             <span>EU COST</span>
+            <p>
+              AI-Governance, Use, and Impact for a Dynamic European R&amp;I
+              Ecosystem (AI-GUIDE) · CA25157
+            </p>
+          </div>
+          <div className="affiliation-row">
+            <span>EU COST</span>
             <p>Next Generation Sequencing Data Analysis Network · BM1006</p>
           </div>
           <div className="affiliation-row">
             <span>EU COST</span>
             <p>NGS for plant viral disease research and diagnosis · FA1407</p>
-          </div>
-          <div className="affiliation-row">
-            <span>EU COST</span>
-            <p>
-              AI-Governance, Use, and Impact for a Dynamic European R&amp;I
-              Ecosystem (AI-GUIDE) · CA25157
-            </p>
           </div>
         </div>
       </section>

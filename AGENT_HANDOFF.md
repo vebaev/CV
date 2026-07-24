@@ -29,20 +29,29 @@ The English academic CV website is implemented and ready for GitHub Pages.
   developer-key service limit while still retrieving the complete publication
   list.
 - Personal birth date, gender, street address and telephone are not displayed
-  on the public page. The original PDF remains available through the CV download.
+  on the public page. The original PDF remains in the static assets but is no
+  longer linked from the hero.
 - The project supports both the local vinext preview and a standard Next.js
   static export for GitHub Pages.
 - The visual system uses a compact editorial scale: a 72 px desktop header,
   restrained 42–60 px hero display type, 58–80 px section spacing, denser
   research cards and bibliography-style publication rows.
-- About and Research are consolidated into a single blue `Research focus`
-  section. The numbered content flow is Research focus, Academic career and
+- About me is a separate profile section with a five-step visual language
+  scale. The numbered content flow remains Research focus, Academic career and
   Memberships.
+- Research focus uses the same light background as Academic career and a
+  six-card layout covering NGS, non-coding RNAs, microbial genomics,
+  multi-omics, tool/workflow development and AI models in bioinformatics.
 - The header uses the full `Prof. Dr. Vesselin Baev` name. Professor, Vice Dean
   and the Scopus update label have stronger type hierarchy than supporting copy.
-- Memberships includes EU COST actions BM1006, FA1407 and AI-GUIDE CA25157.
-- Teaching includes tool development, Illumina/ONT analysis and AI
-  bioinformatics solutions.
+- The hero VB panel is intentionally smaller than the text column and the CV
+  download button has been removed.
+- Memberships lists AI-GUIDE CA25157 first, followed by BM1006 and FA1407.
+- Teaching lists tool development, Illumina/ONT analysis and AI bioinformatics
+  solutions as separate entries.
+- The daily updater keeps the publication set and metrics sourced from Scopus,
+  then enriches each DOI with Crossref author metadata so all available authors
+  are shown. The author text wraps instead of being truncated.
 - The verified live Scopus snapshot contains 58 documents, h-index 16 and 1,266
   citations as of 24 July 2026.
 
