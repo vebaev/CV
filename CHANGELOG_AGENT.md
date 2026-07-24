@@ -19,6 +19,15 @@
 
 - Reworked the desktop and mobile visual scale into a compact editorial CV
   layout with smaller display type, tighter section spacing and denser cards.
+- Refined the hero hierarchy with the full `Prof. Dr. Vesselin Baev` name,
+  larger Professor and Vice Dean labels, and a smaller main statement.
+- Increased the Scopus profile update label for improved readability.
+- Merged the About copy and research cards into one `Research focus` section.
+- Renamed Networks to Memberships and renumbered the remaining profile sections.
+- Replaced the Academic leadership membership row with EU COST AI-GUIDE
+  CA25157.
+- Added tool development, Illumina/ONT analysis and AI bioinformatics
+  solutions to Teaching.
 - Increased small metadata text for better balance and readability.
 - Reduced the measured 1280 px desktop page height from about 6,694 px to
   4,787 px while preserving all content and interactions.
@@ -52,6 +61,10 @@
 - `npm test` passed with 2 tests.
 - `npm run lint` passed.
 - Compact responsive layout was visually inspected at desktop size.
+- The updated hero and merged Research focus section were visually inspected at
+  1280 × 720; the resulting page height is 4,740 px.
+- Rendered-content tests cover the full name, Teaching addition, Memberships,
+  AI-GUIDE and removal of Academic leadership.
 - Desktop page height was reduced by approximately 28%.
 - Live Scopus refresh passed with 58 documents, h-index 16 and 1,266 citations.
 - The successful Scopus workflow triggered and completed a subsequent GitHub

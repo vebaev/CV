@@ -93,7 +93,7 @@ main {
 
 .brand strong {
   color: var(--blue-deep);
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.01em;
 }
 
@@ -161,15 +161,20 @@ nav a:focus-visible::after {
   text-transform: uppercase;
 }
 
+.hero .eyebrow {
+  font-size: 15px;
+  letter-spacing: 0.14em;
+}
+
 .hero h1 {
-  max-width: 760px;
+  max-width: 700px;
   margin: 0;
   color: var(--blue-deep);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(48px, 5.4vw, 72px);
+  font-size: clamp(42px, 4.5vw, 60px);
   font-weight: 400;
   letter-spacing: -0.045em;
-  line-height: 0.96;
+  line-height: 0.98;
 }
 
 .hero h1 span {
@@ -310,9 +315,17 @@ nav a:focus-visible::after {
 
 .hero-role span,
 .hero-role small {
-  font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+}
+
+.hero-role span {
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.hero-role small {
+  font-size: 11px;
 }
 
 .hero-role strong {
@@ -360,7 +373,8 @@ nav a:focus-visible::after {
 .metric-intro > p:last-child {
   margin: 0;
   color: rgba(255,255,255,0.58);
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: 550;
 }
 
 .metric {
@@ -454,7 +468,20 @@ nav a:focus-visible::after {
   color: var(--white);
 }
 
+.research .statement {
+  color: var(--white);
+}
+
+.research .statement em {
+  color: var(--gold-pale);
+}
+
+.research .about-columns p {
+  color: rgba(255,255,255,0.72);
+}
+
 .research-grid {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid rgba(255,255,255,0.18);
@@ -935,12 +962,20 @@ footer {
 }
 
 @media (max-width: 640px) {
+  .brand strong {
+    font-size: 14px;
+  }
+
   .brand small {
     display: none;
   }
 
+  .hero .eyebrow {
+    font-size: 13px;
+  }
+
   .hero h1 {
-    font-size: clamp(42px, 12vw, 54px);
+    font-size: clamp(38px, 10.5vw, 48px);
   }
 
   .hero-intro {
@@ -986,6 +1021,7 @@ footer {
   }
 
   .research-grid {
+    margin-top: 30px;
     grid-template-columns: 1fr;
   }
 

@@ -32,9 +32,15 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /<title>Prof\. Dr\. Vesselin Baev \| Bioinformatics<\/title>/i);
   assert.match(html, /Science at the/);
   assert.match(html, /Research impact/);
+  assert.match(html, /Prof\. Dr\. Vesselin Baev/);
+  assert.match(html, /Research focus/);
+  assert.match(html, /Tool development, Illumina\/ONT analysis/);
+  assert.match(html, /Memberships/);
+  assert.match(html, /AI-Governance, Use, and Impact/);
   assert.match(html, /Publications/);
   assert.match(html, /Vice Dean/);
   assert.match(html, /baev@uni-plovdiv\.bg/);
+  assert.doesNotMatch(html, /Academic leadership/);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|Starter Project/);
 });
 

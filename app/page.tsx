@@ -52,6 +52,7 @@ const teaching = [
   "Bioinformatics Analysis",
   "Programming in Bioinformatics",
   "Small RNAs & NGS Data Analysis",
+  "Tool development, Illumina/ONT analysis, AI bioinformatics solutions.",
 ];
 
 function compactNumber(value: number) {
@@ -112,10 +113,10 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Vesselin Baev home">
+        <a className="brand" href="#top" aria-label="Prof. Dr. Vesselin Baev home">
           <span className="brand-mark">VB</span>
           <span>
-            <strong>Vesselin Baev</strong>
+            <strong>Prof. Dr. Vesselin Baev</strong>
             <small>Bioinformatics · University of Plovdiv</small>
           </span>
         </a>
@@ -132,7 +133,6 @@ export default function Home() {
         </button>
 
         <nav className={menuOpen ? "nav-open" : ""} aria-label="Main navigation">
-          <a href="#about" onClick={closeMenu}>About</a>
           <a href="#research" onClick={closeMenu}>Research</a>
           <a href="#publications" onClick={closeMenu}>Publications</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
@@ -209,12 +209,12 @@ export default function Home() {
         </a>
       </section>
 
-      <section className="about section-grid" id="about">
+      <section className="research section-grid" id="research">
         <div className="section-label">
           <span>01</span>
-          <p>About</p>
+          <p>Research focus</p>
         </div>
-        <div className="section-content">
+        <div className="section-content research-content">
           <p className="statement">
             Building bridges between <em>molecular biology</em>, computation and
             the next generation of scientists.
@@ -231,15 +231,6 @@ export default function Home() {
               complex biological data into practical scientific insight.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section className="research section-grid" id="research">
-        <div className="section-label">
-          <span>02</span>
-          <p>Research focus</p>
-        </div>
-        <div className="section-content">
           <div className="research-grid">
             {researchAreas.map((area) => (
               <article className="research-card" key={area.number}>
@@ -254,7 +245,7 @@ export default function Home() {
 
       <section className="career section-grid">
         <div className="section-label">
-          <span>03</span>
+          <span>02</span>
           <p>Academic career</p>
         </div>
         <div className="section-content career-layout">
@@ -381,8 +372,8 @@ export default function Home() {
 
       <section className="affiliations section-grid">
         <div className="section-label">
-          <span>04</span>
-          <p>Networks</p>
+          <span>03</span>
+          <p>Memberships</p>
         </div>
         <div className="section-content">
           <div className="affiliation-row">
@@ -394,8 +385,11 @@ export default function Home() {
             <p>NGS for plant viral disease research and diagnosis · FA1407</p>
           </div>
           <div className="affiliation-row">
-            <span>Academic leadership</span>
-            <p>Vice Dean for Science and Research · Faculty of Biology</p>
+            <span>EU COST</span>
+            <p>
+              AI-Governance, Use, and Impact for a Dynamic European R&amp;I
+              Ecosystem (AI-GUIDE) · CA25157
+            </p>
           </div>
         </div>
       </section>

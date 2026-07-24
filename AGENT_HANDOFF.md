@@ -33,8 +33,16 @@ The English academic CV website is implemented and ready for GitHub Pages.
 - The project supports both the local vinext preview and a standard Next.js
   static export for GitHub Pages.
 - The visual system uses a compact editorial scale: a 72 px desktop header,
-  restrained 48–72 px display type, 58–80 px section spacing, denser research
-  cards and bibliography-style publication rows.
+  restrained 42–60 px hero display type, 58–80 px section spacing, denser
+  research cards and bibliography-style publication rows.
+- About and Research are consolidated into a single blue `Research focus`
+  section. The numbered content flow is Research focus, Academic career and
+  Memberships.
+- The header uses the full `Prof. Dr. Vesselin Baev` name. Professor, Vice Dean
+  and the Scopus update label have stronger type hierarchy than supporting copy.
+- Memberships includes EU COST actions BM1006, FA1407 and AI-GUIDE CA25157.
+- Teaching includes tool development, Illumina/ONT analysis and AI
+  bioinformatics solutions.
 - The verified live Scopus snapshot contains 58 documents, h-index 16 and 1,266
   citations as of 24 July 2026.
 
