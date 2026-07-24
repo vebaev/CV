@@ -69,6 +69,8 @@
   the official English EU ITN grant record in both language modes.
 - Moved the English and Bulgarian flag controls after Contact in the header and
   added direct anchors for the Memberships and Projects sections.
+- Changed the English section 01 heading from `reproducible biological insight`
+  to `reproducible biological insights`.
 - Refined the Bulgarian Vice Dean, About and Teaching wording and changed
   French proficiency from 4/5 to 3/5 in both languages.
 - Standardized Professor, Associate Professor and Assistant Professor
@@ -128,6 +130,7 @@
   Bulgarian section heading.
 - Tests cover the new Memberships and Projects navigation links, their section
   anchors and the placement of the language controls after Contact.
+- Tests cover the plural `insights` wording in the English section 01 heading.
 - The Crossref enrichment endpoint returned five complete author records for a
   live DOI test.
 - Desktop page height was reduced by approximately 28%.

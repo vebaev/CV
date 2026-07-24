@@ -41,6 +41,14 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /Russian/);
   assert.match(html, /Japanese/);
   assert.match(html, /Research focus/);
+  assert.match(
+    html,
+    /From sequencing data to reproducible biological insights\./,
+  );
+  assert.doesNotMatch(
+    html,
+    /From sequencing data to reproducible biological insight\./,
+  );
   assert.match(html, /Tool and Workflow Development/);
   assert.match(html, /AI Models in Bioinformatics/);
   assert.match(html, /Tool development/);

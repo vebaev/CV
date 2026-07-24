@@ -88,7 +88,7 @@ const siteCopy = {
     research: {
       label: "Research focus",
       eyebrow: "Scientific scope",
-      heading: "From sequencing data to reproducible biological insight.",
+      heading: "From sequencing data to reproducible biological insights.",
       areas: [
         {
           number: "01",

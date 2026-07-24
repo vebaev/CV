@@ -55,6 +55,8 @@ for GitHub Pages.
 - Research focus uses the same light background as Academic career and a
   six-card layout covering NGS, non-coding RNAs, microbial genomics,
   multi-omics, tool/workflow development and AI models in bioinformatics.
+- The English Research focus heading uses the plural phrase `reproducible
+  biological insights`.
 - The header uses the full `Prof. Dr. Vesselin Baev` name. Professor, Vice Dean
   and the Scopus update label have stronger type hierarchy than supporting copy.
 - The hero panel is intentionally smaller than the text column and uses
