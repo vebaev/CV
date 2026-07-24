@@ -476,10 +476,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">
-            <span className="hero-eyebrow-dot" aria-hidden="true" />
-            {copy.hero.eyebrow}
-          </p>
+          <p className="eyebrow">{copy.hero.eyebrow}</p>
           <h1 className="hero-statement">
             {copy.hero.lineOne}
             <span>{copy.hero.emphasis}</span>
