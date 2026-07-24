@@ -44,6 +44,9 @@
 
 ### Changed
 
+- Removed the repeated `Prof. Dr. Vesselin Baev` line from the hero after the
+  Professor of Bioinformatics label and promoted the editorial science
+  statement to the semantic `h1`.
 - Reworked the desktop and mobile visual scale into a compact editorial CV
   layout with smaller display type, tighter section spacing and denser cards.
 - Refined the hero hierarchy with the full `Prof. Dr. Vesselin Baev` name,

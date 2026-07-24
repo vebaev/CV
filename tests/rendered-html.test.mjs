@@ -33,11 +33,8 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /Science at the/);
   assert.match(html, /Research impact/);
   assert.match(html, /Prof\. Dr\. Vesselin Baev/);
-  assert.match(
-    html,
-    /<h1 class="hero-name">Prof\. Dr\. Vesselin Baev<\/h1>/,
-  );
-  assert.match(html, /<h2 class="hero-statement">Science at the/);
+  assert.doesNotMatch(html, /class="hero-name"/);
+  assert.match(html, /<h1 class="hero-statement">Science at the/);
   assert.match(
     html,
     /<link rel="canonical" href="https:\/\/vebaev\.github\.io\/CV\/"/,

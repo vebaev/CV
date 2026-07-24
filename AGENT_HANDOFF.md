@@ -73,8 +73,9 @@ for GitHub Pages.
   biological insights`.
 - The header uses the full `Prof. Dr. Vesselin Baev` name. Professor, Vice Dean
   and the Scopus update label have stronger type hierarchy than supporting copy.
-- The hero displays `Prof. Dr. Vesselin Baev` as the single semantic `h1`; the
-  editorial science statement is the visually supporting `h2`.
+- The hero no longer repeats `Prof. Dr. Vesselin Baev` after the Professor of
+  Bioinformatics label. The editorial science statement is the semantic `h1`;
+  the full name remains prominent in the fixed header and in all SEO metadata.
 - The hero panel is intentionally smaller than the text column and uses
   `public/Vesselin-Baev-Tokyo-2026.jpg` inside the existing arch shape. The VB
   monogram and CV download button have been removed. A dark lower gradient and

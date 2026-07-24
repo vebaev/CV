@@ -213,16 +213,6 @@ nav a:focus-visible::after {
   letter-spacing: 0.14em;
 }
 
-.hero-name {
-  max-width: 700px;
-  margin: 0 0 16px;
-  color: var(--blue-deep);
-  font-size: clamp(32px, 3.5vw, 48px);
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  line-height: 1;
-}
-
 .hero-statement {
   max-width: 700px;
   margin: 0;
@@ -1145,10 +1135,6 @@ footer {
 
   .hero .eyebrow {
     font-size: 13px;
-  }
-
-  .hero-name {
-    font-size: clamp(30px, 8.5vw, 40px);
   }
 
   .hero-statement {

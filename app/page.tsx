@@ -477,12 +477,11 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">{copy.hero.eyebrow}</p>
-          <h1 className="hero-name">{copy.name}</h1>
-          <h2 className="hero-statement">
+          <h1 className="hero-statement">
             {copy.hero.lineOne}
             <span>{copy.hero.emphasis}</span>
             {copy.hero.lineThree}
-          </h2>
+          </h1>
           <p className="hero-intro">{copy.hero.intro}</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#publications">
