@@ -41,7 +41,11 @@ for GitHub Pages.
 - The browser favicon is `public/favicon.svg`: a compact `VB` monogram using the
   site's deep blue `#07164f`, gold `#b48d3b` and pale gold `#efe5cc`.
 - Simple Analytics is loaded globally from
-  `https://scripts.simpleanalyticscdn.com/latest.js` in `app/layout.tsx`.
+  `https://scripts.simpleanalyticscdn.com/latest.js` immediately after the page
+  content and before the closing body tag in `app/layout.tsx`. Because React
+  hoists async scripts into the document head during static export,
+  `scripts/place-simple-analytics.mjs` moves the generated tag back immediately
+  before `</body>` as the final step of `npm run build:pages`.
 - The homepage permanently retains the Google Search Console HTML verification
   meta tag for the URL-prefix property `https://vebaev.github.io/CV/`.
 - The URL-prefix property is verified in Google Search Console under the user's

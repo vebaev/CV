@@ -48,6 +48,8 @@
 
 ### Changed
 
+- Moved the Simple Analytics script to the end of the global page content,
+  immediately before the closing body tag.
 - Removed the repeated `Prof. Dr. Vesselin Baev` line from the hero after the
   Professor of Bioinformatics label and promoted the editorial science
   statement to the semantic `h1`.
@@ -105,6 +107,9 @@
 
 ### Fixed
 
+- Added a GitHub Pages post-build step that prevents React's async-script
+  hoisting from moving Simple Analytics out of its required position directly
+  before the closing body tag.
 - Excluded Cloudflare-only starter files from the GitHub Pages type check.
 - Removed starter loading preview, starter metadata and unused dependency.
 - Removed unused starter icons and illustration assets.

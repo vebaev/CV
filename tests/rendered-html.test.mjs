@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
+import { placeSimpleAnalyticsBeforeBody } from "../scripts/place-simple-analytics.mjs";
 
 async function render() {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -190,4 +191,23 @@ test("ships search-engine discovery metadata", async () => {
   assert.match(robotsSource, /sitemap\.xml/);
   assert.match(sitemapSource, /changeFrequency: "daily"/);
   assert.match(sitemapSource, /priority: 1/);
+});
+
+test("places Simple Analytics at the end of the body layout", async () => {
+  const layout = await readFile(
+    new URL("../app/layout.tsx", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(
+    layout,
+    /\{children\}\s*<script\s+async\s+src="https:\/\/scripts\.simpleanalyticscdn\.com\/latest\.js"\s*\/>\s*<\/body>/,
+  );
+
+  const generatedHtml =
+    '<html><head><script async="" src="https://scripts.simpleanalyticscdn.com/latest.js"></script></head><body><main>CV</main></body></html>';
+  assert.equal(
+    placeSimpleAnalyticsBeforeBody(generatedHtml),
+    '<html><head></head><body><main>CV</main><script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script></body></html>',
+  );
 });
