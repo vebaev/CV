@@ -23,6 +23,8 @@
 - Reset publication pagination directly in filter handlers to satisfy React
   lint rules.
 - Enabled automatic GitHub Pages activation for a newly created repository.
+- Switched the Scopus Search request to the API-key-compatible `STANDARD` view
+  after Elsevier rejected the subscription-only `COMPLETE` view.
 
 ### Verification
 

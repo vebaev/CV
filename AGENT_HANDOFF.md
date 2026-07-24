@@ -18,6 +18,8 @@ The English academic CV website is implemented and ready for GitHub Pages.
 - The schedule runs at 03:07 in `Europe/Sofia` to avoid peak scheduler load.
 - The January 2026 CV export is used as safe fallback data until the first live
   API refresh.
+- Scopus Search uses the `STANDARD` view so a regular Elsevier developer key can
+  refresh the public metadata without an institutional subscription token.
 - Personal birth date, gender, street address and telephone are not displayed
   on the public page. The original PDF remains available through the CV download.
 - The project supports both the local vinext preview and a standard Next.js

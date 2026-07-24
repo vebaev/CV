@@ -72,7 +72,7 @@ const authorUrl =
   "?view=ENHANCED&httpAccept=application%2Fjson";
 const searchUrl =
   `${API_ROOT}/search/scopus` +
-  `?query=AU-ID%28${AUTHOR_ID}%29&view=COMPLETE&count=200&sort=-coverDate` +
+  `?query=AU-ID%28${AUTHOR_ID}%29&view=STANDARD&count=200&sort=-coverDate` +
   "&httpAccept=application%2Fjson";
 
 const [authorPayload, searchPayload] = await Promise.all([
