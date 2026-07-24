@@ -19,6 +19,8 @@
 - Research directions for tool/workflow development and AI models in
   bioinformatics.
 - Crossref author enrichment for complete author lists on Scopus publications.
+- Rate-limit retries, paced author requests and publisher metadata fallback for
+  DOI records not available through Crossref.
 
 ### Changed
 

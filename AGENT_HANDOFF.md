@@ -51,7 +51,9 @@ The English academic CV website is implemented and ready for GitHub Pages.
   solutions as separate entries.
 - The daily updater keeps the publication set and metrics sourced from Scopus,
   then enriches each DOI with Crossref author metadata so all available authors
-  are shown. The author text wraps instead of being truncated.
+  are shown. Crossref calls are paced and retried on rate limits; a publisher
+  page metadata fallback covers DOIs without a Crossref record. The author text
+  wraps instead of being truncated.
 - The verified live Scopus snapshot contains 58 documents, h-index 16 and 1,266
   citations as of 24 July 2026.
 

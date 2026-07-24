@@ -4,7 +4,9 @@ import { dirname, resolve } from "node:path";
 const AUTHOR_ID = "12789511400";
 const API_ROOT = "https://api.elsevier.com/content";
 const CROSSREF_API_ROOT = "https://api.crossref.org/works";
-const CROSSREF_CONCURRENCY = 6;
+const CROSSREF_CONCURRENCY = 1;
+const CROSSREF_REQUEST_DELAY_MS = 250;
+const CROSSREF_RETRY_LIMIT = 4;
 const SEARCH_PAGE_SIZE = 25;
 const SEARCH_RESULT_LIMIT = 5000;
 const outputPath = resolve("public/data/scopus.json");
@@ -30,10 +32,14 @@ async function fetchJson(url, requestHeaders = headers) {
   if (!response.ok) {
     const detail = await response.text();
     throw new Error(
-      `Scopus request failed (${response.status}): ${detail.slice(0, 240)}`,
+      `Request failed (${response.status}): ${detail.slice(0, 240)}`,
     );
   }
   return response.json();
+}
+
+function sleep(milliseconds) {
+  return new Promise((resolvePromise) => setTimeout(resolvePromise, milliseconds));
 }
 
 function crossrefAuthorName(author) {
@@ -43,21 +49,66 @@ function crossrefAuthorName(author) {
   return [given, family].filter(Boolean).join(" ") || literal;
 }
 
+async function crossrefAuthors(doi) {
+  for (let attempt = 0; attempt < CROSSREF_RETRY_LIMIT; attempt += 1) {
+    const response = await fetch(
+      `${CROSSREF_API_ROOT}/${encodeURIComponent(doi)}`,
+      {
+        headers: {
+          Accept: "application/json",
+          "User-Agent":
+            "Vesselin-Baev-CV/1.0 (mailto:baev@uni-plovdiv.bg)",
+        },
+      },
+    );
+
+    if (response.ok) {
+      const payload = await response.json();
+      return Array.isArray(payload.message?.author)
+        ? payload.message.author.map(crossrefAuthorName).filter(Boolean)
+        : [];
+    }
+    if (response.status === 404) return [];
+    if (response.status !== 429) {
+      throw new Error(`Crossref request failed (${response.status})`);
+    }
+
+    await sleep(500 * 2 ** attempt);
+  }
+
+  throw new Error("Crossref rate limit persisted after retries");
+}
+
+function publisherAuthorName(value) {
+  const parts = value.split(",").map((part) => part.trim()).filter(Boolean);
+  return parts.length === 2 ? `${parts[1]} ${parts[0]}` : value.trim();
+}
+
+async function publisherAuthors(doi) {
+  const response = await fetch(`https://doi.org/${doi}`, {
+    headers: {
+      Accept: "text/html",
+      "User-Agent": "Vesselin-Baev-CV/1.0 (mailto:baev@uni-plovdiv.bg)",
+    },
+  });
+  if (!response.ok) return [];
+
+  const html = await response.text();
+  return (html.match(/<meta\b[^>]*>/gi) ?? [])
+    .filter((tag) => /name=["']citation_author["']/i.test(tag))
+    .map((tag) => tag.match(/content=["']([^"']+)["']/i)?.[1])
+    .filter(Boolean)
+    .map(publisherAuthorName);
+}
+
 async function completeAuthors(publication) {
   if (!publication.doi) return publication;
 
   try {
-    const payload = await fetchJson(
-      `${CROSSREF_API_ROOT}/${encodeURIComponent(publication.doi)}`,
-      {
-        Accept: "application/json",
-        "User-Agent":
-          "Vesselin-Baev-CV/1.0 (mailto:baev@uni-plovdiv.bg)",
-      },
-    );
-    const authors = Array.isArray(payload.message?.author)
-      ? payload.message.author.map(crossrefAuthorName).filter(Boolean)
-      : [];
+    const crossref = await crossrefAuthors(publication.doi);
+    const authors = crossref.length
+      ? crossref
+      : await publisherAuthors(publication.doi);
 
     return authors.length
       ? { ...publication, authors: authors.join(", ") }
@@ -67,6 +118,8 @@ async function completeAuthors(publication) {
       `Unable to retrieve the complete author list for ${publication.doi}: ${error.message}`,
     );
     return publication;
+  } finally {
+    await sleep(CROSSREF_REQUEST_DELAY_MS);
   }
 }
 
