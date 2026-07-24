@@ -43,6 +43,8 @@
   requested priority indexing for the canonical homepage.
 - Responsive SVG browser favicon with a `VB` monogram in the site's deep blue
   and gold palette.
+- Global Simple Analytics tracking script for privacy-friendly visitor
+  statistics on the published CV.
 
 ### Changed
 

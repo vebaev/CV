@@ -180,6 +180,10 @@ export default function RootLayout({
             ),
           }}
         />
+        <script
+          async
+          src="https://scripts.simpleanalyticscdn.com/latest.js"
+        />
         {children}
       </body>
     </html>

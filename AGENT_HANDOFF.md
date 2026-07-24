@@ -40,6 +40,8 @@ for GitHub Pages.
   and large image/snippet permissions for Googlebot.
 - The browser favicon is `public/favicon.svg`: a compact `VB` monogram using the
   site's deep blue `#07164f`, gold `#b48d3b` and pale gold `#efe5cc`.
+- Simple Analytics is loaded globally from
+  `https://scripts.simpleanalyticscdn.com/latest.js` in `app/layout.tsx`.
 - The homepage permanently retains the Google Search Console HTML verification
   meta tag for the URL-prefix property `https://vebaev.github.io/CV/`.
 - The URL-prefix property is verified in Google Search Console under the user's

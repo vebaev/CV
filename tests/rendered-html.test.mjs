@@ -49,6 +49,10 @@ test("server-renders the academic CV", async () => {
     /<meta name="google-site-verification" content="s9kurQRjRr4wko5MR_T46vzil5lP4sFkzGqaAjXbDfg"/,
   );
   assert.match(html, /application\/ld\+json/);
+  assert.match(
+    html,
+    /<script async="" src="https:\/\/scripts\.simpleanalyticscdn\.com\/latest\.js"><\/script>/,
+  );
   assert.match(html, /https:\/\/schema\.org/);
   assert.match(html, /ProfilePage/);
   assert.match(html, /0000-0002-5224-9145/);
