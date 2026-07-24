@@ -1,27 +1,47 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-01-15T03:00:00+02:00",
-  "source": "Scopus export, January 2026",
+  "updatedAt": "2026-07-24T10:15:04.353Z",
+  "source": "Elsevier Scopus APIs",
   "metrics": {
-    "hIndex": 15,
-    "citations": 1193,
-    "documents": 56
+    "hIndex": 16,
+    "citations": 1266,
+    "documents": 58
   },
   "publications": [
     {
-      "title": "Potential of Fermented Food-Derived Lactiplantibacillus Cell-Free Supernatants to Control Staphylococcus aureus Growth and Biofilm Development",
-      "authors": "Ilieva L., Baev V., Marhova M., Yahubyan G., Apostolova E., Gozmanova M., Gochev V., et al.",
-      "year": 2026,
-      "journal": "International Journal of Molecular Sciences",
-      "doi": "10.3390/ijms27020760",
-      "type": "Article"
-    },
-    {
       "title": "A Metagenomic Comparison of the Colostrum Microbiome in Bulgarian Mothers by Delivery Mode: A Pilot Study",
-      "authors": "Mollova D., Baev V., Borisova T., Rusinova M., Iliev I.",
+      "authors": "Mollova D.",
       "year": 2026,
       "journal": "Microorganisms",
       "doi": "10.3390/microorganisms14010184",
+      "citations": 1,
+      "type": "Article"
+    },
+    {
+      "title": "Menstrual cycle-dependent expression of tRNA-derived fragments in healthy human endometrium and uterine fluid-derived extracellular vesicles",
+      "authors": "Apostolov A.",
+      "year": 2026,
+      "journal": "BMC Genomics",
+      "doi": "10.1186/s12864-026-12851-3",
+      "citations": 0,
+      "type": "Article"
+    },
+    {
+      "title": "Potential of Fermented Food-Derived Lactiplantibacillus Cell-Free Supernatants to Control Staphylococcus aureus Growth and Biofilm Development",
+      "authors": "Ilieva L.",
+      "year": 2026,
+      "journal": "International Journal of Molecular Sciences",
+      "doi": "10.3390/ijms27020760",
+      "citations": 0,
+      "type": "Article"
+    },
+    {
+      "title": "An AI-powered knowledge base for scientific abstracts: a case study on environmental DNA (eDNA) in biomonitoring",
+      "authors": "Baev V.",
+      "year": 2025,
+      "journal": "Ecologia Balkanica",
+      "doi": "10.69085/eb20252154",
+      "citations": 0,
       "type": "Article"
     },
     {
@@ -30,92 +50,120 @@
       "year": 2025,
       "journal": "Current Issues in Molecular Biology",
       "doi": "10.3390/cimb47040258",
-      "type": "Review"
+      "citations": 2,
+      "type": "Editorial"
     },
     {
-      "title": "Using Moss Walls for Air Quality Monitoring: Extending Their Utility Beyond Traditional Green Infrastructure",
-      "authors": "Gecheva G., Petkova Z., Damyanov S., Georgieva D., Baev V., et al.",
-      "year": 2025,
-      "journal": "International Journal of Plant Biology",
-      "doi": "10.3390/ijpb16020044",
-      "type": "Article"
-    },
-    {
-      "title": "Characterization and Probiotic Potential of Levilactobacillus brevis DPL5",
-      "authors": "Iliev I., Yahubyan G., Apostolova-Kuzova E., Gozmanova M., Mollova D., et al.",
+      "title": "Characterization and Probiotic Potential of Levilactobacillus brevis DPL5: A Novel Strain Isolated from Human Breast Milk with Antimicrobial Properties Against Biofilm-Forming Staphylococcus aureus",
+      "authors": "Iliev I.",
       "year": 2025,
       "journal": "Microorganisms",
       "doi": "10.3390/microorganisms13010160",
-      "type": "Article"
-    },
-    {
-      "title": "In Vitro Probiotic Modulation of Specific Dietary Complex Sugar Consumption in Fecal Cultures in Infants",
-      "authors": "Mollova D., Baev V., Iliev I.",
-      "year": 2025,
-      "journal": "Microorganisms",
-      "doi": "10.3390/microorganisms13102352",
+      "citations": 11,
       "type": "Article"
     },
     {
       "title": "Combinatorial Analysis of miRNAs and tRNA Fragments as Potential Biomarkers for Cancer Patients in Liquid Biopsies",
-      "authors": "Glogovitis I., D’Ambrosi S., Antunes-Ferreira M., Chiogna M., Yahubyan G., Baev V., et al.",
+      "authors": "Glogovitis I.",
       "year": 2025,
-      "journal": "Non-Coding RNA",
+      "journal": "Non Coding RNA",
       "doi": "10.3390/ncrna11010017",
+      "citations": 2,
       "type": "Article"
     },
     {
-      "title": "Multi-omics analysis of uterine fluid extracellular vesicles reveals a resemblance with endometrial tissue across the menstrual cycle",
-      "authors": "Apostolov A., Mladenović D., Tilk K., Lõhmus A., Baev V., Yahubyan G., et al.",
+      "title": "In Vitro Probiotic Modulation of Specific Dietary Complex Sugar Consumption in Fecal Cultures in Infants",
+      "authors": "Mollova D.",
+      "year": 2025,
+      "journal": "Microorganisms",
+      "doi": "10.3390/microorganisms13102352",
+      "citations": 0,
+      "type": "Article"
+    },
+    {
+      "title": "Multi-omics analysis of uterine fluid extracellular vesicles reveals a resemblance with endometrial tissue across the menstrual cycle: biological and translational insights",
+      "authors": "Apostolov A.",
       "year": 2025,
       "journal": "Human Reproduction Open",
       "doi": "10.1093/hropen/hoaf010",
-      "type": "Article"
-    },
-    {
-      "title": "Unveiling the Petunia hybrida Virome: Metatranscriptomic Profiling from the Bulgarian Market and In Vitro Cultures",
-      "authors": "Valkova R., Jurak S., Apostolova-Kuzova E., Baev V., Nacheva L., et al.",
-      "year": 2025,
-      "journal": "Plants",
-      "doi": "10.3390/plants14162597",
+      "citations": 18,
       "type": "Article"
     },
     {
       "title": "Small RNA Landscape of Platelet Dust: Platelet-Derived Extracellular Vesicles from Patients with Non-Small-Cell Lung Cancer",
-      "authors": "Antunes-Ferreira M., Glogovitis I., Fortunato D., D’Ambrosi S., Yahubyan G., Baev V., et al.",
+      "authors": "Antunes-Ferreira M.",
       "year": 2025,
-      "journal": "Non-Coding RNA",
+      "journal": "Non Coding RNA",
       "doi": "10.3390/ncrna11030038",
+      "citations": 0,
       "type": "Article"
     },
     {
-      "title": "An AI-powered knowledge base for scientific abstracts: a case study on environmental DNA in biomonitoring",
-      "authors": "Baev V., Gecheva G.",
+      "title": "Unveiling the Petunia hybrida Virome: Metatranscriptomic Profiling from the Bulgarian Market and In Vitro Cultures",
+      "authors": "Valkova R.",
       "year": 2025,
-      "journal": "Ecologia Balkanica",
-      "doi": "10.69085/eb20252154",
+      "journal": "Plants",
+      "doi": "10.3390/plants14162597",
+      "citations": 0,
       "type": "Article"
     },
     {
-      "title": "Viral and Viroid Communities in Peach Cultivars Grown in Bulgaria",
-      "authors": "Gozmanova M., Baev V., Valkova R., Apostolova-Kuzova E., Jurak S., et al.",
+      "title": "Using Moss Walls for Air Quality Monitoring: Extending Their Utility Beyond Traditional Green Infrastructure",
+      "authors": "Gecheva G.",
       "year": 2025,
-      "journal": "Horticulturae",
-      "doi": "10.3390/horticulturae11050503",
-      "type": "Article"
-    },
-    {
-      "title": "Endometrial Proliferative Phase-Centered View of Transcriptome Dynamics across the Menstrual Cycle",
-      "authors": "Apostolov A., Naydenov M., Kalinina A., Nikolova M., Saare M., Aleksejeva E., et al.",
-      "year": 2024,
-      "journal": "International Journal of Molecular Sciences",
-      "doi": "10.3390/ijms25105320",
+      "journal": "International Journal of Plant Biology",
+      "doi": "10.3390/ijpb16020044",
       "citations": 1,
       "type": "Article"
     },
     {
-      "title": "Genomic Exploration of a Chitinolytic Streptomyces albogriseolus PMB5 Strain from European Mantis",
-      "authors": "Baev V., Iliev I., Apostolova E., Gozmanova M., Hristova Y., Ilieva Y., et al.",
+      "title": "Viral and Viroid Communities in Peach Cultivars Grown in Bulgaria",
+      "authors": "Gozmanova M.",
+      "year": 2025,
+      "journal": "Horticulturae",
+      "doi": "10.3390/horticulturae11050503",
+      "citations": 1,
+      "type": "Article"
+    },
+    {
+      "title": "Aging promotes accumulation of senescent and multiciliated cells in human endometrial epithelium",
+      "authors": "Loid M.",
+      "year": 2024,
+      "journal": "Human Reproduction Open",
+      "doi": "10.1093/hropen/hoae048",
+      "citations": 21,
+      "type": "Article"
+    },
+    {
+      "title": "Endometrial Proliferative Phase-Centered View of Transcriptome Dynamics across the Menstrual Cycle",
+      "authors": "Apostolov A.",
+      "year": 2024,
+      "journal": "International Journal of Molecular Sciences",
+      "doi": "10.3390/ijms25105320",
+      "citations": 4,
+      "type": "Article"
+    },
+    {
+      "title": "Exploring the Genomic Landscape of Bacillus paranthracis PUMB_17 as a Proficient Phosphatidylcholine-Specific Phospholipase C Producer",
+      "authors": "Baev V.",
+      "year": 2024,
+      "journal": "Current Issues in Molecular Biology",
+      "doi": "10.3390/cimb46030158",
+      "citations": 3,
+      "type": "Article"
+    },
+    {
+      "title": "Exploring the Metatranscriptome of Bacterial Communities of Two Moss Species Thriving in Different Environments—Terrestrial and Aquatic",
+      "authors": "Baev V.",
+      "year": 2024,
+      "journal": "Plants",
+      "doi": "10.3390/plants13091210",
+      "citations": 8,
+      "type": "Article"
+    },
+    {
+      "title": "Genomic Exploration of a Chitinolytic Streptomyces albogriseolus PMB5 Strain from European mantis (Mantis religiosa)",
+      "authors": "Baev V.",
       "year": 2024,
       "journal": "Current Issues in Molecular Biology",
       "doi": "10.3390/cimb46090554",
@@ -123,75 +171,363 @@
       "type": "Article"
     },
     {
-      "title": "Aging promotes accumulation of senescent and multiciliated cells in human endometrial epithelium",
-      "authors": "Loid M., Obukhova D., Kask K., Apostolov A., Meltsov A., Baev V., et al.",
-      "year": 2024,
-      "journal": "Human Reproduction Open",
-      "doi": "10.1093/hropen/hoae048",
-      "citations": 2,
+      "title": "16S-rRNA-Based Metagenomic Profiling of the Bacterial Communities in Traditional Bulgarian Sourdoughs",
+      "authors": "Baev V.",
+      "year": 2023,
+      "journal": "Microorganisms",
+      "doi": "10.3390/microorganisms11030803",
+      "citations": 8,
       "type": "Article"
     },
     {
-      "title": "Exploring the Genomic Landscape of Bacillus paranthracis PUMB_17 as a Proficient Phosphatidylcholine-Specific Phospholipase C Producer",
-      "authors": "Baev V., Iliev I., Stefanov Y., Tsankova M., Marhova M., Apostolova E., et al.",
-      "year": 2024,
-      "journal": "Current Issues in Molecular Biology",
-      "doi": "10.3390/cimb46030158",
-      "citations": 0,
+      "title": "Effects of sourdough on rheological properties of dough, quality characteristics and staling time of wholemeal wheat croissants",
+      "authors": "Chochkov R.",
+      "year": 2023,
+      "journal": "Italian Journal of Food Science",
+      "doi": "10.15586/IJFS.V35I3.2385",
+      "citations": 9,
       "type": "Article"
     },
     {
-      "title": "Exploring the Metatranscriptome of Bacterial Communities of Two Moss Species Thriving in Different Environments",
-      "authors": "Baev V., Gecheva G., Apostolova E., Gozmanova M., Yahubyan G.",
-      "year": 2024,
-      "journal": "Plants",
-      "doi": "10.3390/plants13091210",
-      "citations": 0,
+      "title": "Identification of Bulgarian Sourdough Microbiota by Metagenomic Approach Using Three Commercially Available DNA Extraction Protocols",
+      "authors": "Vassileva I.",
+      "year": 2023,
+      "journal": "Food Technology and Biotechnology",
+      "doi": "10.17113/ftb.61.01.23.7796",
+      "citations": 6,
+      "type": "Article"
+    },
+    {
+      "title": "Illuminating the Genomic Landscape of Lactiplantibacillus plantarum PU3—A Novel Probiotic Strain Isolated from Human Breast Milk, Explored through Nanopore Sequencing",
+      "authors": "Mollova D.",
+      "year": 2023,
+      "journal": "Microorganisms",
+      "doi": "10.3390/microorganisms11102440",
+      "citations": 11,
       "type": "Article"
     },
     {
       "title": "Liquid Biopsy: Current Status and Future Perspectives",
-      "authors": "Baev V., Koppers-Lalic D., Costa-Silva B.",
+      "authors": "Baev V.",
       "year": 2023,
       "journal": "Cancers",
       "doi": "10.3390/cancers15123205",
-      "citations": 5,
+      "citations": 12,
       "type": "Editorial"
     },
     {
       "title": "The Dynamics of miR-449a/c Expression during Uterine Cycles Are Associated with Endometrial Development",
-      "authors": "Naydenov M., Nikolova M., Apostolov A., Glogovitis I., Salumets A., Baev V., Yahubyan G.",
+      "authors": "Naydenov M.",
       "year": 2023,
       "journal": "Biology",
       "doi": "10.3390/biology12010055",
+      "citations": 8,
+      "type": "Article"
+    },
+    {
+      "title": "The Fascinating World of Plant Non-Coding RNAs",
+      "authors": "Baev V.",
+      "year": 2023,
+      "journal": "International Journal of Molecular Sciences",
+      "doi": "10.3390/ijms241210341",
+      "citations": 3,
+      "type": "Editorial"
+    },
+    {
+      "title": "Bacterial diversity and physiological activity of lettuce (Lactuca sativa) rhizosphere under bio-organic greenhouse management strategies",
+      "authors": "Iliev I.",
+      "year": 2022,
+      "journal": "International Journal of Environmental Science and Technology",
+      "doi": "10.1007/s13762-021-03831-z",
       "citations": 5,
       "type": "Article"
     },
     {
       "title": "The Multiverse of Plant Small RNAs: How Can We Explore It?",
-      "authors": "Ivanova Z., Minkov G., Gisel A., Yahubyan G., Minkov I., Toneva V., Baev V.",
+      "authors": "Ivanova Z.",
       "year": 2022,
       "journal": "International Journal of Molecular Sciences",
       "doi": "10.3390/ijms23073979",
-      "citations": 4,
+      "citations": 10,
       "type": "Review"
     },
     {
-      "title": "MirGalaxy: Galaxy-based framework for interactive analysis of microRNA and isomiR sequencing data",
-      "authors": "Glogovitis I., Yahubyan G., Würdinger T., Koppers-Lalic D., Baev V.",
+      "title": "Analysis of the Complete Mitochondrial Genome Sequence of the Resurrection Plant Haberlea Rhodopensis",
+      "authors": "Baev V.",
+      "year": 2021,
+      "journal": "Acta Biochimica Polonica",
+      "doi": "10.18388/abp.2020_5555",
+      "citations": 5,
+      "type": "Article"
+    },
+    {
+      "title": "Coupling miR/isomiR and mRNA Expression Signatures Unveils New Molecular Layers of Endometrial Receptivity",
+      "authors": "Nikolova M.",
+      "year": 2021,
+      "journal": "Life",
+      "doi": "10.3390/life11121391",
+      "citations": 16,
+      "type": "Article"
+    },
+    {
+      "title": "Isomirs–hidden soldiers in the mirna regulatory army, and how to find them?",
+      "authors": "Glogovitis I.",
+      "year": 2021,
+      "journal": "Biomolecules",
+      "doi": "10.3390/biom11010041",
+      "citations": 16,
+      "type": "Review"
+    },
+    {
+      "title": "MicroRNA expression dynamics reshape the cultivar-specific response of pepper (Capsicum annuum L.) to potato spindle tuber viroid (PSTVd) infection",
+      "authors": "Apostolova E.",
+      "year": 2021,
+      "journal": "Scientia Horticulturae",
+      "doi": "10.1016/j.scienta.2020.109845",
+      "citations": 7,
+      "type": "Article"
+    },
+    {
+      "title": "Mirgalaxy: Galaxy‐based framework for interactive analysis of microrna and isomir sequencing data",
+      "authors": "Glogovitis I.",
       "year": 2021,
       "journal": "Cancers",
       "doi": "10.3390/cancers13225663",
-      "citations": 6,
+      "citations": 8,
+      "type": "Article"
+    },
+    {
+      "title": "Transcriptome analysis reveals dynamic cultivar-dependent patterns of gene expression in potato spindle tuber viroid-infected pepper",
+      "authors": "Hadjieva N.",
+      "year": 2021,
+      "journal": "Plants",
+      "doi": "10.3390/plants10122687",
+      "citations": 9,
+      "type": "Article"
+    },
+    {
+      "title": "MicroRNA profiling the resurrection plant haberlea rhodopensis unveils essential regulators of survival under severe drought",
+      "authors": "Apostolova E.",
+      "year": 2020,
+      "journal": "Biologia Plantarum",
+      "doi": "10.32615/bp.2020.062",
+      "citations": 5,
+      "type": "Article"
+    },
+    {
+      "title": "Metagenomic analysis of the microbial community structure in protected wetlands in the Maritza River Basin",
+      "authors": "Iliev I.",
+      "year": 2019,
+      "journal": "Biotechnology and Biotechnological Equipment",
+      "doi": "10.1080/13102818.2019.1697364",
+      "citations": 12,
+      "type": "Article"
+    },
+    {
+      "title": "LoopRNA – Java module for RNA structure annotation",
+      "authors": "Minkov G.",
+      "year": 2018,
+      "journal": "Comptes Rendus De L Academie Bulgare Des Sciences",
+      "doi": "10.7546/CRABS.2018.09.08",
+      "citations": 0,
+      "type": "Article"
+    },
+    {
+      "title": "Transposon-associated polymorphisms of stress-responsive gene promoters in selected accessions of Arabidopsis thaliana",
+      "authors": "Naydenov M.",
+      "year": 2018,
+      "journal": "Acta Biochimica Polonica",
+      "doi": "10.18388/abp.2017_1590",
+      "citations": 2,
+      "type": "Article"
+    },
+    {
+      "title": "Chloroplast genome analysis of resurrection tertiary relict Haberlea rhodopensis highlights genes important for desiccation stress response",
+      "authors": "Ivanova Z.",
+      "year": 2017,
+      "journal": "Frontiers in Plant Science",
+      "doi": "10.3389/fpls.2017.00204",
+      "citations": 122,
+      "type": "Article"
+    },
+    {
+      "title": "Erratum to: Growing Diversity of Plant MicroRNAs and MIR-Derived Small RNAs (Plant Epigenetics, RNA Technologies, 10.1007/978-3-319-55520-1_3)",
+      "authors": "Gozmanova M.",
+      "year": 2017,
+      "journal": "RNA Technologies",
+      "doi": "10.1007/978-3-319-55520-1_26",
+      "citations": 0,
+      "type": "Erratum"
+    },
+    {
+      "title": "Growing Diversity of Plant MicroRNAs and MIR-Derived Small RNAs",
+      "authors": "Gozmanova M.",
+      "year": 2017,
+      "journal": "RNA Technologies",
+      "doi": "10.1007/978-3-319-55520-1_3",
+      "citations": 5,
+      "type": "Book Chapter"
+    },
+    {
+      "title": "Metagenomic profiling of the microbial freshwater communities in two Bulgarian reservoirs",
+      "authors": "Iliev I.",
+      "year": 2017,
+      "journal": "Journal of Basic Microbiology",
+      "doi": "10.1002/jobm.201700137",
+      "citations": 20,
+      "type": "Article"
+    },
+    {
+      "title": "ChloroMitoSSRDB 2.00: More genomes, more repeats, unifying SSRs search patterns and on-the-fly repeat detection",
+      "authors": "Sablok G.",
+      "year": 2015,
+      "journal": "Database",
+      "doi": "10.1093/database/bav084",
+      "citations": 26,
+      "type": "Article"
+    },
+    {
+      "title": "High-temperature effect on genes engaged in DNA methylation and affected by DNA methylation in Arabidopsis",
+      "authors": "Naydenov M.",
+      "year": 2015,
+      "journal": "Plant Physiology and Biochemistry",
+      "doi": "10.1016/j.plaphy.2014.12.022",
+      "citations": 112,
+      "type": "Article"
+    },
+    {
+      "title": "isomiRs: Increasing evidences of isomiRs complexity in plant stress functional biology",
+      "authors": "Sablok G.",
+      "year": 2015,
+      "journal": "Frontiers in Plant Science",
+      "doi": "10.3389/fpls.2015.00949",
+      "citations": 27,
+      "type": "Article"
+    },
+    {
+      "title": "Insight into small RNA abundance and expression in high- and low-temperature stress response using deep sequencing in Arabidopsis",
+      "authors": "Baev V.",
+      "year": 2014,
+      "journal": "Plant Physiology and Biochemistry",
+      "doi": "10.1016/j.plaphy.2014.09.007",
+      "citations": 38,
+      "type": "Article"
+    },
+    {
+      "title": "Next generation sequencing crowd sourcing at BIOCOMP: What promises it holds for us in future?",
+      "authors": "Baev V.",
+      "year": 2014,
+      "journal": "Journal of Computational Science",
+      "doi": "10.1016/j.jocs.2014.04.001",
+      "citations": 1,
+      "type": "Editorial"
+    },
+    {
+      "title": "Small RNA analysis of potato spindle tuber viroid infected phelipanche ramosa",
+      "authors": "Ivanova D.",
+      "year": 2014,
+      "journal": "Plant Physiology and Biochemistry",
+      "doi": "10.1016/j.plaphy.2013.11.019",
+      "citations": 26,
+      "type": "Article"
+    },
+    {
+      "title": "Small RNAs in Crop Response to Temperature Stress Noncoding RNAs in Plants",
+      "authors": "Yahubyan G.",
+      "year": 2014,
+      "journal": "Handbook of Plant and Crop Physiology Third Edition",
+      "doi": "10.1201/b16675-40",
+      "citations": 1,
+      "type": "Book Chapter"
+    },
+    {
+      "title": "Combinational effect of mutational bias and translational selection for translation efficiency in tomato (Solanum lycopersicum) cv. Micro-Tom",
+      "authors": "Sablok G.",
+      "year": 2013,
+      "journal": "Genomics",
+      "doi": "10.1016/j.ygeno.2013.02.008",
+      "citations": 8,
+      "type": "Article"
+    },
+    {
+      "title": "IsomiRex: Web-based identification of microRNAs, isomiR variations and differential expression using next-generation sequencing datasets",
+      "authors": "Sablok G.",
+      "year": 2013,
+      "journal": "FEBS Letters",
+      "doi": "10.1016/j.febslet.2013.06.047",
+      "citations": 60,
+      "type": "Article"
+    },
+    {
+      "title": "Characterization of the uterine leiomyoma microRNAome by deep sequencing",
+      "authors": "Georgieva B.",
+      "year": 2012,
+      "journal": "Genomics",
+      "doi": "10.1016/j.ygeno.2012.03.003",
+      "citations": 72,
+      "type": "Article"
+    },
+    {
+      "title": "Implementation of a de novo genome-wide computational approach for updating Brachypodium miRNAs",
+      "authors": "Baev V.",
+      "year": 2011,
+      "journal": "Genomics",
+      "doi": "10.1016/j.ygeno.2011.02.008",
+      "citations": 14,
+      "type": "Article"
+    },
+    {
+      "title": "Identification of potato spindle tuber viroid small rna in orobanche ramosa by microarray",
+      "authors": "Ivanova D.",
+      "year": 2010,
+      "journal": "Biotechnology and Biotechnological Equipment",
+      "doi": "10.1080/13102818.2010.10817829",
+      "citations": 4,
+      "type": "Article"
+    },
+    {
+      "title": "Identification of RNA-dependent DNA-methylation regulated promoters in Arabidopsis",
+      "authors": "Baev V.",
+      "year": 2010,
+      "journal": "Plant Physiology and Biochemistry",
+      "doi": "10.1016/j.plaphy.2010.03.013",
+      "citations": 17,
+      "type": "Article"
+    },
+    {
+      "title": "Computational identification of novel microRNA homologs in the chimpanzee genome",
+      "authors": "Baev V.",
+      "year": 2009,
+      "journal": "Computational Biology and Chemistry",
+      "doi": "10.1016/j.compbiolchem.2008.07.024",
+      "citations": 35,
+      "type": "Article"
+    },
+    {
+      "title": "Prediction and preliminary validation of oncogene regulation by miRNAs",
+      "authors": "Koscianska E.",
+      "year": 2007,
+      "journal": "BMC Molecular Biology",
+      "doi": "10.1186/1471-2199-8-79",
+      "citations": 65,
+      "type": "Article"
+    },
+    {
+      "title": "MicroRNA promoter element discovery in Arabidopsis",
+      "authors": "Megraw M.",
+      "year": 2006,
+      "journal": "RNA",
+      "doi": "10.1261/rna.130506",
+      "citations": 166,
       "type": "Article"
     },
     {
       "title": "MicroInspector: A web tool for detection of miRNA binding sites in an RNA sequence",
-      "authors": "Rusinov V., Baev V., Minkov I.N., Tabler M.",
+      "authors": "Rusinov V.",
       "year": 2005,
       "journal": "Nucleic Acids Research",
       "doi": "10.1093/nar/gki364",
-      "citations": 220,
+      "citations": 223,
       "type": "Article"
     }
   ]
