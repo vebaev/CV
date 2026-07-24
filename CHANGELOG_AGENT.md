@@ -44,6 +44,9 @@
 - Reduced the VB hero panel and removed the CV download button.
 - Replaced the VB hero monogram with the user portrait, preserving the arch
   shape and adding a gold-edged text treatment for contrast.
+- Replaced the first Tokyo portrait with the revised 1043 × 931 image and
+  widened the arch to the photograph's natural aspect ratio.
+- Updated the hero coordinates from Plovdiv to Tokyo.
 - Standardized Professor, Associate Professor and Assistant Professor
   affiliations to Department of Molecular Biology, University of Plovdiv.
 - Split Tool development, Illumina/ONT analysis and AI bioinformatics solutions
@@ -92,6 +95,7 @@
   research directions, separate Teaching entries and removal of the CV button.
 - Rendered-content and asset tests cover the portrait, telephone, iMessage link
   and removal of the hero monogram.
+- Rendered-content tests cover the Tokyo latitude and longitude.
 - The Crossref enrichment endpoint returned five complete author records for a
   live DOI test.
 - Desktop page height was reduced by approximately 28%.

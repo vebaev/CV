@@ -141,11 +141,11 @@ nav a:focus-visible::after {
 }
 
 .hero {
-  min-height: 560px;
+  min-height: 620px;
   padding: 108px clamp(24px, 5.5vw, 80px) 48px;
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.65fr);
-  gap: clamp(32px, 5vw, 72px);
+  grid-template-columns: minmax(0, 1.08fr) minmax(430px, 0.92fr);
+  gap: clamp(30px, 4vw, 58px);
   align-items: center;
   background:
     radial-gradient(circle at 79% 26%, rgba(180, 141, 59, 0.12), transparent 24%),
@@ -230,13 +230,13 @@ nav a:focus-visible::after {
 .hero-panel {
   position: relative;
   isolation: isolate;
-  width: min(100%, 330px);
-  aspect-ratio: 0.86;
+  width: min(100%, 510px);
+  aspect-ratio: 1043 / 931;
   margin-left: auto;
   overflow: hidden;
   color: var(--white);
   background: var(--blue);
-  border-radius: 210px 210px 24px 24px;
+  border-radius: 260px 260px 24px 24px;
   box-shadow: 0 24px 60px rgba(7, 22, 79, 0.2);
 }
 
@@ -1000,7 +1000,7 @@ footer {
   }
 
   .hero-panel {
-    width: min(100%, 330px);
+    width: min(100%, 510px);
     margin: 0 auto;
   }
 
@@ -1062,8 +1062,8 @@ footer {
   }
 
   .hero-panel {
-    width: min(100%, 290px);
-    aspect-ratio: 0.86;
+    width: min(100%, 360px);
+    aspect-ratio: 1043 / 931;
   }
 
   .hero-actions {

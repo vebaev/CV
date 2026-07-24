@@ -48,7 +48,10 @@ The English academic CV website is implemented and ready for GitHub Pages.
 - The hero panel is intentionally smaller than the text column and uses
   `public/Vesselin-Baev-Tokyo.jpg` inside the existing arch shape. The VB
   monogram and CV download button have been removed. A dark lower gradient and
-  subtle gold text strokes preserve the role text over the photograph.
+  subtle gold text strokes preserve the role text over the photograph. The
+  current portrait is 1043 × 931 px; the desktop arch uses the same aspect ratio
+  at up to 510 px wide so the full photograph remains visible.
+- The decorative hero coordinates are for Tokyo: `35.6762° N, 139.6503° E`.
 - Contact links list the institutional email, telephone and an iMessage link to
   `vebaev@gmail.com` before the institutional and Scopus links.
 - Memberships lists AI-GUIDE CA25157 first, followed by BM1006 and FA1407.

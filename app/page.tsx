@@ -186,7 +186,7 @@ export default function Home() {
             alt="Prof. Dr. Vesselin Baev in Tokyo"
             fill
             priority
-            sizes="(max-width: 640px) 290px, 330px"
+            sizes="(max-width: 640px) 360px, 510px"
           />
           <div className="hero-role">
             <span>Vice Dean</span>
@@ -194,8 +194,8 @@ export default function Home() {
             <small>Faculty of Biology</small>
           </div>
           <div className="hero-location">
-            <span>42.1354° N</span>
-            <span>24.7453° E</span>
+            <span>35.6762° N</span>
+            <span>139.6503° E</span>
           </div>
         </div>
       </section>

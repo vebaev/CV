@@ -52,6 +52,8 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /tel:\+35932261560/);
   assert.match(html, /imessage:\/\/vebaev@gmail\.com/);
   assert.match(html, /Prof\. Dr\. Vesselin Baev in Tokyo/);
+  assert.match(html, /35\.6762° N/);
+  assert.match(html, /139\.6503° E/);
   assert.doesNotMatch(html, /Download CV/);
   assert.doesNotMatch(html, /hero-monogram/);
   assert.doesNotMatch(html, /Academic leadership/);
