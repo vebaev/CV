@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 
 type Publication = {
@@ -178,10 +179,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-panel" aria-label="Academic profile overview">
-          <div className="hero-monogram">VB</div>
-          <div className="orbit orbit-one" />
-          <div className="orbit orbit-two" />
+        <div className="hero-panel" aria-label="Portrait and academic profile">
+          <Image
+            className="hero-photo"
+            src="./Vesselin-Baev-Tokyo.jpg"
+            alt="Prof. Dr. Vesselin Baev in Tokyo"
+            fill
+            priority
+            sizes="(max-width: 640px) 290px, 330px"
+          />
           <div className="hero-role">
             <span>Vice Dean</span>
             <strong>Science & Research</strong>
@@ -456,6 +462,12 @@ export default function Home() {
         <div className="contact-links">
           <a href="mailto:baev@uni-plovdiv.bg">
             baev@uni-plovdiv.bg <span aria-hidden="true">↗</span>
+          </a>
+          <a href="tel:+35932261560">
+            +359 32 261 560 <span aria-hidden="true">↗</span>
+          </a>
+          <a href="imessage://vebaev@gmail.com">
+            iMessage · vebaev@gmail.com <span aria-hidden="true">↗</span>
           </a>
           <a href="https://bio.uni-plovdiv.bg/" target="_blank" rel="noreferrer">
             Faculty of Biology <span aria-hidden="true">↗</span>

@@ -49,7 +49,11 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /Publications/);
   assert.match(html, /Vice Dean/);
   assert.match(html, /baev@uni-plovdiv\.bg/);
+  assert.match(html, /tel:\+35932261560/);
+  assert.match(html, /imessage:\/\/vebaev@gmail\.com/);
+  assert.match(html, /Prof\. Dr\. Vesselin Baev in Tokyo/);
   assert.doesNotMatch(html, /Download CV/);
+  assert.doesNotMatch(html, /hero-monogram/);
   assert.doesNotMatch(html, /Academic leadership/);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|Starter Project/);
 });
@@ -58,6 +62,7 @@ test("ships publication data, CV and social preview", async () => {
   const [data] = await Promise.all([
     readFile(new URL("../public/data/scopus.json", import.meta.url), "utf8"),
     access(new URL("../public/Vesselin-Baev-CV-2026.pdf", import.meta.url)),
+    access(new URL("../public/Vesselin-Baev-Tokyo.jpg", import.meta.url)),
     access(new URL("../public/og.png", import.meta.url)),
   ]);
 

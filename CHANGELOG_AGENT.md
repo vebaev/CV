@@ -23,6 +23,8 @@
   DOI records not available through Crossref.
 - Verified author override for the legacy book chapter DOI
   `10.1201/b16675-40`, whose DOI metadata omits authors.
+- User-provided Tokyo portrait as the hero profile photograph.
+- Direct telephone and iMessage contact links.
 
 ### Changed
 
@@ -40,6 +42,8 @@
 - Redesigned Research focus as a six-card light section matching the Academic
   career background.
 - Reduced the VB hero panel and removed the CV download button.
+- Replaced the VB hero monogram with the user portrait, preserving the arch
+  shape and adding a gold-edged text treatment for contrast.
 - Standardized Professor, Associate Professor and Assistant Professor
   affiliations to Department of Molecular Biology, University of Plovdiv.
 - Split Tool development, Illumina/ONT analysis and AI bioinformatics solutions
@@ -86,6 +90,8 @@
   AI-GUIDE and removal of Academic leadership.
 - Rendered-content tests cover About me, all four languages, the two new
   research directions, separate Teaching entries and removal of the CV button.
+- Rendered-content and asset tests cover the portrait, telephone, iMessage link
+  and removal of the hero monogram.
 - The Crossref enrichment endpoint returned five complete author records for a
   live DOI test.
 - Desktop page height was reduced by approximately 28%.

@@ -28,8 +28,9 @@ The English academic CV website is implemented and ready for GitHub Pages.
 - Scopus Search is paginated in batches of 25 records, matching the regular
   developer-key service limit while still retrieving the complete publication
   list.
-- Personal birth date, gender, street address and telephone are not displayed
-  on the public page. The original PDF remains in the static assets but is no
+- Personal birth date, gender and street address are not displayed on the
+  public page. The user explicitly approved the public contact telephone
+  `+359 32 261 560`. The original PDF remains in the static assets but is no
   longer linked from the hero.
 - The project supports both the local vinext preview and a standard Next.js
   static export for GitHub Pages.
@@ -44,8 +45,12 @@ The English academic CV website is implemented and ready for GitHub Pages.
   multi-omics, tool/workflow development and AI models in bioinformatics.
 - The header uses the full `Prof. Dr. Vesselin Baev` name. Professor, Vice Dean
   and the Scopus update label have stronger type hierarchy than supporting copy.
-- The hero VB panel is intentionally smaller than the text column and the CV
-  download button has been removed.
+- The hero panel is intentionally smaller than the text column and uses
+  `public/Vesselin-Baev-Tokyo.jpg` inside the existing arch shape. The VB
+  monogram and CV download button have been removed. A dark lower gradient and
+  subtle gold text strokes preserve the role text over the photograph.
+- Contact links list the institutional email, telephone and an iMessage link to
+  `vebaev@gmail.com` before the institutional and Scopus links.
 - Memberships lists AI-GUIDE CA25157 first, followed by BM1006 and FA1407.
 - Teaching lists tool development, Illumina/ONT analysis and AI bioinformatics
   solutions as separate entries.
