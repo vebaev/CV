@@ -20,13 +20,17 @@ The English academic CV website is implemented and ready for GitHub Pages.
   API refresh.
 - Scopus Search uses the `STANDARD` view so a regular Elsevier developer key can
   refresh the public metadata without an institutional subscription token.
+- Scopus Search is paginated in batches of 25 records, matching the regular
+  developer-key service limit while still retrieving the complete publication
+  list.
 - Personal birth date, gender, street address and telephone are not displayed
   on the public page. The original PDF remains available through the CV download.
 - The project supports both the local vinext preview and a standard Next.js
   static export for GitHub Pages.
 
-## Repository and remaining external step
+## Repository and automation
 
-The project is connected to `vebaev/CV` and has been pushed to `main`. Add
-`ELSEVIER_API_KEY` under repository Actions secrets and run the Scopus workflow
-once manually.
+The project is connected to `vebaev/CV` and has been pushed to `main`.
+GitHub Pages is enabled, and the `ELSEVIER_API_KEY` Actions secret is configured.
+The Scopus workflow should be run manually after updater changes to verify the
+live API before relying on the daily schedule.

@@ -3,6 +3,8 @@ import { dirname, resolve } from "node:path";
 
 const AUTHOR_ID = "12789511400";
 const API_ROOT = "https://api.elsevier.com/content";
+const SEARCH_PAGE_SIZE = 25;
+const SEARCH_RESULT_LIMIT = 5000;
 const outputPath = resolve("public/data/scopus.json");
 const tempPath = `${outputPath}.tmp`;
 const apiKey = process.env.ELSEVIER_API_KEY;
@@ -70,19 +72,38 @@ function normalizePublication(entry) {
 const authorUrl =
   `${API_ROOT}/author/author_id/${AUTHOR_ID}` +
   "?view=ENHANCED&httpAccept=application%2Fjson";
-const searchUrl =
-  `${API_ROOT}/search/scopus` +
-  `?query=AU-ID%28${AUTHOR_ID}%29&view=STANDARD&count=200&sort=-coverDate` +
-  "&httpAccept=application%2Fjson";
 
-const [authorPayload, searchPayload] = await Promise.all([
+function makeSearchUrl(start) {
+  return (
+    `${API_ROOT}/search/scopus` +
+    `?query=AU-ID%28${AUTHOR_ID}%29&view=STANDARD` +
+    `&count=${SEARCH_PAGE_SIZE}&start=${start}&sort=-coverDate` +
+    "&httpAccept=application%2Fjson"
+  );
+}
+
+const [authorPayload, firstSearchPayload] = await Promise.all([
   fetchJson(authorUrl),
-  fetchJson(searchUrl),
+  fetchJson(makeSearchUrl(0)),
 ]);
 
 const authorRecord = authorPayload["author-retrieval-response"]?.[0];
 const core = authorRecord?.coredata;
-const entries = searchPayload["search-results"]?.entry;
+const firstSearchResults = firstSearchPayload["search-results"];
+const totalResults = number(firstSearchResults?.["opensearch:totalResults"]);
+const resultLimit = Math.min(totalResults, SEARCH_RESULT_LIMIT);
+const remainingStarts = [];
+
+for (let start = SEARCH_PAGE_SIZE; start < resultLimit; start += SEARCH_PAGE_SIZE) {
+  remainingStarts.push(start);
+}
+
+const remainingPayloads = await Promise.all(
+  remainingStarts.map((start) => fetchJson(makeSearchUrl(start))),
+);
+const entries = [firstSearchPayload, ...remainingPayloads].flatMap(
+  (payload) => payload["search-results"]?.entry ?? [],
+);
 
 if (!core || !Array.isArray(entries) || entries.length === 0) {
   throw new Error("Scopus returned an incomplete author profile");
@@ -104,7 +125,7 @@ const next = {
     citations: number(core["citation-count"], previous.metrics.citations),
     documents: number(
       core["document-count"],
-      number(searchPayload["search-results"]?.["opensearch:totalResults"], publications.length),
+      number(firstSearchResults?.["opensearch:totalResults"], publications.length),
     ),
   },
   publications,

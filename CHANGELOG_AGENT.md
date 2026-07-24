@@ -25,6 +25,8 @@
 - Enabled automatic GitHub Pages activation for a newly created repository.
 - Switched the Scopus Search request to the API-key-compatible `STANDARD` view
   after Elsevier rejected the subscription-only `COMPLETE` view.
+- Paginated Scopus Search in batches of 25 after the regular developer-key
+  service rejected the previous 200-record request.
 
 ### Verification
 
