@@ -32,6 +32,8 @@
 - Removed the still-entitlement-restricted Author Retrieval call for public
   GitHub runners; metrics are now derived from the complete live Scopus Search
   result set.
+- Triggered Pages deployment after every successful Scopus workflow, including
+  data commits made with GitHub's workflow token.
 
 ### Verification
 

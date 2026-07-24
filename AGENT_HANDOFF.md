@@ -36,5 +36,6 @@ The English academic CV website is implemented and ready for GitHub Pages.
 
 The project is connected to `vebaev/CV` and has been pushed to `main`.
 GitHub Pages is enabled, and the `ELSEVIER_API_KEY` Actions secret is configured.
-The Scopus workflow should be run manually after updater changes to verify the
-live API before relying on the daily schedule.
+The Pages deployment listens for both regular pushes and successful completion
+of the Scopus workflow, because commits made with GitHub's workflow token do not
+emit another push-triggered workflow.
