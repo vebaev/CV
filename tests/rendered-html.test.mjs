@@ -67,4 +67,15 @@ test("ships publication data, CV and social preview", async () => {
   assert.ok(scopus.metrics.citations >= 1193);
   assert.ok(scopus.metrics.documents >= scopus.publications.length);
   assert.ok(scopus.publications.length >= 20);
+  assert.ok(
+    scopus.publications.filter((publication) =>
+      publication.authors.includes(","),
+    ).length >= 50,
+  );
+  assert.equal(
+    scopus.publications.find(
+      (publication) => publication.doi === "10.1201/b16675-40",
+    )?.authors,
+    "Galina Yahubyan, Elena Apostolova, Ivan Minkov, Vesselin Baev",
+  );
 });

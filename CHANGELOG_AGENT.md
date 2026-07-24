@@ -21,6 +21,8 @@
 - Crossref author enrichment for complete author lists on Scopus publications.
 - Rate-limit retries, paced author requests and publisher metadata fallback for
   DOI records not available through Crossref.
+- Verified author override for the legacy book chapter DOI
+  `10.1201/b16675-40`, whose DOI metadata omits authors.
 
 ### Changed
 

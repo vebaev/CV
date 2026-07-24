@@ -7,6 +7,12 @@ const CROSSREF_API_ROOT = "https://api.crossref.org/works";
 const CROSSREF_CONCURRENCY = 1;
 const CROSSREF_REQUEST_DELAY_MS = 250;
 const CROSSREF_RETRY_LIMIT = 4;
+const AUTHOR_OVERRIDES = new Map([
+  [
+    "10.1201/b16675-40",
+    "Galina Yahubyan, Elena Apostolova, Ivan Minkov, Vesselin Baev",
+  ],
+]);
 const SEARCH_PAGE_SIZE = 25;
 const SEARCH_RESULT_LIMIT = 5000;
 const outputPath = resolve("public/data/scopus.json");
@@ -39,7 +45,9 @@ async function fetchJson(url, requestHeaders = headers) {
 }
 
 function sleep(milliseconds) {
-  return new Promise((resolvePromise) => setTimeout(resolvePromise, milliseconds));
+  return new Promise((resolvePromise) =>
+    setTimeout(resolvePromise, milliseconds),
+  );
 }
 
 function crossrefAuthorName(author) {
@@ -103,6 +111,9 @@ async function publisherAuthors(doi) {
 
 async function completeAuthors(publication) {
   if (!publication.doi) return publication;
+
+  const override = AUTHOR_OVERRIDES.get(publication.doi.toLowerCase());
+  if (override) return { ...publication, authors: override };
 
   try {
     const crossref = await crossrefAuthors(publication.doi);
