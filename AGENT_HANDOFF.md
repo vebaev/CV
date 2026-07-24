@@ -40,8 +40,8 @@ for GitHub Pages.
   English and Bulgarian and update the document language and title.
 - Static CV copy, navigation, metrics, filters, contact details and
   accessibility labels are localized. Scopus publication titles, authors,
-  journals and types, plus the three EU COST membership names, remain in their
-  original language.
+  journals and types, the three EU COST membership names and the EU ITN project
+  record remain in their original language.
 - The Bulgarian hero role is `Научноизследователската дейност`; the About
   statement begins `Мостове между`, and the Teaching introduction uses
   `Обучаване на биолози да прилагат изчислителни подходи`.
@@ -49,8 +49,8 @@ for GitHub Pages.
   restrained 42–60 px hero display type, 58–80 px section spacing, denser
   research cards and bibliography-style publication rows.
 - About me is a separate profile section with a five-step visual language
-  scale. The numbered content flow remains Research focus, Academic career and
-  Memberships. French proficiency is 3/5 in both language modes.
+  scale. The numbered content flow remains Research focus, Academic career,
+  Memberships and Projects. French proficiency is 3/5 in both language modes.
 - Research focus uses the same light background as Academic career and a
   six-card layout covering NGS, non-coding RNAs, microbial genomics,
   multi-omics, tool/workflow development and AI models in bioinformatics.
@@ -70,6 +70,9 @@ for GitHub Pages.
   label. The Faculty address above the contact buttons follows the selected
   interface language.
 - Memberships lists AI-GUIDE CA25157 first, followed by BM1006 and FA1407.
+- Projects follows Memberships as section 04 in the same gold row style. It
+  lists the EU ITN Marie Skłodowska-Curie ELBA grant agreement 765492
+  (2018–2023); only the section heading is localized.
 - Teaching lists tool development, Illumina/ONT analysis and AI bioinformatics
   solutions as separate entries.
 - The daily updater keeps the publication set and metrics sourced from Scopus,

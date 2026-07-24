@@ -171,6 +171,7 @@ const siteCopy = {
       more: "Show more publications",
     },
     memberships: "Memberships",
+    projects: "Projects",
     contact: {
       eyebrow: "Let’s connect",
       heading: "Open to research collaboration and scientific exchange.",
@@ -326,6 +327,7 @@ const siteCopy = {
       more: "Покажи още публикации",
     },
     memberships: "Членства",
+    projects: "Проекти",
     contact: {
       eyebrow: "За връзка",
       heading: "Отворен съм за научно сътрудничество и академичен обмен.",
@@ -734,6 +736,22 @@ export default function Home() {
           <div className="affiliation-row">
             <span>EU COST</span>
             <p>NGS for plant viral disease research and diagnosis · FA1407</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="affiliations projects section-grid">
+        <div className="section-label">
+          <span>04</span>
+          <p>{copy.projects}</p>
+        </div>
+        <div className="section-content">
+          <div className="affiliation-row">
+            <span>EU ITN</span>
+            <p>
+              Marie Skłodowska-Curie Grant agreement ID: ELBA 765492,
+              2018–2023
+            </p>
           </div>
         </div>
       </section>

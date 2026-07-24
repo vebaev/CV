@@ -48,6 +48,13 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /AI bioinformatics solutions/);
   assert.match(html, /Memberships/);
   assert.match(html, /AI-Governance, Use, and Impact/);
+  assert.match(html, /Projects/);
+  assert.match(html, /EU ITN/);
+  assert.match(
+    html,
+    /Marie Skłodowska-Curie Grant agreement ID: ELBA 765492/,
+  );
+  assert.match(html, /2018–2023/);
   assert.match(html, /Publications/);
   assert.match(html, /Vice Dean/);
   assert.match(html, /baev@uni-plovdiv\.bg/);
@@ -103,6 +110,7 @@ test("ships publication data, CV and social preview", async () => {
   assert.match(pageSource, /aria-label="English"/);
   assert.match(pageSource, /aria-label="Български"/);
   assert.match(pageSource, /Научни интереси/);
+  assert.match(pageSource, /projects: "Проекти"/);
   assert.match(pageSource, /Пловдивски университет „Паисий Хилендарски“/);
   assert.match(pageSource, /Научноизследователската дейност/);
   assert.match(pageSource, /statementBefore: "Мостове между"/);

@@ -880,6 +880,10 @@ nav a:focus-visible::after {
   background: var(--gold-pale);
 }
 
+.projects {
+  border-top: 1px solid rgba(21,23,19,0.14);
+}
+
 .affiliation-row {
   padding: 18px 0;
   display: grid;
