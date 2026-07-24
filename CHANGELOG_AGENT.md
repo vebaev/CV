@@ -39,6 +39,8 @@
   Scopus, ORCID, University of Plovdiv, ResearchGate and Frontiers profiles.
 - Google Search Console HTML verification metadata for the canonical URL-prefix
   property.
+- Verified Google Search Console ownership, submitted `/CV/sitemap.xml` and
+  requested priority indexing for the canonical homepage.
 
 ### Changed
 
@@ -142,6 +144,8 @@
 - Tests cover the canonical URL, index/follow directives, JSON-LD identity
   graph, verified researcher identifiers, sitemap and crawler guidance.
 - Tests cover the persistent Google Search Console verification marker.
+- Confirmed the verification marker and sitemap return HTTP 200 on the public
+  site before completing ownership verification and the indexing request.
 - The Crossref enrichment endpoint returned five complete author records for a
   live DOI test.
 - Desktop page height was reduced by approximately 28%.

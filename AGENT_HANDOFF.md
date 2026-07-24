@@ -40,6 +40,12 @@ for GitHub Pages.
   and large image/snippet permissions for Googlebot.
 - The homepage permanently retains the Google Search Console HTML verification
   meta tag for the URL-prefix property `https://vebaev.github.io/CV/`.
+- The URL-prefix property is verified in Google Search Console under the user's
+  University of Plovdiv Google account. `/CV/sitemap.xml` was submitted and the
+  homepage was added to Google's priority crawl queue on 24 July 2026. Search
+  Console initially reported `Couldn't fetch` for the newly submitted sitemap
+  even though a Googlebot-style public request returned HTTP 200 with valid XML;
+  recheck after Google's first processing cycle.
 - The page includes JSON-LD `WebSite`, `ProfilePage` and `Person` entities with
   verified Scopus Author ID `12789511400`, ORCID `0000-0002-5224-9145`, the
   official University of Plovdiv profile, ResearchGate and Frontiers Loop.
