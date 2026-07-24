@@ -23,8 +23,8 @@ The English academic CV website is implemented and ready for GitHub Pages.
 - The project supports both the local vinext preview and a standard Next.js
   static export for GitHub Pages.
 
-## Remaining external step
+## Repository and remaining external step
 
-A GitHub repository URL or repository name is needed before pushing and
-activating GitHub Pages. After push, add `ELSEVIER_API_KEY` under repository
-Actions secrets and run the Scopus workflow once manually.
+The project is connected to `vebaev/CV` and has been pushed to `main`. Add
+`ELSEVIER_API_KEY` under repository Actions secrets and run the Scopus workflow
+once manually.

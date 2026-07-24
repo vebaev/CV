@@ -22,6 +22,7 @@
 - Removed unused starter icons and illustration assets.
 - Reset publication pagination directly in filter handlers to satisfy React
   lint rules.
+- Enabled automatic GitHub Pages activation for a newly created repository.
 
 ### Verification
 
