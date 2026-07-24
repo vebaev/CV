@@ -41,3 +41,6 @@
 - `npm run build:pages` passed.
 - `npm test` passed with 2 tests.
 - `npm run lint` passed.
+- Live Scopus refresh passed with 58 documents, h-index 16 and 1,266 citations.
+- The successful Scopus workflow triggered and completed a subsequent GitHub
+  Pages deployment.
