@@ -87,6 +87,11 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /Memberships/);
   assert.match(html, /href="#memberships">Memberships<\/a>/);
   assert.match(html, /AI-Governance, Use, and Impact/);
+  assert.match(html, /CIMB/);
+  assert.match(
+    html,
+    /Editorial Board,<!-- --> <strong>Bioinformatics and Systems Biology Section<\/strong>/,
+  );
   assert.match(html, /Projects/);
   assert.match(html, /href="#projects">Projects<\/a>/);
   assert.match(html, /EU ITN/);

@@ -751,6 +751,13 @@ export default function Home() {
             <span>EU COST</span>
             <p>NGS for plant viral disease research and diagnosis · FA1407</p>
           </div>
+          <div className="affiliation-row">
+            <span>CIMB</span>
+            <p>
+              Editorial Board,{" "}
+              <strong>Bioinformatics and Systems Biology Section</strong>
+            </p>
+          </div>
         </div>
       </section>
 

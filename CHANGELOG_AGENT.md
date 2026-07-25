@@ -5,6 +5,8 @@
 ### Added
 
 - Secondary GitHub profile button beside Explore publications in the hero.
+- CIMB Editorial Board membership for the Bioinformatics and Systems Biology
+  Section.
 
 ### Changed
 
