@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 type Publication = {
   title: string;
@@ -359,6 +359,199 @@ function publicationLink(publication: Publication) {
   return "https://www.scopus.com/authid/detail.uri?authorId=12789511400";
 }
 
+const neuralNodes = Array.from({ length: 14 }, (_, index) => `n${index + 1}`);
+
+type NeuralEdge = {
+  from: string;
+  to: string;
+  distance: number;
+};
+
+function NeuralField() {
+  const fieldRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const field = fieldRef.current;
+    if (!field) return;
+
+    const nodes = [...field.querySelectorAll<HTMLElement>(".hero-neural-node")].map(
+      (element) => ({
+        element,
+        key: element.dataset.node ?? "",
+      }),
+    );
+    const activeLinks = new Map<string, HTMLElement>();
+    const removalTimers = new Set<number>();
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    let animationFrame = 0;
+    let refreshTimer = 0;
+    let disposed = false;
+
+    const getCenters = () => {
+      const fieldRect = field.getBoundingClientRect();
+      const centers = new Map<string, { x: number; y: number }>();
+
+      for (const node of nodes) {
+        const rect = node.element.getBoundingClientRect();
+        centers.set(node.key, {
+          x: rect.left + rect.width / 2 - fieldRect.left,
+          y: rect.top + rect.height / 2 - fieldRect.top,
+        });
+      }
+
+      return centers;
+    };
+
+    const syncLinks = () => {
+      if (disposed) return;
+      const centers = getCenters();
+
+      for (const link of field.querySelectorAll<HTMLElement>(".hero-neural-link")) {
+        const start = centers.get(link.dataset.from ?? "");
+        const end = centers.get(link.dataset.to ?? "");
+        if (!start || !end) continue;
+
+        const deltaX = end.x - start.x;
+        const deltaY = end.y - start.y;
+        link.style.left = `${start.x}px`;
+        link.style.top = `${start.y}px`;
+        link.style.width = `${Math.hypot(deltaX, deltaY)}px`;
+        link.style.transform = `rotate(${Math.atan2(deltaY, deltaX)}rad)`;
+      }
+
+      if (!reducedMotion) {
+        animationFrame = window.requestAnimationFrame(syncLinks);
+      }
+    };
+
+    const chooseEdges = () => {
+      const centers = getCenters();
+      const candidates = new Map<string, NeuralEdge>();
+
+      for (let index = 0; index < nodes.length; index += 1) {
+        for (let comparison = index + 1; comparison < nodes.length; comparison += 1) {
+          const from = nodes[index].key;
+          const to = nodes[comparison].key;
+          const start = centers.get(from);
+          const end = centers.get(to);
+          if (!start || !end) continue;
+
+          candidates.set(`${from}|${to}`, {
+            from,
+            to,
+            distance: Math.hypot(end.x - start.x, end.y - start.y),
+          });
+        }
+      }
+
+      const localCandidates = new Map<string, NeuralEdge>();
+      for (const node of nodes) {
+        const nearest = [...candidates.values()]
+          .filter((candidate) => candidate.from === node.key || candidate.to === node.key)
+          .sort((left, right) => left.distance - right.distance)
+          .slice(0, 4);
+
+        for (const candidate of nearest) {
+          localCandidates.set(`${candidate.from}|${candidate.to}`, candidate);
+        }
+      }
+
+      const selected = new Map<string, NeuralEdge>();
+      for (const node of nodes) {
+        const nearest = [...localCandidates.values()]
+          .filter((candidate) => candidate.from === node.key || candidate.to === node.key)
+          .sort((left, right) => left.distance - right.distance)[0];
+
+        if (nearest) {
+          selected.set(`${nearest.from}|${nearest.to}`, nearest);
+        }
+      }
+
+      const optional = [...localCandidates.values()].filter(
+        (candidate) => !selected.has(`${candidate.from}|${candidate.to}`),
+      );
+
+      for (let index = optional.length - 1; index > 0; index -= 1) {
+        const swapWith = Math.floor(Math.random() * (index + 1));
+        [optional[index], optional[swapWith]] = [optional[swapWith], optional[index]];
+      }
+
+      const targetCount = 18 + Math.floor(Math.random() * 4);
+      for (const candidate of optional) {
+        if (selected.size >= targetCount) break;
+        selected.set(`${candidate.from}|${candidate.to}`, candidate);
+      }
+
+      return selected;
+    };
+
+    const createLink = (key: string, edge: NeuralEdge) => {
+      const link = document.createElement("i");
+      link.className = "hero-neural-link";
+      link.dataset.from = edge.from;
+      link.dataset.to = edge.to;
+      link.style.setProperty("--signal-delay", `${-Math.random() * 8}s`);
+      field.insertBefore(link, nodes[0].element);
+      activeLinks.set(key, link);
+      window.requestAnimationFrame(() => link.classList.add("is-live"));
+    };
+
+    const refreshEdges = () => {
+      if (disposed) return;
+      const nextEdges = chooseEdges();
+
+      for (const [key, link] of activeLinks) {
+        if (nextEdges.has(key)) continue;
+        activeLinks.delete(key);
+        link.classList.remove("is-live");
+        link.classList.add("is-leaving");
+        const timer = window.setTimeout(() => {
+          link.remove();
+          removalTimers.delete(timer);
+        }, 1500);
+        removalTimers.add(timer);
+      }
+
+      for (const [key, edge] of nextEdges) {
+        if (!activeLinks.has(key)) createLink(key, edge);
+      }
+    };
+
+    const scheduleRefresh = () => {
+      if (reducedMotion || disposed) return;
+      refreshTimer = window.setTimeout(() => {
+        refreshEdges();
+        scheduleRefresh();
+      }, 4800 + Math.random() * 2400);
+    };
+
+    refreshEdges();
+    animationFrame = window.requestAnimationFrame(syncLinks);
+    scheduleRefresh();
+
+    return () => {
+      disposed = true;
+      window.cancelAnimationFrame(animationFrame);
+      window.clearTimeout(refreshTimer);
+      for (const timer of removalTimers) window.clearTimeout(timer);
+    };
+  }, []);
+
+  return (
+    <div className="hero-neural-field" ref={fieldRef} aria-hidden="true">
+      {neuralNodes.map((node) => (
+        <b
+          className={`hero-neural-node ${node}`}
+          data-node={node}
+          key={node}
+        />
+      ))}
+    </div>
+  );
+}
+
 export default function Home() {
   const [language, setLanguage] = useState<SiteLanguage>("en");
   const [data, setData] = useState<ScopusData | null>(null);
@@ -501,6 +694,8 @@ export default function Home() {
             </a>
           </div>
         </div>
+
+        <NeuralField />
 
         <div className="hero-panel" aria-label="Portrait and academic profile">
           <Image

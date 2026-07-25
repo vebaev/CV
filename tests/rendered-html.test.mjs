@@ -118,6 +118,11 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /Prof\. Dr\. Vesselin Baev in Tokyo/);
   assert.match(html, /35\.6762° N/);
   assert.match(html, /139\.6503° E/);
+  assert.match(html, /class="hero-neural-field"/);
+  assert.equal(
+    (html.match(/class="hero-neural-node n\d+"/g) ?? []).length,
+    14,
+  );
   assert.doesNotMatch(html, /Download CV/);
   assert.doesNotMatch(html, /hero-monogram/);
   assert.doesNotMatch(html, /Academic leadership/);
@@ -200,6 +205,19 @@ test("ships publication data, CV and social preview", async () => {
   assert.match(
     styleSource,
     /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.timeline article:first-child::before\s*\{[\s\S]*animation: none/,
+  );
+  assert.match(
+    pageSource,
+    /const targetCount = 18 \+ Math\.floor\(Math\.random\(\) \* 4\)/,
+  );
+  assert.match(pageSource, /4800 \+ Math\.random\(\) \* 2400/);
+  assert.match(
+    styleSource,
+    /@media \(max-width: 640px\)[\s\S]*\.hero-neural-field\s*\{[\s\S]*display: none/,
+  );
+  assert.match(
+    styleSource,
+    /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.hero-neural-node,[\s\S]*animation: none/,
   );
 });
 

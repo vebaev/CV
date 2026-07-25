@@ -7,6 +7,8 @@
 - Secondary GitHub profile button beside Explore publications in the hero.
 - CIMB Editorial Board membership for the Bioinformatics and Systems Biology
   Section.
+- Decorative hero neural-network background with 14 gently moving, pulsing
+  nodes and evolving local connections.
 
 ### Changed
 
@@ -19,6 +21,8 @@
 - Added the 24-hour Europe/Sofia update time to the Scopus profile label.
 - Changed the Explore publications arrow to point down-right toward its
   on-page destination.
+- Added randomized 4.8–7.2 second topology changes so some neural links fade
+  away while new links appear, while retaining minimum node connectivity.
 
 ## 2026-07-24
 
@@ -154,8 +158,10 @@
 
 - `npm run build` passed.
 - `npm run build:pages` passed.
-- `npm test` passed with 2 tests.
+- `npm test` passed with 4 tests.
 - `npm run lint` passed.
+- The hero network is covered by rendered-output checks for all 14 nodes,
+  randomized link counts and timing, mobile hiding and reduced-motion support.
 - Compact responsive layout was visually inspected at desktop size.
 - The updated hero and merged Research focus section were visually inspected at
   1280 × 720; the resulting page height is 4,740 px.

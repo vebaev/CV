@@ -93,6 +93,11 @@ for GitHub Pages.
 - The hero actions contain the primary Publications anchor and a secondary
   external GitHub button linking to `https://github.com/vebaev`. The primary
   Publications anchor uses a down-right arrow to indicate its on-page target.
+- The hero includes a decorative neural-network field between the copy and
+  portrait. Fourteen softly drifting nodes retain local connectivity while
+  18–21 links fade out and re-form at randomized 4.8–7.2 second intervals.
+  Link geometry follows the moving node centers. The field is hidden on small
+  phones and becomes static when reduced motion is preferred.
 - The hero panel is intentionally smaller than the text column and uses
   `public/Vesselin-Baev-Tokyo-2026.jpg` inside the existing arch shape. The VB
   monogram and CV download button have been removed. A dark lower gradient and
