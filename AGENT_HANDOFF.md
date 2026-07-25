@@ -83,6 +83,7 @@ for GitHub Pages.
   biological insights`.
 - The header uses the full `Prof. Dr. Vesselin Baev` name. Professor, Vice Dean
   and the Scopus update label have stronger type hierarchy than supporting copy.
+  The Scopus update label shows the date and 24-hour time in `Europe/Sofia`.
 - The gold timeline dot for the current `Professor of Bioinformatics` role in
   Academic career pulses subtly. The hero label remains static, and the
   timeline animation is disabled when the visitor prefers reduced motion.

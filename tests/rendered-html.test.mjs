@@ -171,6 +171,9 @@ test("ships publication data, CV and social preview", async () => {
   assert.match(pageSource, /Пловдивски университет „Паисий Хилендарски“/);
   assert.match(pageSource, /Научноизследователска дейност/);
   assert.doesNotMatch(pageSource, /Научноизследователската дейност/);
+  assert.match(pageSource, /hour: "2-digit"/);
+  assert.match(pageSource, /minute: "2-digit"/);
+  assert.match(pageSource, /timeZone: "Europe\/Sofia"/);
   assert.match(
     styleSource,
     /html\[lang="bg"\] \.hero-role strong\s*\{[\s\S]*?font-size: clamp\(17px, 1\.5vw, 21px\)/,

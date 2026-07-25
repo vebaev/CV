@@ -16,6 +16,7 @@
   description uses one consistent text weight.
 - Increased Japanese language proficiency from 1/5 to 2/5 in both interface
   languages.
+- Added the 24-hour Europe/Sofia update time to the Scopus profile label.
 
 ## 2026-07-24
 

@@ -407,6 +407,10 @@ export default function Home() {
         day: "2-digit",
         month: "short",
         year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        hourCycle: "h23",
+        timeZone: "Europe/Sofia",
       }).format(new Date(data.updatedAt))
     : language === "bg"
       ? "ян. 2026 г."
