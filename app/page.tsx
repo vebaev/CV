@@ -753,10 +753,7 @@ export default function Home() {
           </div>
           <div className="affiliation-row">
             <span>CIMB</span>
-            <p>
-              Editorial Board,{" "}
-              <strong>Bioinformatics and Systems Biology Section</strong>
-            </p>
+            <p>Editorial Board, Bioinformatics and Systems Biology Section</p>
           </div>
         </div>
       </section>

@@ -12,6 +12,8 @@
 
 - Shortened the Bulgarian hero role to `Научноизследователска дейност` and
   reduced its overlay font size to fit the portrait cleanly.
+- Removed the bold emphasis from the CIMB section name so the full membership
+  description uses one consistent text weight.
 
 ## 2026-07-24
 

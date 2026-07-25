@@ -104,7 +104,8 @@ for GitHub Pages.
   label. The Faculty address above the contact buttons follows the selected
   interface language.
 - Memberships lists AI-GUIDE CA25157 first, followed by BM1006, FA1407 and the
-  CIMB Editorial Board, Bioinformatics and Systems Biology Section.
+  CIMB Editorial Board, Bioinformatics and Systems Biology Section. The CIMB
+  entry uses the same regular text weight throughout.
 - Projects follows Memberships as section 04 in the same gold row style. It
   lists the EU ITN Marie Skłodowska-Curie ELBA grant agreement 765492
   (2018–2023); only the section heading is localized.

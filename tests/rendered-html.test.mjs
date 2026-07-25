@@ -90,7 +90,11 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /CIMB/);
   assert.match(
     html,
-    /Editorial Board,<!-- --> <strong>Bioinformatics and Systems Biology Section<\/strong>/,
+    /Editorial Board, Bioinformatics and Systems Biology Section/,
+  );
+  assert.doesNotMatch(
+    html,
+    /<strong>Bioinformatics and Systems Biology Section<\/strong>/,
   );
   assert.match(html, /Projects/);
   assert.match(html, /href="#projects">Projects<\/a>/);
