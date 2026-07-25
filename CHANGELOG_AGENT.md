@@ -17,6 +17,8 @@
 - Increased Japanese language proficiency from 1/5 to 2/5 in both interface
   languages.
 - Added the 24-hour Europe/Sofia update time to the Scopus profile label.
+- Changed the Explore publications arrow to point down-right toward its
+  on-page destination.
 
 ## 2026-07-24
 

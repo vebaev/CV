@@ -489,7 +489,7 @@ export default function Home() {
           <p className="hero-intro">{copy.hero.intro}</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#publications">
-              {copy.hero.button} <span aria-hidden="true">↗</span>
+              {copy.hero.button} <span aria-hidden="true">↘</span>
             </a>
             <a
               className="button button-secondary"

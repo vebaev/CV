@@ -33,6 +33,7 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /<title>Prof\. Dr\. Vesselin Baev \| Bioinformatics<\/title>/i);
   assert.match(html, /Science at the/);
   assert.match(html, /Research impact/);
+  assert.match(html, /Explore publications<!-- --> <span aria-hidden="true">↘<\/span>/);
   assert.match(html, /Prof\. Dr\. Vesselin Baev/);
   assert.match(
     html,
