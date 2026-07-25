@@ -14,6 +14,8 @@
   reduced its overlay font size to fit the portrait cleanly.
 - Removed the bold emphasis from the CIMB section name so the full membership
   description uses one consistent text weight.
+- Increased Japanese language proficiency from 1/5 to 2/5 in both interface
+  languages.
 
 ## 2026-07-24
 

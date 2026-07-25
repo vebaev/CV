@@ -83,7 +83,7 @@ const siteCopy = {
       { name: "English", level: 5 },
       { name: "French", level: 3 },
       { name: "Russian", level: 1 },
-      { name: "Japanese", level: 1 },
+      { name: "Japanese", level: 2 },
     ],
     research: {
       label: "Research focus",
@@ -241,7 +241,7 @@ const siteCopy = {
       { name: "Английски", level: 5 },
       { name: "Френски", level: 3 },
       { name: "Руски", level: 1 },
-      { name: "Японски", level: 1 },
+      { name: "Японски", level: 2 },
     ],
     research: {
       label: "Научни интереси",

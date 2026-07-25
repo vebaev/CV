@@ -178,6 +178,8 @@ test("ships publication data, CV and social preview", async () => {
   assert.match(pageSource, /statementBefore: "Мостове между"/);
   assert.match(pageSource, /\{ name: "French", level: 3 \}/);
   assert.match(pageSource, /\{ name: "Френски", level: 3 \}/);
+  assert.match(pageSource, /\{ name: "Japanese", level: 2 \}/);
+  assert.match(pageSource, /\{ name: "Японски", level: 2 \}/);
   assert.match(
     pageSource,
     /Обучаване на биолози да прилагат изчислителни подходи\./,

@@ -74,7 +74,8 @@ for GitHub Pages.
   research cards and bibliography-style publication rows.
 - About me is a separate profile section with a five-step visual language
   scale. The numbered content flow remains Research focus, Academic career,
-  Memberships and Projects. French proficiency is 3/5 in both language modes.
+  Memberships and Projects. French proficiency is 3/5 and Japanese proficiency
+  is 2/5 in both language modes.
 - Research focus uses the same light background as Academic career and a
   six-card layout covering NGS, non-coding RNAs, microbial genomics,
   multi-omics, tool/workflow development and AI models in bioinformatics.
