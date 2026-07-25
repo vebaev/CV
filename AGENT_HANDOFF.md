@@ -65,7 +65,8 @@ for GitHub Pages.
   accessibility labels are localized. Scopus publication titles, authors,
   journals and types, the three EU COST membership names and the EU ITN project
   record remain in their original language.
-- The Bulgarian hero role is `Научноизследователската дейност`; the About
+- The Bulgarian hero role is `Научноизследователска дейност` and uses a
+  smaller language-specific overlay size so it stays on one line; the About
   statement begins `Мостове между`, and the Teaching introduction uses
   `Обучаване на биолози да прилагат изчислителни подходи`.
 - The visual system uses a compact editorial scale: a 72 px desktop header,

@@ -6,6 +6,11 @@
 
 - Secondary GitHub profile button beside Explore publications in the hero.
 
+### Changed
+
+- Shortened the Bulgarian hero role to `Научноизследователска дейност` and
+  reduced its overlay font size to fit the portrait cleanly.
+
 ## 2026-07-24
 
 ### Added

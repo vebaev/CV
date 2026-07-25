@@ -160,7 +160,12 @@ test("ships publication data, CV and social preview", async () => {
   assert.match(pageSource, /id="memberships"/);
   assert.match(pageSource, /id="projects"/);
   assert.match(pageSource, /Пловдивски университет „Паисий Хилендарски“/);
-  assert.match(pageSource, /Научноизследователската дейност/);
+  assert.match(pageSource, /Научноизследователска дейност/);
+  assert.doesNotMatch(pageSource, /Научноизследователската дейност/);
+  assert.match(
+    styleSource,
+    /html\[lang="bg"\] \.hero-role strong\s*\{[\s\S]*?font-size: clamp\(17px, 1\.5vw, 21px\)/,
+  );
   assert.match(pageSource, /statementBefore: "Мостове между"/);
   assert.match(pageSource, /\{ name: "French", level: 3 \}/);
   assert.match(pageSource, /\{ name: "Френски", level: 3 \}/);

@@ -363,6 +363,12 @@ nav a:focus-visible::after {
   -webkit-text-stroke: 0.35px rgba(239, 229, 204, 0.9);
 }
 
+html[lang="bg"] .hero-role strong {
+  font-size: clamp(17px, 1.5vw, 21px);
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
 .hero-location {
   position: absolute;
   z-index: 2;
