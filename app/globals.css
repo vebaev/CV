@@ -274,6 +274,18 @@ nav a:focus-visible::after {
   background: var(--blue-deep);
 }
 
+.button-secondary {
+  color: var(--blue);
+  border-color: rgba(11, 35, 121, 0.28);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.button-secondary:hover {
+  color: var(--blue-deep);
+  border-color: var(--gold);
+  background: var(--gold-pale);
+}
+
 .hero-panel {
   position: relative;
   isolation: isolate;

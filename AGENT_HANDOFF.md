@@ -87,6 +87,8 @@ for GitHub Pages.
 - The hero no longer repeats `Prof. Dr. Vesselin Baev` after the Professor of
   Bioinformatics label. The editorial science statement is the semantic `h1`;
   the full name remains prominent in the fixed header and in all SEO metadata.
+- The hero actions contain the primary Publications anchor and a secondary
+  external GitHub button linking to `https://github.com/vebaev`.
 - The hero panel is intentionally smaller than the text column and uses
   `public/Vesselin-Baev-Tokyo-2026.jpg` inside the existing arch shape. The VB
   monogram and CV download button have been removed. A dark lower gradient and

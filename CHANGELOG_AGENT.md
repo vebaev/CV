@@ -1,5 +1,11 @@
 # Agent changelog
 
+## 2026-07-25
+
+### Added
+
+- Secondary GitHub profile button beside Explore publications in the hero.
+
 ## 2026-07-24
 
 ### Added

@@ -487,6 +487,14 @@ export default function Home() {
             <a className="button button-primary" href="#publications">
               {copy.hero.button} <span aria-hidden="true">↗</span>
             </a>
+            <a
+              className="button button-secondary"
+              href="https://github.com/vebaev"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
 
