@@ -58,7 +58,7 @@ editorial character of the CV.
 
 - Add rendered-content checks for the new navigation labels, section anchor,
   number, title, version, Zenodo DOI, GitHub URL and bilingual heading.
-- Verify the section appears after Projects and before Publications in the
+- Verify the section appears after Projects and before Contact in the
   rendered source.
 - Run the full site tests, lint, and GitHub Pages static build before
   publishing.
