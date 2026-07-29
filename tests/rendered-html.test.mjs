@@ -105,6 +105,27 @@ test("server-renders the academic CV", async () => {
     /Marie Skłodowska-Curie Grant agreement ID: ELBA 765492/,
   );
   assert.match(html, /2018–2023/);
+  assert.match(html, /href="#tools-code">Tools &amp; Code<\/a>/);
+  assert.match(html, /id="tools-code"/);
+  assert.match(html, /<span>05<\/span>[\s\S]*Recent Tools &amp; Code/);
+  assert.match(html, /Baev, V\. \(2026\)\./);
+  assert.match(
+    html,
+    /<em>vebaev\/book-figure-skill: Codex Skill for Molecular Biology Textbook Figures<\/em>/,
+  );
+  assert.match(html, /Version 1\.3\.0/);
+  assert.match(
+    html,
+    /href="https:\/\/github\.com\/vebaev\/book-figure-skill\/" target="_blank" rel="noreferrer"/,
+  );
+  assert.match(
+    html,
+    /href="https:\/\/doi\.org\/10\.5281\/zenodo\.21669810" target="_blank" rel="noreferrer"/,
+  );
+  assert.match(
+    html,
+    /id="projects"[\s\S]*id="tools-code"[\s\S]*id="contact"/,
+  );
   assert.match(html, /Publications/);
   assert.match(html, /Vice Dean/);
   assert.match(html, /baev@uni-plovdiv\.bg/);
@@ -168,9 +189,16 @@ test("ships publication data, CV and social preview", async () => {
   assert.match(pageSource, /Научни интереси/);
   assert.match(pageSource, /projects: "Проекти"/);
   assert.match(pageSource, /memberships: "Членства"/);
+  assert.match(pageSource, /toolsCode: "Tools & Code"/);
+  assert.match(pageSource, /toolsCode: "Инструменти и код"/);
+  assert.match(pageSource, /toolsCode: "Recent Tools & Code"/);
   assert.match(
     pageSource,
     /href="#contact"[\s\S]*\{copy\.nav\.contact\}[\s\S]*className="language-switcher"/,
+  );
+  assert.match(
+    pageSource,
+    /href="#projects"[\s\S]*\{copy\.nav\.projects\}[\s\S]*href="#tools-code"[\s\S]*\{copy\.nav\.toolsCode\}[\s\S]*href="#contact"/,
   );
   assert.match(pageSource, /id="memberships"/);
   assert.match(pageSource, /id="projects"/);

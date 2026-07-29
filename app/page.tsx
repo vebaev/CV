@@ -42,6 +42,7 @@ const siteCopy = {
       publications: "Publications",
       memberships: "Memberships",
       projects: "Projects",
+      toolsCode: "Tools & Code",
       contact: "Contact",
     },
     hero: {
@@ -174,6 +175,7 @@ const siteCopy = {
     },
     memberships: "Memberships",
     projects: "Projects",
+    toolsCode: "Recent Tools & Code",
     contact: {
       eyebrow: "Let’s connect",
       heading: "Open to research collaboration and scientific exchange.",
@@ -200,6 +202,7 @@ const siteCopy = {
       publications: "Публикации",
       memberships: "Членства",
       projects: "Проекти",
+      toolsCode: "Инструменти и код",
       contact: "Контакти",
     },
     hero: {
@@ -332,6 +335,7 @@ const siteCopy = {
     },
     memberships: "Членства",
     projects: "Проекти",
+    toolsCode: "Инструменти и код",
     contact: {
       eyebrow: "За връзка",
       heading: "Отворен съм за научно сътрудничество и академичен обмен.",
@@ -637,6 +641,7 @@ export default function Home() {
           <a href="#publications" onClick={closeMenu}>{copy.nav.publications}</a>
           <a href="#memberships" onClick={closeMenu}>{copy.nav.memberships}</a>
           <a href="#projects" onClick={closeMenu}>{copy.nav.projects}</a>
+          <a href="#tools-code" onClick={closeMenu}>{copy.nav.toolsCode}</a>
           <a href="#contact" onClick={closeMenu}>{copy.nav.contact}</a>
           <div
             className="language-switcher"
@@ -969,6 +974,44 @@ export default function Home() {
               Marie Skłodowska-Curie Grant agreement ID: ELBA 765492,
               2018–2023
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="affiliations tools-code section-grid" id="tools-code">
+        <div className="section-label">
+          <span>05</span>
+          <p>{copy.toolsCode}</p>
+        </div>
+        <div className="section-content">
+          <div className="affiliation-row tools-code-entry">
+            <span>GitHub</span>
+            <div className="tools-code-body">
+              <p>
+                Baev, V. (2026).{" "}
+                <em>
+                  vebaev/book-figure-skill: Codex Skill for Molecular Biology
+                  Textbook Figures
+                </em>{" "}
+                (Version 1.3.0). Zenodo.
+              </p>
+              <div className="tools-code-actions">
+                <a
+                  href="https://github.com/vebaev/book-figure-skill/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub <span aria-hidden="true">↗</span>
+                </a>
+                <a
+                  href="https://doi.org/10.5281/zenodo.21669810"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  DOI <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
