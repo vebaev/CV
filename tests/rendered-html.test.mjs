@@ -116,7 +116,11 @@ test("server-renders the academic CV", async () => {
   assert.match(html, /Version 1\.3\.0/);
   assert.match(
     html,
-    /href="https:\/\/github\.com\/vebaev\/book-figure-skill\/" target="_blank" rel="noreferrer"/,
+    /href="https:\/\/vebaev\.github\.io\/book-figure-skill\/" target="_blank" rel="noreferrer"/,
+  );
+  assert.doesNotMatch(
+    html,
+    /href="https:\/\/github\.com\/vebaev\/book-figure-skill\/"/,
   );
   assert.match(
     html,

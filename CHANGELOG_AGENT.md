@@ -10,6 +10,11 @@
 - Rendered-content and stylesheet checks for the new section, external links,
   ordering, responsive actions and compact intermediate-width navigation.
 
+### Changed
+
+- Pointed the book-figure-skill GitHub action to its published GitHub Pages
+  documentation instead of the source repository.
+
 ## 2026-07-25
 
 ### Added

@@ -997,7 +997,7 @@ export default function Home() {
               </p>
               <div className="tools-code-actions">
                 <a
-                  href="https://github.com/vebaev/book-figure-skill/"
+                  href="https://vebaev.github.io/book-figure-skill/"
                   target="_blank"
                   rel="noreferrer"
                 >

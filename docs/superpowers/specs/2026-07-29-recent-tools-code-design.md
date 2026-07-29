@@ -31,7 +31,7 @@ editorial character of the CV.
 ## Links
 
 - Provide two distinct, keyboard-accessible external links:
-  - `GitHub` → `https://github.com/vebaev/book-figure-skill/`
+  - `GitHub` → `https://vebaev.github.io/book-figure-skill/`
   - `DOI` → `https://doi.org/10.5281/zenodo.21669810`
 - Open both links in a new tab and use safe external-link relationship
   attributes.

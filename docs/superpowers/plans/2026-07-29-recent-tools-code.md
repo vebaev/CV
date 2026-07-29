@@ -20,7 +20,7 @@ Pages static export.
 - Use `Recent Tools & Code` in English and `Инструменти и код` in Bulgarian.
 - Use `Tools & Code` for the English navigation label.
 - Keep the complete citation in English in both language modes.
-- Link GitHub to `https://github.com/vebaev/book-figure-skill/`.
+- Link GitHub to `https://vebaev.github.io/book-figure-skill/`.
 - Link DOI to `https://doi.org/10.5281/zenodo.21669810`.
 - Open both external links in a new tab with `rel="noreferrer"`.
 - Preserve the existing compact editorial visual system and mobile layout.
@@ -58,7 +58,7 @@ assert.match(
 assert.match(html, /Version 1\.3\.0/);
 assert.match(
   html,
-  /href="https:\/\/github\.com\/vebaev\/book-figure-skill\/" target="_blank" rel="noreferrer"/,
+  /href="https:\/\/vebaev\.github\.io\/book-figure-skill\/" target="_blank" rel="noreferrer"/,
 );
 assert.match(
   html,
@@ -146,7 +146,7 @@ Insert this section after the closing Projects section and before Contact:
         </p>
         <div className="tools-code-actions">
           <a
-            href="https://github.com/vebaev/book-figure-skill/"
+            href="https://vebaev.github.io/book-figure-skill/"
             target="_blank"
             rel="noreferrer"
           >
