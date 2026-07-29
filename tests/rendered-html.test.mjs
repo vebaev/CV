@@ -247,6 +247,26 @@ test("ships publication data, CV and social preview", async () => {
     styleSource,
     /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.hero-neural-node,[\s\S]*animation: none/,
   );
+  assert.match(
+    styleSource,
+    /\.tools-code-actions\s*\{[\s\S]*display: flex[\s\S]*flex-wrap: wrap/,
+  );
+  assert.match(
+    styleSource,
+    /\.tools-code-actions a\s*\{[\s\S]*min-height: 38px[\s\S]*border-radius: 999px/,
+  );
+  assert.match(
+    styleSource,
+    /\.tools-code-actions a:focus-visible\s*\{[\s\S]*outline:/,
+  );
+  assert.match(
+    styleSource,
+    /@media \(max-width: 640px\)[\s\S]*\.tools-code-entry\s*\{[\s\S]*grid-template-columns: 1fr/,
+  );
+  assert.match(
+    styleSource,
+    /@media \(max-width: 1100px\) and \(min-width: 901px\)[\s\S]*nav a\s*\{[\s\S]*font-size: 12px/,
+  );
 });
 
 test("ships search-engine discovery metadata", async () => {

@@ -1102,7 +1102,8 @@ html[lang="bg"] .hero-role strong {
   background: var(--gold-pale);
 }
 
-.projects {
+.projects,
+.tools-code {
   border-top: 1px solid rgba(21,23,19,0.14);
 }
 
@@ -1130,6 +1131,60 @@ html[lang="bg"] .hero-role strong {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 18px;
+}
+
+.tools-code-entry {
+  align-items: start;
+}
+
+.tools-code-body {
+  min-width: 0;
+}
+
+.tools-code-body p {
+  margin: 0;
+}
+
+.tools-code-body em {
+  color: var(--blue-deep);
+}
+
+.tools-code-actions {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tools-code-actions a {
+  min-height: 38px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue);
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(11, 35, 121, 0.22);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 750;
+  transition:
+    color 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.tools-code-actions a:hover {
+  color: var(--blue-deep);
+  background: var(--gold-pale);
+  border-color: var(--gold);
+  transform: translateY(-1px);
+}
+
+.tools-code-actions a:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
 }
 
 .contact {
@@ -1241,12 +1296,20 @@ footer {
 }
 
 @media (max-width: 1100px) and (min-width: 901px) {
+  .site-header {
+    padding-inline: 24px;
+  }
+
   .brand small {
     display: none;
   }
 
   nav {
-    gap: 14px;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 12px;
   }
 }
 
@@ -1451,6 +1514,10 @@ footer {
   .affiliation-row {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .tools-code-entry {
+    grid-template-columns: 1fr;
   }
 
   .contact {
