@@ -74,8 +74,8 @@ for GitHub Pages.
   research cards and bibliography-style publication rows.
 - About me is a separate profile section with a five-step visual language
   scale. The numbered content flow remains Research focus, Academic career,
-  Memberships and Projects. French proficiency is 3/5 and Japanese proficiency
-  is 2/5 in both language modes.
+  Memberships, Projects and Recent Tools & Code. French proficiency is 3/5 and
+  Japanese proficiency is 2/5 in both language modes.
 - Research focus uses the same light background as Academic career and a
   six-card layout covering NGS, non-coding RNAs, microbial genomics,
   multi-omics, tool/workflow development and AI models in bioinformatics.
@@ -117,8 +117,11 @@ for GitHub Pages.
 - Projects follows Memberships as section 04 in the same gold row style. It
   lists the EU ITN Marie Skłodowska-Curie ELBA grant agreement 765492
   (2018–2023); only the section heading is localized.
-- Memberships and Projects are available as localized top-navigation links with
-  direct anchors to their numbered sections.
+- Recent Tools & Code follows Projects as section 05 and is available from the
+  bilingual top navigation. Its first entry is the English Zenodo citation for
+  `vebaev/book-figure-skill` version 1.3.0, with separate GitHub and DOI links.
+- Memberships, Projects and Recent Tools & Code are available as localized
+  top-navigation links with direct anchors to their numbered sections.
 - Teaching lists tool development, Illumina/ONT analysis and AI bioinformatics
   solutions as separate entries.
 - The daily updater keeps the publication set and metrics sourced from Scopus,

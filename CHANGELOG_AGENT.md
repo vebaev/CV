@@ -1,5 +1,15 @@
 # Agent changelog
 
+## 2026-07-29
+
+### Added
+
+- Bilingual Recent Tools & Code / Инструменти и код navigation and section 05.
+- Zenodo citation for book-figure-skill version 1.3.0 with GitHub and DOI
+  actions.
+- Rendered-content and stylesheet checks for the new section, external links,
+  ordering, responsive actions and compact intermediate-width navigation.
+
 ## 2026-07-25
 
 ### Added
