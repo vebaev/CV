@@ -9,6 +9,11 @@
 - Rendered-content checks for the PROBEAT citation metadata and both external
   destinations.
 
+### Changed
+
+- Renamed the PROBEAT row label from `Toolkit` to `GitHub` for consistency with
+  the other Recent Tools & Code entry.
+
 ## 2026-07-29
 
 ### Added

@@ -120,7 +120,8 @@ for GitHub Pages.
 - Recent Tools & Code follows Projects as section 05 and is available from the
   bilingual top navigation. It includes the English Zenodo citation for
   `vebaev/book-figure-skill` version 1.3.0 and the 2026 PROBEAT toolkit article,
-  with separate documentation or repository and DOI actions for each entry.
+  with both rows labeled `GitHub` and separate documentation or repository and
+  DOI actions for each entry.
 - Memberships, Projects and Recent Tools & Code are available as localized
   top-navigation links with direct anchors to their numbered sections.
 - Teaching lists tool development, Illumina/ONT analysis and AI bioinformatics

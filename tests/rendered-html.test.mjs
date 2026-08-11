@@ -132,6 +132,10 @@ test("server-renders the academic CV", async () => {
   );
   assert.match(
     html,
+    /<div class="affiliation-row tools-code-entry"><span>GitHub<\/span><div class="tools-code-body"><p>Baev, V\. PROBEAT/,
+  );
+  assert.match(
+    html,
     /<em>Curr\. Issues Mol\. Biol\.<\/em>/,
   );
   assert.match(html, /<strong>2026<\/strong>/);

@@ -1014,7 +1014,7 @@ export default function Home() {
             </div>
           </div>
           <div className="affiliation-row tools-code-entry">
-            <span>Toolkit</span>
+            <span>GitHub</span>
             <div className="tools-code-body">
               <p>
                 Baev, V. PROBEAT: PRObiotic Bacterial gEnome Analysis Toolkit.{" "}
