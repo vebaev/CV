@@ -118,9 +118,9 @@ for GitHub Pages.
   lists the EU ITN Marie Skłodowska-Curie ELBA grant agreement 765492
   (2018–2023); only the section heading is localized.
 - Recent Tools & Code follows Projects as section 05 and is available from the
-  bilingual top navigation. Its first entry is the English Zenodo citation for
-  `vebaev/book-figure-skill` version 1.3.0, with separate links to the published
-  GitHub Pages documentation and the Zenodo DOI.
+  bilingual top navigation. It includes the English Zenodo citation for
+  `vebaev/book-figure-skill` version 1.3.0 and the 2026 PROBEAT toolkit article,
+  with separate documentation or repository and DOI actions for each entry.
 - Memberships, Projects and Recent Tools & Code are available as localized
   top-navigation links with direct anchors to their numbered sections.
 - Teaching lists tool development, Illumina/ONT analysis and AI bioinformatics

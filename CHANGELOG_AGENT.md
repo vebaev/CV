@@ -1,5 +1,14 @@
 # Agent changelog
 
+## 2026-08-11
+
+### Added
+
+- PROBEAT toolkit article in Recent Tools & Code, with direct DOI and GitHub
+  repository actions.
+- Rendered-content checks for the PROBEAT citation metadata and both external
+  destinations.
+
 ## 2026-07-29
 
 ### Added

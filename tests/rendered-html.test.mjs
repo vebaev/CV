@@ -128,6 +128,24 @@ test("server-renders the academic CV", async () => {
   );
   assert.match(
     html,
+    /Baev, V\. PROBEAT: PRObiotic Bacterial gEnome Analysis Toolkit\./,
+  );
+  assert.match(
+    html,
+    /<em>Curr\. Issues Mol\. Biol\.<\/em>/,
+  );
+  assert.match(html, /<strong>2026<\/strong>/);
+  assert.match(html, /<em>48<\/em>, 811\./);
+  assert.match(
+    html,
+    /href="https:\/\/doi\.org\/10\.3390\/cimb48080811" target="_blank" rel="noreferrer"/,
+  );
+  assert.match(
+    html,
+    /href="https:\/\/github\.com\/vebaev\/PROBEAT" target="_blank" rel="noreferrer"/,
+  );
+  assert.match(
+    html,
     /id="projects"[\s\S]*id="tools-code"[\s\S]*id="contact"/,
   );
   assert.match(html, /Publications/);

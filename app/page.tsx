@@ -1013,6 +1013,32 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="affiliation-row tools-code-entry">
+            <span>Toolkit</span>
+            <div className="tools-code-body">
+              <p>
+                Baev, V. PROBEAT: PRObiotic Bacterial gEnome Analysis Toolkit.{" "}
+                <em>Curr. Issues Mol. Biol.</em> <strong>2026</strong>,{" "}
+                <em>48</em>, 811.
+              </p>
+              <div className="tools-code-actions">
+                <a
+                  href="https://doi.org/10.3390/cimb48080811"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  DOI <span aria-hidden="true">↗</span>
+                </a>
+                <a
+                  href="https://github.com/vebaev/PROBEAT"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
