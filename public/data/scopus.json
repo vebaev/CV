@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-08-25T01:47:24.476Z",
+  "updatedAt": "2026-08-26T01:52:46.718Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1277,
+    "citations": 1278,
     "documents": 58
   },
   "publications": [
@@ -95,7 +95,7 @@
       "year": 2025,
       "journal": "Non Coding RNA",
       "doi": "10.3390/ncrna11030038",
-      "citations": 0,
+      "citations": 1,
       "type": "Article"
     },
     {
