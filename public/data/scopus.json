@@ -1,11 +1,11 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-09-01T04:57:06.593Z",
+  "updatedAt": "2026-09-02T04:20:24.045Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1279,
-    "documents": 58
+    "citations": 1284,
+    "documents": 59
   },
   "publications": [
     {
@@ -36,6 +36,15 @@
       "type": "Article"
     },
     {
+      "title": "PROBEAT: PRObiotic Bacterial gEnome Analysis Toolkit",
+      "authors": "Vesselin Baev",
+      "year": 2026,
+      "journal": "Current Issues in Molecular Biology",
+      "doi": "10.3390/cimb48080811",
+      "citations": 0,
+      "type": "Article"
+    },
+    {
       "title": "An AI-powered knowledge base for scientific abstracts: a case study on environmental DNA (eDNA) in biomonitoring",
       "authors": "Vesselin Baev, Gana Gecheva",
       "year": 2025,
@@ -59,7 +68,7 @@
       "year": 2025,
       "journal": "Microorganisms",
       "doi": "10.3390/microorganisms13010160",
-      "citations": 13,
+      "citations": 14,
       "type": "Article"
     },
     {
@@ -203,7 +212,7 @@
       "year": 2023,
       "journal": "Microorganisms",
       "doi": "10.3390/microorganisms11102440",
-      "citations": 11,
+      "citations": 12,
       "type": "Article"
     },
     {
@@ -221,7 +230,7 @@
       "year": 2023,
       "journal": "Biology",
       "doi": "10.3390/biology12010055",
-      "citations": 8,
+      "citations": 9,
       "type": "Article"
     },
     {
@@ -275,7 +284,7 @@
       "year": 2021,
       "journal": "Biomolecules",
       "doi": "10.3390/biom11010041",
-      "citations": 17,
+      "citations": 18,
       "type": "Review"
     },
     {
@@ -293,7 +302,7 @@
       "year": 2021,
       "journal": "Cancers",
       "doi": "10.3390/cancers13225663",
-      "citations": 8,
+      "citations": 9,
       "type": "Article"
     },
     {
