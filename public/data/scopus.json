@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-09-28T05:16:55.034Z",
+  "updatedAt": "2026-09-29T05:35:39.672Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1293,
+    "citations": 1295,
     "documents": 59
   },
   "publications": [
@@ -158,7 +158,7 @@
       "year": 2024,
       "journal": "Current Issues in Molecular Biology",
       "doi": "10.3390/cimb46030158",
-      "citations": 3,
+      "citations": 4,
       "type": "Article"
     },
     {
@@ -266,7 +266,7 @@
       "year": 2021,
       "journal": "Acta Biochimica Polonica",
       "doi": "10.18388/abp.2020_5555",
-      "citations": 5,
+      "citations": 6,
       "type": "Article"
     },
     {
