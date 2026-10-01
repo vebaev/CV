@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-09-30T05:24:02.491Z",
+  "updatedAt": "2026-10-01T05:40:40.740Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1295,
+    "citations": 1296,
     "documents": 59
   },
   "publications": [
@@ -167,7 +167,7 @@
       "year": 2024,
       "journal": "Plants",
       "doi": "10.3390/plants13091210",
-      "citations": 9,
+      "citations": 10,
       "type": "Article"
     },
     {
