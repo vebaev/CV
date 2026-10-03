@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-10-02T05:27:28.755Z",
+  "updatedAt": "2026-10-03T05:08:27.039Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1296,
+    "citations": 1298,
     "documents": 59
   },
   "publications": [
@@ -122,7 +122,7 @@
       "year": 2025,
       "journal": "International Journal of Plant Biology",
       "doi": "10.3390/ijpb16020044",
-      "citations": 2,
+      "citations": 3,
       "type": "Article"
     },
     {
@@ -140,7 +140,7 @@
       "year": 2024,
       "journal": "Human Reproduction Open",
       "doi": "10.1093/hropen/hoae048",
-      "citations": 27,
+      "citations": 28,
       "type": "Article"
     },
     {
