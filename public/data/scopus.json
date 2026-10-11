@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-10-10T05:41:02.898Z",
+  "updatedAt": "2026-10-11T05:36:21.483Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1298,
+    "citations": 1299,
     "documents": 59
   },
   "publications": [
@@ -239,7 +239,7 @@
       "year": 2023,
       "journal": "International Journal of Molecular Sciences",
       "doi": "10.3390/ijms241210341",
-      "citations": 3,
+      "citations": 4,
       "type": "Editorial"
     },
     {
