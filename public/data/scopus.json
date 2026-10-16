@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-10-15T04:26:13.727Z",
+  "updatedAt": "2026-10-16T04:21:00.897Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1299,
+    "citations": 1300,
     "documents": 59
   },
   "publications": [
@@ -95,7 +95,7 @@
       "year": 2025,
       "journal": "Human Reproduction Open",
       "doi": "10.1093/hropen/hoaf010",
-      "citations": 20,
+      "citations": 21,
       "type": "Article"
     },
     {
