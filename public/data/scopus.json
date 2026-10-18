@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-10-17T04:13:47.134Z",
+  "updatedAt": "2026-10-18T04:19:20.579Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1300,
+    "citations": 1301,
     "documents": 59
   },
   "publications": [
@@ -329,7 +329,7 @@
       "year": 2019,
       "journal": "Biotechnology and Biotechnological Equipment",
       "doi": "10.1080/13102818.2019.1697364",
-      "citations": 12,
+      "citations": 13,
       "type": "Article"
     },
     {
