@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-10-18T04:19:20.579Z",
+  "updatedAt": "2026-10-19T04:29:46.740Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1301,
+    "citations": 1302,
     "documents": 59
   },
   "publications": [
@@ -401,7 +401,7 @@
       "year": 2015,
       "journal": "Plant Physiology and Biochemistry",
       "doi": "10.1016/j.plaphy.2014.12.022",
-      "citations": 113,
+      "citations": 114,
       "type": "Article"
     },
     {
