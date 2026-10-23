@@ -1,11 +1,11 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-10-22T04:31:35.311Z",
+  "updatedAt": "2026-10-23T04:36:22.607Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1302,
-    "documents": 59
+    "citations": 1303,
+    "documents": 60
   },
   "publications": [
     {
@@ -23,6 +23,15 @@
       "year": 2026,
       "journal": "BMC Genomics",
       "doi": "10.1186/s12864-026-12851-3",
+      "citations": 0,
+      "type": "Article"
+    },
+    {
+      "title": "MicroRNA repertoire and responses of Hypnum cupressiforme to a heavy metal-enriched urban environment",
+      "authors": "Apostolova-Kuzova E.",
+      "year": 2026,
+      "journal": "Comprehensive Plant Biology",
+      "doi": "10.2298/CPB2602407A",
       "citations": 0,
       "type": "Article"
     },
@@ -46,7 +55,7 @@
     },
     {
       "title": "An AI-powered knowledge base for scientific abstracts: a case study on environmental DNA (eDNA) in biomonitoring",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Gana Gecheva",
       "year": 2025,
       "journal": "Ecologia Balkanica",
       "doi": "10.69085/eb20252154",
@@ -122,7 +131,7 @@
       "year": 2025,
       "journal": "International Journal of Plant Biology",
       "doi": "10.3390/ijpb16020044",
-      "citations": 3,
+      "citations": 4,
       "type": "Article"
     },
     {
