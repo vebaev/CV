@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-10-24T04:26:14.733Z",
+  "updatedAt": "2026-10-25T04:30:14.920Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1303,
+    "citations": 1305,
     "documents": 60
   },
   "publications": [
@@ -55,7 +55,7 @@
     },
     {
       "title": "An AI-powered knowledge base for scientific abstracts: a case study on environmental DNA (eDNA) in biomonitoring",
-      "authors": "Baev V.",
+      "authors": "Vesselin Baev, Gana Gecheva",
       "year": 2025,
       "journal": "Ecologia Balkanica",
       "doi": "10.69085/eb20252154",
@@ -68,7 +68,7 @@
       "year": 2025,
       "journal": "Current Issues in Molecular Biology",
       "doi": "10.3390/cimb47040258",
-      "citations": 3,
+      "citations": 4,
       "type": "Editorial"
     },
     {
@@ -356,7 +356,7 @@
       "year": 2018,
       "journal": "Acta Biochimica Polonica",
       "doi": "10.18388/abp.2017_1590",
-      "citations": 2,
+      "citations": 3,
       "type": "Article"
     },
     {
