@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-10-25T04:30:14.920Z",
+  "updatedAt": "2026-10-26T06:01:30.565Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1305,
+    "citations": 1306,
     "documents": 60
   },
   "publications": [
@@ -221,7 +221,7 @@
       "year": 2023,
       "journal": "Microorganisms",
       "doi": "10.3390/microorganisms11102440",
-      "citations": 13,
+      "citations": 14,
       "type": "Article"
     },
     {
