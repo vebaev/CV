@@ -959,6 +959,10 @@ export default function Home() {
             <span>CIMB</span>
             <p>Editorial Board, Bioinformatics and Systems Biology Section</p>
           </div>
+          <div className="affiliation-row">
+            <span>GTN</span>
+            <p>Galaxy Training Network</p>
+          </div>
         </div>
       </section>
 

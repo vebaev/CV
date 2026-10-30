@@ -224,8 +224,7 @@ if (!Array.isArray(entries) || entries.length === 0) {
 const validEntries = entries.filter((entry) => !entry.error);
 const basePublications = validEntries
   .map(normalizePublication)
-  .filter((entry) => entry.year > 1900)
-  .sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
+  .filter((entry) => entry.year > 1900);
 const publications = await mapWithConcurrency(
   basePublications,
   CROSSREF_CONCURRENCY,

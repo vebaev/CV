@@ -1,5 +1,11 @@
 # Agent changelog
 
+## 2026-10-30
+
+- Added Galaxy Training Network (GTN) to Memberships.
+- Preserved the Scopus Search response order instead of sorting titles within
+  each year; the query requests descending cover date.
+
 ## 2026-08-11
 
 ### Added

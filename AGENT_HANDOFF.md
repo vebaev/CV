@@ -28,7 +28,8 @@ for GitHub Pages.
   document total comes from the same Scopus response.
 - Scopus Search is paginated in batches of 25 records, matching the regular
   developer-key service limit while still retrieving the complete publication
-  list.
+  list. The updater preserves the API response order for its `-coverDate`
+  query; other sorting options in the Scopus interface may differ.
 - Personal birth date, gender and street address are not displayed on the
   public page. The user explicitly approved the public contact telephone
   `+359 32 261 560`. The original PDF remains in the static assets but is no
@@ -112,7 +113,7 @@ for GitHub Pages.
   label. The Faculty address above the contact buttons follows the selected
   interface language.
 - Memberships lists AI-GUIDE CA25157 first, followed by BM1006, FA1407 and the
-  CIMB Editorial Board, Bioinformatics and Systems Biology Section. The CIMB
+  CIMB Editorial Board and GTN Galaxy Training Network. The CIMB
   entry uses the same regular text weight throughout.
 - Projects follows Memberships as section 04 in the same gold row style. It
   lists the EU ITN Marie Skłodowska-Curie ELBA grant agreement 765492
