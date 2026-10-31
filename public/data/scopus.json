@@ -1,11 +1,11 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-10-30T14:03:39.005Z",
+  "updatedAt": "2026-10-31T06:55:11.607Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
     "citations": 1307,
-    "documents": 60
+    "documents": 61
   },
   "publications": [
     {
@@ -14,6 +14,15 @@
       "year": 2026,
       "journal": "BMC Genomics",
       "doi": "10.1186/s12864-026-12851-3",
+      "citations": 0,
+      "type": "Article"
+    },
+    {
+      "title": "BGC-XPLORER: Exploring Biosynthetic Gene Clusters with Gene-Level Functional Annotation and AI-Assisted Summarization",
+      "authors": "Vesselin Baev, Elena Apostolova, Mariyana Gozmanova, Ivan Iliev, Velizar Gochev, Galina Yahubyan",
+      "year": 2026,
+      "journal": "Current Issues in Molecular Biology",
+      "doi": "10.3390/cimb48101091",
       "citations": 0,
       "type": "Article"
     },
