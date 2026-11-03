@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-11-02T07:36:04.279Z",
+  "updatedAt": "2026-11-03T07:49:56.422Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1307,
+    "citations": 1308,
     "documents": 61
   },
   "publications": [
@@ -248,7 +248,7 @@
       "year": 2023,
       "journal": "Italian Journal of Food Science",
       "doi": "10.15586/IJFS.V35I3.2385",
-      "citations": 9,
+      "citations": 10,
       "type": "Article"
     },
     {
