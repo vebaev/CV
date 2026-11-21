@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-11-20T08:24:43.149Z",
+  "updatedAt": "2026-11-21T08:12:33.231Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1312,
+    "citations": 1318,
     "documents": 61
   },
   "publications": [
@@ -176,7 +176,7 @@
       "year": 2024,
       "journal": "Plants",
       "doi": "10.3390/plants13091210",
-      "citations": 10,
+      "citations": 11,
       "type": "Article"
     },
     {
@@ -203,7 +203,7 @@
       "year": 2023,
       "journal": "Microorganisms",
       "doi": "10.3390/microorganisms11102440",
-      "citations": 14,
+      "citations": 15,
       "type": "Article"
     },
     {
@@ -230,7 +230,7 @@
       "year": 2023,
       "journal": "Microorganisms",
       "doi": "10.3390/microorganisms11030803",
-      "citations": 9,
+      "citations": 10,
       "type": "Article"
     },
     {
@@ -248,7 +248,7 @@
       "year": 2023,
       "journal": "Italian Journal of Food Science",
       "doi": "10.15586/IJFS.V35I3.2385",
-      "citations": 10,
+      "citations": 11,
       "type": "Article"
     },
     {
@@ -320,7 +320,7 @@
       "year": 2021,
       "journal": "Acta Biochimica Polonica",
       "doi": "10.18388/abp.2020_5555",
-      "citations": 6,
+      "citations": 7,
       "type": "Article"
     },
     {
@@ -428,7 +428,7 @@
       "year": 2015,
       "journal": "Database",
       "doi": "10.1093/database/bav084",
-      "citations": 26,
+      "citations": 27,
       "type": "Article"
     },
     {
