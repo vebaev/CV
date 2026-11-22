@@ -1,10 +1,10 @@
 {
   "authorId": "12789511400",
-  "updatedAt": "2026-11-21T08:12:33.231Z",
+  "updatedAt": "2026-11-22T07:56:55.410Z",
   "source": "Elsevier Scopus APIs",
   "metrics": {
     "hIndex": 17,
-    "citations": 1318,
+    "citations": 1320,
     "documents": 61
   },
   "publications": [
@@ -122,7 +122,7 @@
       "year": 2025,
       "journal": "Non Coding RNA",
       "doi": "10.3390/ncrna11010017",
-      "citations": 2,
+      "citations": 3,
       "type": "Article"
     },
     {
@@ -383,7 +383,7 @@
       "year": 2017,
       "journal": "Frontiers in Plant Science",
       "doi": "10.3389/fpls.2017.00204",
-      "citations": 122,
+      "citations": 123,
       "type": "Article"
     },
     {
